@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xml-apis-1.3.04">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/xml-apis-1.3.04.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

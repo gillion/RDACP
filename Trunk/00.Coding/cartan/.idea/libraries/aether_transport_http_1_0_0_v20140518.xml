@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aether-transport-http-1.0.0.v20140518">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/aether-transport-http-1.0.0.v20140518.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rtm_config  ID="1" CONFIG_CODE="1" CONFIG_NAME="1" TYPE_CODE="1"/>
+    <t_ipf_rtm_config  ID="2" CONFIG_CODE="2" CONFIG_NAME="2" TYPE_CODE="2"/>
+</dataset>

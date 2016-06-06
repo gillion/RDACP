@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_dml_index  ID="1" IPF_DML_TABLE_ID="1" INDEX_NAME="1" INDEX_TYPE="1"/>
+    <t_ipf_dml_index  ID="2" IPF_DML_TABLE_ID="2" INDEX_NAME="2" INDEX_TYPE="2"/>
+</dataset>

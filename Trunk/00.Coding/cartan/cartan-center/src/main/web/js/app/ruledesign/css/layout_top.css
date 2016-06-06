@@ -1,0 +1,62 @@
+/*kuangjia_css_start*/
+html{
+     _padding:75px 0;
+}
+.frame_all {
+	z-index:1;
+}
+.frame_top{
+     position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     height:113px;
+     background:#999;
+	 z-index:100;
+	 
+}
+.frame_body{
+     position:absolute;
+     top:113px;
+     right:0;
+     bottom:36px;
+     left:0;
+     overflow:auto;
+     _overflow:auto;
+	 -overflow-x:hidden;
+     width:100%;
+     _height:100%;
+	
+}
+.frame_body_left{
+     position:absolute;
+     top:0;
+     left:0;
+     bottom:0;
+     overflow:auto;
+     width:235px;
+     _height:100%;
+}
+.frame_body_right{
+     position:absolute;
+     _position:static;
+     top:0;
+     right:0;
+     bottom:0;
+     left:235px;
+     overflow:auto;
+     _overflow:auto;
+     _height:100%;
+     _margin-left:235px;
+}
+.frame_bottom{
+     position:absolute;
+     bottom:0;
+     left:0;
+     width:100%;
+     height:36px;
+	 background:#4494AB;
+}
+
+/*kuangjia_css_end*/
+

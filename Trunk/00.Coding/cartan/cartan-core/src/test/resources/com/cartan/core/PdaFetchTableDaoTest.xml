@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <PDA_FETCH_TABLE  ID="1" IFLAG="1" SMODULE="1" STABLENAME="1" STABLETITLE="1" SFIELDNAME="1" SELSQL="1" SELTITLE="1" SUNIONMODULE="1" ISROWNO="1" ISSUM="1" SENDCOUNT="1" SGRANTSET="1" SDNROLE="1" SDNDATE="1" COMM="1"/>
+    <PDA_FETCH_TABLE  ID="2" IFLAG="2" SMODULE="2" STABLENAME="2" STABLETITLE="2" SFIELDNAME="2" SELSQL="2" SELTITLE="2" SUNIONMODULE="2" ISROWNO="2" ISSUM="2" SENDCOUNT="2" SGRANTSET="2" SDNROLE="2" SDNDATE="2" COMM="2"/>
+</dataset>

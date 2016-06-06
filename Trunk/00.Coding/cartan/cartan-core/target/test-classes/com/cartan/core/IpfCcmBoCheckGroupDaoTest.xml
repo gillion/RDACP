@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_check_group  ID="1" IPF_CCM_BO_ID="1" GROUP_NAME="1" GROUP_DESC="1"/>
+    <t_ipf_ccm_bo_check_group  ID="2" IPF_CCM_BO_ID="2" GROUP_NAME="2" GROUP_DESC="2"/>
+</dataset>

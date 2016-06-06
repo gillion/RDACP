@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-interpolation-1.19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/plexus-interpolation-1.19.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

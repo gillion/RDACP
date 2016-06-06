@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rop="http://www.rop.com/schema/rop"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+    http://www.rop.com/schema/rop http://www.rop.com/schema/rop/rop-1.0.xsd">
+
+    <!-- ROP配置 -->
+    <rop:annotation-driven
+            core-pool-size="50"
+            max-pool-size="1000"
+            queue-capacity="300"
+            app-secret-manager="appSecretManager"
+            ext-error-base-name="rop/i18n/error"
+            sign-enable="false"/>
+
+    <bean id="appSecretManager"
+          class="com.rop.security.FileBaseAppSecretManager"
+          p:appSecretFile="classpath:rop/appSecret.properties"/>
+
+</beans>

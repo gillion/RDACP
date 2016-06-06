@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="drools-verifier-6.2.0.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/drools-verifier-6.2.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

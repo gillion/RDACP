@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_req_rule  ID="1" RULE_NAME="1" RULE_NO="1" RULE_TYPE="1" RULE_STATUS="1" TRIGGER_TYPE="1" PHYSICAL_LOCATION="1" ACTION_TYPE="1" BUSINESS_LOCATION="1" BUSINESS_MODULE="1" DROOLS_ATTRIBUTE="1" RULE_DESC="1" IS_DECISION_TABLE="1" PUBLIC_TYPE="1" IPF_CCM_BO_ID="1" IMPORT_DESC="1" DROOLS_WHEN="1" DROOLS_THEN="1" REMARK="1"/>
+    <t_ipf_req_rule  ID="2" RULE_NAME="2" RULE_NO="2" RULE_TYPE="2" RULE_STATUS="2" TRIGGER_TYPE="2" PHYSICAL_LOCATION="2" ACTION_TYPE="2" BUSINESS_LOCATION="2" BUSINESS_MODULE="2" DROOLS_ATTRIBUTE="2" RULE_DESC="2" IS_DECISION_TABLE="2" PUBLIC_TYPE="2" IPF_CCM_BO_ID="2" IMPORT_DESC="2" DROOLS_WHEN="2" DROOLS_THEN="2" REMARK="2"/>
+</dataset>

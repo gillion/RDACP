@@ -1,0 +1,396 @@
+<html lang="zh-CN">
+<head>
+    <title>按钮写法</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="core/js/lib/kendoui/kendo.common.min.css" />
+    <link rel="stylesheet" href="core/js/lib/kendoui/kendo.default.min.css" />
+    <script type="text/javascript" src="js/combox.js"></script>
+    <style type="text/css">
+        a:hover{text-decoration: none;}
+        .btn{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 24px;
+            border-radius: 4px;
+            background-color: #63b7ff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #99c6ff;
+        }
+        .btn{
+            font-style: normal;
+        }
+        .bgbtn {width:16px; height:16px; padding:0; margin:2px 0 0 1px; border:0 none;
+            background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+            background-image:url("./js/app/ruledesign/css/zTreeStyle/img/zTreeStandard.png"); *background-image:url("./js/app/ruledesign/css/zTreeStyle/img/zTreeStandard.gif")
+        }
+        .bgbtn.arrow {
+            background-position:-110px -80px;
+        }
+        .bgbtn.open {
+            background-position:-110px -16px;
+        }
+        .bgbtn.close {
+            background-position:-110px -0px;
+        }
+        .bgbtn.add {
+            background-position:-144px -0px;
+        }
+        .bgbtn.remove {
+           background-position:-110px -64px;
+
+        }
+        .bgbtn.edit {
+            background-position:-110px -48px;
+        }
+        .bgbtn.docu {
+            background-position:-110px -32px;
+        }
+        .div-inline{
+           display:inline;
+        }
+
+        .combox_input{border:0px solid gray;background-color:white;}.combox_text{vertical-align:middle;position:relative;border:none;}
+        .combox_container{background:white;border:1px solid silver;overflow:auto}
+        .combox_dpList{list-style:none;margin:0;padding:0;background-color:#fff}
+        .combox_row{text-indent:4px;height:20px;line-height:20px;font-size:12px;margin:0;padding:0;}
+        .combox_row_mouseover{background-color:gray;color:white;text-indent:4px;height:20px;line-height:20px;font-size:12px;}
+        .combox_row_mouseout{background-color:white;color:black;text-indent:4px;height:20px;line-height:20px;font-size:12px;}
+    </style>
+</head>
+<script type="text/javascript" >
+    var a=0;
+    var ln=0;
+
+    function removeAllChild(divid)
+    {
+        var div = document.getElementById(divid);
+        while(div.hasChildNodes()) //当div下还存在子节点时 循环继续
+        {
+            div.removeChild(div.firstChild);
+        }
+    }
+
+    function addline(maindiv){
+        var div=document.createElement("div");
+        div.innerHTML="";
+        div.id=maindiv+"-"+ln;
+        document.getElementById(maindiv).appendChild(div);
+        //添加公式DIV
+        var caldiv=document.createElement("div");
+        caldiv.style.display="inline";
+        caldiv.innerHTML="";
+        caldiv.id="cal"+maindiv+"-"+ln;
+        div.appendChild(caldiv);
+
+        addclose(caldiv.id);
+
+        var divid=div.id;
+
+        var arrow=generateInput('button',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a,'bgbtn arrow btn');
+        arrow.onclick = function(){
+            addclose(caldiv.id);
+        }
+
+        var del=generateInput('button',maindiv+"-"+ln,"del"+"-"+maindiv+"-"+ln+"-"+a,"arr"+"-"+maindiv+"-"+ln+"-"+a,'bgbtn remove btn');
+        del.onclick = function(){
+            removeAllChild(divid);
+            document.getElementById(maindiv).removeChild(document.getElementById(divid));
+        }
+
+        ln++;
+        a++;
+    }
+    function addclose(divid){
+    /*
+      generateInput('text',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a);
+      generateInput('text',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a);
+      generateInput('text',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a);
+      */
+      generateInput('button',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a,'bgbtn edit btn');
+      var arguments= new Array();
+        var oOption =  new Option("","")
+        arguments.push(oOption);
+      var oOption =  new Option("客户信息","01")
+      arguments.push(oOption);
+      var oOption =  new Option("授信信息","02")
+      arguments.push(oOption);
+      var oOption =  new Option("中间结果","03")
+      arguments.push(oOption);
+      generateCombox(divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a,arguments,"combox");
+        var arguments= new Array();
+        var oOption =  new Option("","")
+        arguments.push(oOption);
+        var oOption =  new Option("年收入","04")
+        arguments.push(oOption);
+        var oOption =  new Option("授信比例","05")
+        arguments.push(oOption);
+        var oOption =  new Option("消费品价值","06")
+        arguments.push(oOption);
+      generateCombox(divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a,arguments,"combox");
+        var arguments= new Array();
+        var oOption =  new Option(";",";")
+        arguments.push(oOption);
+        var oOption =  new Option("大于等于",">=")
+        arguments.push(oOption);
+        var oOption =  new Option("小于等于","<=")
+        arguments.push(oOption);
+        var oOption =  new Option("等于","==")
+        arguments.push(oOption);
+        var oOption =  new Option("大于",">")
+        arguments.push(oOption);
+        var oOption =  new Option("小于","<")
+        arguments.push(oOption);
+      generateCombox(divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a,arguments,"combox");
+      select_transform();
+    }
+
+    function select_transform() {
+        var sel_ary = document.getElementsByTagName('select');
+        for (var i = 0; i < sel_ary.length; i++) {
+            if (!sel_ary[i].multiple && sel_ary[i].style.display != 'none') {
+                if (hasCss('combox', sel_ary[i].className))
+                    (new combox(sel_ary[i])).transform();
+            }
+        }
+    }
+    function hasCss(cssName, cssNameAry) {
+        var cssAry = cssNameAry.split(/\s/);
+        for (var i = 0, css; css = cssAry[i]; i++) {
+            if (cssName.toLowerCase() == css.toLowerCase()) {
+                return true;
+            }
+        }
+        return false;
+    }
+    function add(divid){
+
+        var divlabel=document.createElement("div");
+        divlabel.style.display="inline";
+        divlabel.id=divid+"-"+a;
+        divlabel.innerHTML="test";
+        div.appendChild(divlabel);
+
+        var alink=document.createElement("a");
+        alink.href="javascript:add('"+div.id+"')";
+        alink.innerHTML="追加";
+        div.appendChild(alink);
+
+        a++;
+    }
+    function generateInputDiv(){
+        var testDiv=document.createElement("div");
+        for(var i=0;i<6; i++){
+            testDiv.setAttribute("id","div"+i);
+        generateInput('text',"div"+i,'tem1','tem1');
+        generateInput('button',"div"+i,'tem2','tem2','bgbtn remove btn');
+        }
+        document.body.appendChild(testDiv);
+    }
+
+    function generateCombox(divname,id,name,arguments,classname){
+        var mySelect = document.createElement("select");
+        mySelect.id = id;
+        if(classname == null || classname == ""){
+            classname = ""
+        }else{
+            mySelect.className = classname;
+        }
+
+        for(var i=0; i<arguments.length; i++){
+            var oOption = arguments[i];
+            mySelect.add(oOption);
+        }
+        var tab=document.getElementById(divname); //获得表格
+        tab.appendChild(mySelect);
+        return mySelect;
+    }
+   function generateInput(type,divname,id,name,classname){
+       var input;
+       if(document.all){
+           if(name != null && name != ""){
+               input = document.createElement('<input name="' + name + '">');//IE代码
+           }else{
+               input = document.createElement('<input');//IE代码
+           }
+       }else{
+           input = document.createElement('input'); //其他
+           if(name != null && name != ""){
+               input.name = name;
+           }
+       }
+
+       if(type == null || type == ""){
+           type = "text"
+       }else{
+           input.type = type;
+       }
+       if(type == "text"){
+           input.style.cssText="width:50px;border:0px";
+       }
+       if(id != null && id != ""){
+           input.id = id;
+       }
+       if(classname == null || classname == ""){
+           classname = ""
+       }else{
+           input.className = classname;
+       }
+       input.value = "";
+       var tab=document.getElementById(divname); //获得表格
+       tab.appendChild(input);
+       return input;
+       //document.body.applyElement(input);
+       //document.body.appendChild(input);
+   };
+
+</script>
+
+<body>
+<!--<input>标签按钮-->
+<div class="btn">变量定义</div>
+<div id="var-define"></div>
+<input class="bgbtn add btn" type="button" onclick="addline('var-define');"/>
+<br>
+<br>
+<br>
+<div class="btn">条件判断</div>
+<div id="con-decide"></div>
+<input class="bgbtn add btn" type="button" onclick="addline('con-decide');"/>
+<br>
+<br>
+<br>
+<div class="btn">规则动作</div>
+<div id="rule-action"></div>
+<input class="bgbtn add btn" type="button" onclick="addline('rule-action');"/>
+<div></div>
+<br>
+<div style="display:inline;">
+<button class="bgbtn docu btn" onclick="generateInput('text','list','tem1','tem1');"></button>
+</div>
+    <!--任意标签按钮-->
+<div style="display:inline;">
+<input class="bgbtn remove btn" type="button"  onclick="generateInput('button','list','tem2','tem2','bgbtn remove btn');"/>
+</div>
+    <!--<button>标签按钮-->
+    <div style="display:inline;">
+<input class="bgbtn open btn" type="button" onclick="generateInput('button','list','tem2','tem2','bgbtn open btn');"/>
+    </div>
+    <!--<button>标签按钮-->
+        <div style="display:inline;">
+<input class="bgbtn close btn" type="button" onclick="generateInput('button','list','tem2','tem2','bgbtn close btn');"/>
+        </div>
+<!--<button>标签按钮-->
+<div style="display:inline;">
+    <input class="bgbtn add btn" type="button" onclick="generateInput('button','list','tem2','tem2','bgbtn add btn');"/>
+</div>
+            <!--<button>标签按钮-->
+<div style="display:inline;">
+<button class="bgbtn arrow btn"  onclick="generateInput('button','list','tem2','tem2','bgbtn arrow btn');"></button>
+</div>
+                <!--任意标签按钮-->
+<div  style="display:inline;">
+<i class="bgbtn edit btn"  onclick="generateInput('button','list','tem2','tem2','bgbtn edit btn');"></i>
+</div>
+<div></div>
+<br>
+
+<div style="display:inline;">
+    <a id="varBtn2"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-add"></span>新增</a>
+</div>
+<div style="display:inline;">
+<a id="varBtn"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+    <span class="k-icon k-edit"></span>编辑</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn13"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-delete"></span>删除</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn1"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-update"></span>保存</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn3"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-cancel"></span>取消</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn4"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-filter"></span>过滤</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn7"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-arrow-n"></span>向上</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn5"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-arrow-s"></span>向下</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn16"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-arrow-w"></span>向左</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn17"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-arrow-e"></span>向右</a>
+</div>
+<div></div>
+<br>
+<div style="display:inline;">
+    <a id="varBtn6"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-addfolder"></span>新增目录</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn8"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-calendar"></span>日期</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn9"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-clock"></span>时间</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn10"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-group"></span>分组</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn11"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-maximize"></span>最大化</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn12"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-minimize"></span>最小化</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn14"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-note"></span>提示</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn15"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-refresh"></span>刷新</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn18"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-search"></span>查找</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn19"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-createLink"></span>查找链接</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn20"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-folder-up"></span>查找链接</a>
+</div>
+<div style="display:inline;">
+    <a id="varBtn21"  class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+        <span class="k-icon k-i-columns"></span>查找链接</a>
+</div>
+
+<div id="list">
+
+</div>
+</body>
+</html>

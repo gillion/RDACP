@@ -1,0 +1,13 @@
+package com.cartan.center.ebs.sysUser;
+
+import com.cartan.center.ebs.sysUser.SysUserServiceEbsBase.Message;
+
+rule "require formula"
+    when
+        m : Message( status == Message.REQUIRE)
+    then 
+        m.setMessage( "require finish" );
+        m.setPrice(2400-m.getRequire()*20);
+        m.setStatus(Message.FINISH); 
+        update(m); 
+end 

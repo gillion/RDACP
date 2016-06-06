@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_cartan-service" default="compile.module.cartan-service">
+  <dirname property="module.cartan-service.basedir" file="${ant.file.module_cartan-service}"/>
+  
+  <property name="module.jdk.home.cartan-service" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.cartan-service" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.cartan-service" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.cartan-service" value="${compiler.args}"/>
+  
+  <property name="cartan-service.output.dir" value="${module.cartan-service.basedir}/target/classes"/>
+  <property name="cartan-service.testoutput.dir" value="${module.cartan-service.basedir}/target/test-classes"/>
+  
+  <path id="cartan-service.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="cartan-service.module.production.classpath">
+    <path refid="${module.jdk.classpath.cartan-service}"/>
+    <path refid="library.maven:_com.rop:rop:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.1.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.6.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.16.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.6.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:3.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-core:3.2.3.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-asm:3.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:3.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:3.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.0.0.ga.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:4.2.0.final.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.9.5.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_org.codehaus.woodstox:stax2-api:3.1.1.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_cglib:cglib:3.0.classpath"/>
+    <path refid="library.maven:_com.ridge:ridge-core:1.0.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:4.0.classpath"/>
+  </path>
+  
+  <path id="cartan-service.runtime.production.module.classpath">
+    <pathelement location="${cartan-service.output.dir}"/>
+    <path refid="library.maven:_com.rop:rop:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.1.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.6.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.16.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.6.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:3.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-core:3.2.3.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-asm:3.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:3.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:3.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.0.0.ga.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:4.2.0.final.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.9.5.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_org.codehaus.woodstox:stax2-api:3.1.1.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_cglib:cglib:3.0.classpath"/>
+    <path refid="library.maven:_com.ridge:ridge-core:1.0.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:4.0.classpath"/>
+  </path>
+  
+  <path id="cartan-service.module.classpath">
+    <path refid="${module.jdk.classpath.cartan-service}"/>
+    <pathelement location="${cartan-service.output.dir}"/>
+    <path refid="library.maven:_com.rop:rop:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.1.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.6.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.16.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.6.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:3.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-core:3.2.3.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-asm:3.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:3.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:3.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.0.0.ga.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:4.2.0.final.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.9.5.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_org.codehaus.woodstox:stax2-api:3.1.1.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-spring:3.3.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-core:3.3.classpath"/>
+    <path refid="library.maven:_commons-collections:commons-collections:3.2.classpath"/>
+    <path refid="library.maven:_ognl:ognl:2.6.9.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-test:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-tx:2.5.2.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-database:3.3.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-dbmaintainer:3.3.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate:3.2.5.ga.classpath"/>
+    <path refid="library.maven:_net.sf.ehcache:ehcache:1.2.3.classpath"/>
+    <path refid="library.maven:_asm:asm-attrs:1.5.3.classpath"/>
+    <path refid="library.maven:_dom4j:dom4j:1.6.1.classpath"/>
+    <path refid="library.maven:_antlr:antlr:2.7.6.classpath"/>
+    <path refid="library.maven:_cglib:cglib:3.0.classpath"/>
+    <path refid="library.maven:_asm:asm:1.5.3.classpath"/>
+    <path refid="library.maven:_org.dbunit:dbunit:2.2.2.classpath"/>
+    <path refid="library.maven:_junit-addons:junit-addons:1.4.classpath"/>
+    <path refid="library.maven:_xerces:xercesimpl:2.6.2.classpath"/>
+    <path refid="library.maven:_xerces:xmlparserapis:2.6.2.classpath"/>
+    <path refid="library.maven:_poi:poi:2.5.1-final-20040804.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-nop:1.4.3.classpath"/>
+    <path refid="library.maven:_commons-dbcp:commons-dbcp:1.2.2.classpath"/>
+    <path refid="library.maven:_commons-pool:commons-pool:1.3.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:2.5.2.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-testng:3.3.classpath"/>
+    <path refid="library.maven:_org.testng:testng:jdk15:5.8.classpath"/>
+    <path refid="library.maven:_org.mockito:mockito-all:1.8.5.classpath"/>
+    <path refid="library.maven:_com.ridge:ridge-core:1.0.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:4.0.classpath"/>
+  </path>
+  
+  <path id="cartan-service.runtime.module.classpath">
+    <pathelement location="${cartan-service.testoutput.dir}"/>
+    <pathelement location="${cartan-service.output.dir}"/>
+    <path refid="library.maven:_com.rop:rop:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.1.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.6.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.16.classpath"/>
+    <path refid="library.maven:_commons-lang:commons-lang:2.4.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.6.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:3.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-core:3.2.3.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-asm:3.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:3.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:3.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.0.0.ga.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:4.2.0.final.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-core-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-jaxrs:1.9.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.jackson:jackson-xc:1.9.5.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.0.0-rc2.classpath"/>
+    <path refid="library.maven:_org.codehaus.woodstox:stax2-api:3.1.1.classpath"/>
+    <path refid="library.maven:_javax.xml.stream:stax-api:1.0-2.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-spring:3.3.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-core:3.3.classpath"/>
+    <path refid="library.maven:_commons-collections:commons-collections:3.2.classpath"/>
+    <path refid="library.maven:_ognl:ognl:2.6.9.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-test:2.5.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-tx:2.5.2.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-database:3.3.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-dbmaintainer:3.3.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate:3.2.5.ga.classpath"/>
+    <path refid="library.maven:_net.sf.ehcache:ehcache:1.2.3.classpath"/>
+    <path refid="library.maven:_asm:asm-attrs:1.5.3.classpath"/>
+    <path refid="library.maven:_dom4j:dom4j:1.6.1.classpath"/>
+    <path refid="library.maven:_antlr:antlr:2.7.6.classpath"/>
+    <path refid="library.maven:_cglib:cglib:3.0.classpath"/>
+    <path refid="library.maven:_asm:asm:1.5.3.classpath"/>
+    <path refid="library.maven:_org.dbunit:dbunit:2.2.2.classpath"/>
+    <path refid="library.maven:_junit-addons:junit-addons:1.4.classpath"/>
+    <path refid="library.maven:_xerces:xercesimpl:2.6.2.classpath"/>
+    <path refid="library.maven:_xerces:xmlparserapis:2.6.2.classpath"/>
+    <path refid="library.maven:_poi:poi:2.5.1-final-20040804.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-nop:1.4.3.classpath"/>
+    <path refid="library.maven:_commons-dbcp:commons-dbcp:1.2.2.classpath"/>
+    <path refid="library.maven:_commons-pool:commons-pool:1.3.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:2.5.2.classpath"/>
+    <path refid="library.maven:_org.unitils:unitils-testng:3.3.classpath"/>
+    <path refid="library.maven:_org.testng:testng:jdk15:5.8.classpath"/>
+    <path refid="library.maven:_org.mockito:mockito-all:1.8.5.classpath"/>
+    <path refid="library.maven:_com.ridge:ridge-core:1.0.0-snapshot.classpath"/>
+    <path refid="library.maven:_org.ow2.asm:asm:4.0.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.cartan-service">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.cartan-service">
+    <patternset refid="compiler.excluded"/>
+    <patternset refid="excluded.from.module.cartan-service"/>
+  </patternset>
+  
+  <path id="cartan-service.module.sourcepath">
+    <dirset dir="${module.cartan-service.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="cartan-service.module.test.sourcepath">
+    <dirset dir="${module.cartan-service.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.cartan-service" depends="compile.module.cartan-service.production,compile.module.cartan-service.tests" description="Compile module cartan-service"/>
+  
+  <target name="compile.module.cartan-service.production" depends="register.custom.compilers" description="Compile module cartan-service; production classes">
+    <mkdir dir="${cartan-service.output.dir}"/>
+    <javac2 destdir="${cartan-service.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.cartan-service}/javac">
+      <compilerarg line="${compiler.args.cartan-service}"/>
+      <bootclasspath refid="cartan-service.module.bootclasspath"/>
+      <classpath refid="cartan-service.module.production.classpath"/>
+      <src refid="cartan-service.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.cartan-service"/>
+    </javac2>
+    
+    <copy todir="${cartan-service.output.dir}">
+      <fileset dir="${module.cartan-service.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.cartan-service"/>
+      </fileset>
+      <fileset dir="${module.cartan-service.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.cartan-service"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.cartan-service.tests" depends="register.custom.compilers,compile.module.cartan-service.production" description="compile module cartan-service; test classes" unless="skip.tests">
+    <mkdir dir="${cartan-service.testoutput.dir}"/>
+    <javac2 destdir="${cartan-service.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.cartan-service}/javac">
+      <compilerarg line="${compiler.args.cartan-service}"/>
+      <bootclasspath refid="cartan-service.module.bootclasspath"/>
+      <classpath refid="cartan-service.module.classpath"/>
+      <src refid="cartan-service.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.cartan-service"/>
+    </javac2>
+    
+    <copy todir="${cartan-service.testoutput.dir}">
+      <fileset dir="${module.cartan-service.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.cartan-service"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.cartan-service" description="cleanup module">
+    <delete dir="${cartan-service.output.dir}"/>
+    <delete dir="${cartan-service.testoutput.dir}"/>
+  </target>
+</project>

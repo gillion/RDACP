@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_COMTABLE_KEY  ID="1" TABLENAME="1" NEXTID="1"/>
+    <T_COMTABLE_KEY  ID="2" TABLENAME="2" NEXTID="2"/>
+</dataset>

@@ -1,0 +1,210 @@
+<h3>模态窗口使用例子</h3>
+
+<ol>
+    <li>
+        <h3><p>$.window.showModalDialog(<em>title</em>, <em>url</em>, <em>beforeCloseHandle</em>, <em>afterCloseHandle</em>, <em> vArguments</em>, <em> vFeatures</em>)</p></h3>
+        <dl>
+            <dt>概述</dt>
+            <dd>显示模态弹出窗口。<strong>注意</strong>：这是一个静态方法</dd>
+            <dt>参数</dt>
+            <dd>
+                <dl>
+                    <dt title="String">title {String}</dt>
+                    <dd>窗口的标题</dd>
+                    <dt title="String">url {String}</dt>
+                    <dd>窗口请求的链接</dd>
+                    <dt title="String/Function">beforeCloseHandle {String/Function}</dt>
+                    <dd>窗口关闭前的回调函数</dd>
+                    <dt title="String/Function">afterCloseHandle {String/Function}</dt>
+                    <dd>窗口关闭后的回调函数</dd>
+                    <dt title="Object/String/Boolean/Array">vArguments {Object/String/Boolean/Array}</dt>
+                    <dd>父窗口传递给子窗口的参数</dd>
+                    <dt title="Object">vFeatures {Object}</dt>
+                    <dd>控制弹出框的一些配置参数</dd>
+                </dl>
+            </dd>
+            <dt>返回值</dt>
+            <dd>返回ModalDialog对象</dd>
+            <dt>示例</dt>
+            <dd>
+                <dl>
+                    <dt>显示系统内的页面</dt>
+                    <dd>
+                        <pre>$.window.showModalDialog("显示系统内的页面", "kendoui_grid.jsp", null, null, null, {top:100, left:100, width:1200})</pre>
+                        <input type="button" class="button" value="运行" onclick='var left=$(this).position().left;var top=$(this).position().top;$.window.showModalDialog("显示系统内的页面", "kendoui_grid.jsp", null, null, null, {top:20,  width:1200})' />
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>显示系统外的页面</dt>
+                    <dd>
+                        <pre>$.window.showModalDialog("显示系统外的页面", "http://www.baidu.com")</pre>
+                        <input type="button" class="button" value="运行" onclick='$.window.showModalDialog("显示系统外的页面", "http://www.baidu.com")' />
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>设置关闭前的回调函数</dt>
+                    <dd>
+                        <pre>$.window.showModalDialog("显示系统外的页面",
+                            "http://www.baidu.com",
+                            function(){
+                                var response=confirm("该窗口的数据已经发生改变，您确定要关闭该页面吗？");
+                                return response;
+                            })</pre>
+                        <input type="button" class="button" value="运行" onclick='$.window.showModalDialog("显示系统外的页面", "http://www.baidu.com", function(){var response=confirm("该窗口的数据已经发生改变，您确定要关闭该页面吗？"); return response;})' />
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>设置关闭后的回调函数<br>
+                        <strong>注意</strong>：窗口关闭后的回调函数要执行，必须先标识该窗口数据已经发生了改变，有两种方式标识，一种是配置型的，一种是方法调用型的；</dt>
+                    <dd>
+                        <pre>$.window.showModalDialog("显示系统外的页面",
+                            "http://www.baidu.com",
+                            function(){
+                                $.window.markUpdated();  //方法调用型的，标识该窗口的数据已经发生了改变
+                            },
+                            function(){
+                                alert("窗口关闭后的回调函数");
+                            })</pre>
+                        <input type="button" class="button" value="运行" onclick='$.window.showModalDialog("显示系统外的页面", "http://www.baidu.com", function(){$.window.markUpdated();}, function(){alert("窗口关闭后的回调函数");})' />
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>父窗口传递给子窗口的参数</dt>
+                    <dd>
+                        <pre>$.window.showModalDialog("显示系统外的页面",
+                            "http://www.baidu.com",
+                            function(){
+                                var arguments = $.window.getArguments();  //获取参数
+                                alert(arguments["hello"]);
+                            },
+                            null,
+                            {hello: "刘溪滨，您好！"})</pre>
+                        <input type="button" class="button" value="运行" onclick='$.window.showModalDialog("显示系统外的页面", "http://www.baidu.com", function(){var arguments = $.window.getArguments();alert(arguments["hello"]);}, null, {hello: "刘溪滨，您好！"})' />
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>子窗口传递给父窗口的返回值</dt>
+                    <dd>
+                        <pre>$.window.showModalDialog("显示系统外的页面",
+                            "http://www.baidu.com",
+                            function(){
+                                $.window.returnValue = {name: "刘溪滨", dept: "研发中心"};
+                                $.window.markUpdated();  //方法调用型的，标识该窗口的数据已经发生了改变
+                            },
+                            function(returnValue){
+                                alert("子窗口传递给父窗口的返回值是：[姓名：" + returnValue["name"] + "，部门：" + returnValue["dept"] + "]");
+                            })</pre>
+                        <input type="button" class="button" value="运行" onclick='$.window.showModalDialog("显示系统外的页面", "http://www.baidu.com", function(){$.window.returnValue = {name: "刘溪滨", dept: "研发中心"};$.window.markUpdated();}, function(returnValue){alert("子窗口传递给父窗口的返回值是：[姓名：" + returnValue["name"] + "，部门：" + returnValue["dept"] + "]");})' />
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>窗口配置参数传递</dt>
+                    <dd>
+                        <pre>$.window.showModalDialog("显示系统外的页面",
+                            "http://www.baidu.com",
+                            function(){
+                                $.window.returnValue = {name: "刘溪滨", dept: "研发中心"};
+                            },
+                            function(returnValue){
+                                alert("子窗口传递给父窗口的返回值是：[姓名：" + returnValue["name"] + "，部门：" + returnValue["dept"] + "]");
+                            },
+                            null,
+                            {
+                                isExecuteCallBack: true,   //通过配置标识该窗口的数据已经发生了改变
+                                width: "1000px",             //调整弹出框的宽度大小
+                                height: "500px"             //调整弹出框的高度大小
+                            })</pre>
+                        <input type="button" class="button" value="运行" onclick='$.window.showModalDialog("显示系统外的页面", "http://www.baidu.com", function(){$.window.returnValue = {name: "刘溪滨", dept: "研发中心"};}, function(returnValue){alert("子窗口传递给父窗口的返回值是：[姓名：" + returnValue["name"] + "，部门：" + returnValue["dept"] + "]");}, null, {isExecuteCallBack: true, width: "1000px", height: "500px" })' />
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+    </li>
+    <li>
+        <h3><p>$.window.close()</p></h3>
+        <dl>
+            <dt>概述</dt>
+            <dd>关闭当前激活的弹出窗口</dd>
+        </dl>
+        <dt>参数</dt>
+        <dd>无</dd>
+        <dt>返回值</dt>
+        <dd>无</dd>
+        <dt>示例</dt>
+        <dd>
+            <pre>$.window.close();</pre>
+        </dd>
+    </li>
+    <li>
+        <h3><p>$.window.getArguments()</p></h3>
+        <dl>
+            <dt>概述</dt>
+            <dd>针对当前激活的弹出窗口来说，获取父窗口传递给子窗口的参数</dd>
+        </dl>
+        <dt>参数</dt>
+        <dd>无</dd>
+        <dt>返回值</dt>
+        <dd>Object/String/Boolean/Array类型的任何值</dd>
+        <dt>示例</dt>
+        <dd>
+            <pre>var arguments = $.window.getArguments();</pre>
+        </dd>
+    </li>
+    <li>
+        <h3><p>$.window.markUpdated()</p></h3>
+        <dl>
+            <dt>概述</dt>
+            <dd>如果窗口数据已经发生变更了，就需要调用该函数，主要用于执行当关闭窗口时，是否需要执行关闭窗口后的回调函数</dd>
+        </dl>
+        <dt>参数</dt>
+        <dd>无</dd>
+        <dt>返回值</dt>
+        <dd>无</dd>
+        <dt>示例</dt>
+        <dd>
+            <pre>$.window.markUpdated();</pre>
+        </dd>
+    </li>
+    <li>
+        <h3><p>$.window.getActive()</p></h3>
+        <dl>
+            <dt>概述</dt>
+            <dd>获取当前激活的窗口</dd>
+        </dl>
+        <dt>参数</dt>
+        <dd>无</dd>
+        <dt>返回值</dt>
+        <dd>ModalDialog对象</dd>
+        <dt>示例</dt>
+        <dd>
+            <pre>var modalDialog = $.window.getActive();</pre>
+        </dd>
+    </li>
+    <li>
+        <h3><p>$.window.getOpener()</p></h3>
+        <dl>
+            <dt>概述</dt>
+            <dd>获取创建当前窗口的窗口的引用</dd>
+        </dl>
+        <dt>参数</dt>
+        <dd>无</dd>
+        <dt>返回值</dt>
+        <dd>window</dd>
+        <dt>示例</dt>
+        <dd>
+            <pre>var parentWindow = $.window.getOpener();</pre>
+        </dd>
+    </li>
+</ol>

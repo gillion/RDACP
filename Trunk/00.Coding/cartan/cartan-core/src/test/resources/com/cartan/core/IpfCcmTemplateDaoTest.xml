@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_template  ID="1" TEMPLATE_FILE="1" TEMPLATE_DESC="1" TEMPLATE_TYPE="1"/>
+    <t_ipf_ccm_template  ID="2" TEMPLATE_FILE="2" TEMPLATE_DESC="2" TEMPLATE_TYPE="2"/>
+</dataset>

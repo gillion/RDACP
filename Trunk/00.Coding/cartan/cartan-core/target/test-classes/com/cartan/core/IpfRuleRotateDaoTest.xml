@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rule_rotate  ID="1" WAREHOUSE_OFFICE_ID="1" RULE_CODE="1" RULE_DESC="1" IS_ACTIVE="1" IS_SYSTEM_CREATE="1" ROTATE_EXPRESS="1"/>
+    <t_ipf_rule_rotate  ID="2" WAREHOUSE_OFFICE_ID="2" RULE_CODE="2" RULE_DESC="2" IS_ACTIVE="2" IS_SYSTEM_CREATE="2" ROTATE_EXPRESS="2"/>
+</dataset>

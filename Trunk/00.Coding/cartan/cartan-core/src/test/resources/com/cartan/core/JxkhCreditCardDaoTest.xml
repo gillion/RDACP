@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_CREDIT_CARD  ID="1" TURN_NO="1" USER_LOGINID="1" USER_NAME="1" CUS_NAME="1" CARD_TYPE="1" CARD_ID="1" ID_CARD_NUM="1" ISNEWCUS="1" INSERT_DATE="1"/>
+    <T_JXKH_CREDIT_CARD  ID="2" TURN_NO="2" USER_LOGINID="2" USER_NAME="2" CUS_NAME="2" CARD_TYPE="2" CARD_ID="2" ID_CARD_NUM="2" ISNEWCUS="2" INSERT_DATE="2"/>
+</dataset>

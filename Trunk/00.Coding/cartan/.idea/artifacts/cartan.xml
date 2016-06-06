@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cartan">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="cartan.war">
+      <element id="dir-copy" path="$PROJECT_DIR$/cartan-center/src/main/web" />
+    </root>
+  </artifact>
+</component>

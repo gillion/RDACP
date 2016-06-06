@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_method  ID="1" IPF_CCM_BO_ID="1" BO_TYPE="1" BO_REF_ID="1" ICON="1" REMARK="1" METHOD_DESC="1" METHOD_NAME="1" METHOD_TYPE="1" URL="1" IS_DEFAULT="1" IS_VISIBLE="1" REF_SHLP_NAME="1" RULE_NO="1" JUMP_METHOD_ID="1" JUMP_METHOD_NAME="1" JUMP_BO_NAME="1" WIDTH="1" HEIGHT="1" GROUP_NAME="1" GROUP_DESC="1" IS_CACHE="1" CACHE_TYPE="1" REQUEST_TYPE="1" JUMP_WINDOW_TITLE="1" IS_REFRESH_PARENT_BO="1"/>
+    <t_ipf_ccm_bo_method  ID="2" IPF_CCM_BO_ID="2" BO_TYPE="2" BO_REF_ID="2" ICON="2" REMARK="2" METHOD_DESC="2" METHOD_NAME="2" METHOD_TYPE="2" URL="2" IS_DEFAULT="2" IS_VISIBLE="2" REF_SHLP_NAME="2" RULE_NO="2" JUMP_METHOD_ID="2" JUMP_METHOD_NAME="2" JUMP_BO_NAME="2" WIDTH="2" HEIGHT="2" GROUP_NAME="2" GROUP_DESC="2" IS_CACHE="2" CACHE_TYPE="2" REQUEST_TYPE="2" JUMP_WINDOW_TITLE="2" IS_REFRESH_PARENT_BO="2"/>
+</dataset>

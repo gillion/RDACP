@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-cipher-1.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/plexus-cipher-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

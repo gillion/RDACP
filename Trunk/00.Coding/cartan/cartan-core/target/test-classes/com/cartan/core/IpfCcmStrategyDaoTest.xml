@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_strategy  ID="1" STRATEGY_TYPE="1" STRATEGY_CODE="1" STRATEGY_NAME="1" STRATEGY_DES="1" DRL_FILE="1" DRL_ROUTE="1" PACKAGE_NAME="1" RULE_NO="1" RULE_TYPE="1" SOURCE_CODE="1" SVN_REVISION="1"/>
+    <t_ipf_ccm_strategy  ID="2" STRATEGY_TYPE="2" STRATEGY_CODE="2" STRATEGY_NAME="2" STRATEGY_DES="2" DRL_FILE="2" DRL_ROUTE="2" PACKAGE_NAME="2" RULE_NO="2" RULE_TYPE="2" SOURCE_CODE="2" SVN_REVISION="2"/>
+</dataset>

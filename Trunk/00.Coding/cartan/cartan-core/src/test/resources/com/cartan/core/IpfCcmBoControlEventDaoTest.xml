@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_control_event  ID="1" IPF_CCB_BO_FORM_COLUMN_ID="1" EVENT_TYPE="1" EXEC_TYPE="1" EXEC_CONTENT="1" CALL_BACK="1"/>
+    <t_ipf_ccm_bo_control_event  ID="2" IPF_CCB_BO_FORM_COLUMN_ID="2" EVENT_TYPE="2" EXEC_TYPE="2" EXEC_CONTENT="2" CALL_BACK="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_msg_mediator  mediator_name="1" mediator_type="1" environment="1" description="1" conf="1" os="1"/>
+    <t_msg_mediator  mediator_name="2" mediator_type="2" environment="2" description="2" conf="2" os="2"/>
+</dataset>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="cartan_common" targetNamespace="cartan_common">
+	<xsd:element name="t_rpt_activity30" type="t_rpt_activity30__type" />
+	<xsd:element name="t_service_issue" type="t_service_issue__type" />
+	<xsd:element name="t_rpt_notification" type="t_rpt_notification__type" />
+	<xsd:element name="dbmaintain_scripts" type="dbmaintain_scripts__type" />
+	<xsd:element name="t_app_issue" type="t_app_issue__type" />
+	<xsd:element name="t_service_acl" type="t_service_acl__type" />
+	<xsd:element name="t_rpt_sms30" type="t_rpt_sms30__type" />
+	<xsd:element name="t_code_table" type="t_code_table__type" />
+	<xsd:element name="t_channel_device" type="t_channel_device__type" />
+	<xsd:element name="t_device_app" type="t_device_app__type" />
+	<xsd:element name="t_sys_user" type="t_sys_user__type" />
+	<xsd:element name="t_sys_parameter" type="t_sys_parameter__type" />
+	<xsd:element name="t_app" type="t_app__type" />
+	<xsd:element name="t_device" type="t_device__type" />
+	<xsd:element name="t_rpt_sms" type="t_rpt_sms__type" />
+	<xsd:element name="t_rpt_notification30" type="t_rpt_notification30__type" />
+	<xsd:element name="t_msg_channel" type="t_msg_channel__type" />
+	<xsd:element name="t_service" type="t_service__type" />
+	<xsd:element name="t_channel_user" type="t_channel_user__type" />
+	<xsd:element name="t_code_item" type="t_code_item__type" />
+	<xsd:element name="t_rpt_activity" type="t_rpt_activity__type" />
+	<xsd:element name="t_msg_mediator" type="t_msg_mediator__type" />
+	<xsd:complexType name="t_rpt_activity30__type">
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="report_date" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+		<xsd:attribute name="total_count" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+		<xsd:attribute name="activity" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_service_issue__type">
+		<xsd:attribute name="released" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="author" use="optional" />
+		<xsd:attribute name="issue_time" use="optional" />
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="locked" use="optional" />
+		<xsd:attribute name="service_name" use="optional" />
+		<xsd:attribute name="version" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_rpt_notification__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="report_date" use="optional" />
+		<xsd:attribute name="mediator_name" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+		<xsd:attribute name="total_count" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="dbmaintain_scripts__type">
+		<xsd:attribute name="succeeded" use="optional" />
+		<xsd:attribute name="file_last_modified_at" use="optional" />
+		<xsd:attribute name="executed_at" use="optional" />
+		<xsd:attribute name="checksum" use="optional" />
+		<xsd:attribute name="file_name" use="optional" />
+		<xsd:attribute name="version" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_app_issue__type">
+		<xsd:attribute name="released" use="optional" />
+		<xsd:attribute name="inner_version" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="issue_time" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="app_version" use="optional" />
+		<xsd:attribute name="locked" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+		<xsd:attribute name="url" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_service_acl__type">
+		<xsd:attribute name="service_name" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_rpt_sms30__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="report_date" use="optional" />
+		<xsd:attribute name="mediator_name" use="optional" />
+		<xsd:attribute name="total_count" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_code_table__type">
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="code_tab_code" use="optional" />
+		<xsd:attribute name="order_no" use="optional" />
+		<xsd:attribute name="code_tab_title" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_channel_device__type">
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="phone_num" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="device_uid" use="optional" />
+		<xsd:attribute name="channel_user_id" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_device_app__type">
+		<xsd:attribute name="app_issue_id" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_sys_user__type">
+		<xsd:attribute name="user_name" use="optional" />
+		<xsd:attribute name="last_logon_time" use="optional" />
+		<xsd:attribute name="status" use="optional" />
+		<xsd:attribute name="user_type" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="user_id" use="optional" />
+		<xsd:attribute name="last_logon_ip" use="optional" />
+		<xsd:attribute name="password" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_sys_parameter__type">
+		<xsd:attribute name="param_value" use="optional" />
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="param_name" use="optional" />
+		<xsd:attribute name="order_no" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_app__type">
+		<xsd:attribute name="author" use="optional" />
+		<xsd:attribute name="auditor" use="optional" />
+		<xsd:attribute name="status" use="optional" />
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="audit_info" use="optional" />
+		<xsd:attribute name="app_label" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="appkey" use="optional" />
+		<xsd:attribute name="secret" use="optional" />
+		<xsd:attribute name="audit_time" use="optional" />
+		<xsd:attribute name="curr_version" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_device__type">
+		<xsd:attribute name="app_user_name" use="optional" />
+		<xsd:attribute name="model" use="optional" />
+		<xsd:attribute name="device_name" use="optional" />
+		<xsd:attribute name="os_name" use="optional" />
+		<xsd:attribute name="app_user_id" use="optional" />
+		<xsd:attribute name="manufacturer" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+		<xsd:attribute name="os_version" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_rpt_sms__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="report_date" use="optional" />
+		<xsd:attribute name="mediator_name" use="optional" />
+		<xsd:attribute name="total_count" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_rpt_notification30__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="report_date" use="optional" />
+		<xsd:attribute name="mediator_name" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+		<xsd:attribute name="total_count" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_msg_channel__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="total_message" use="optional" />
+		<xsd:attribute name="channel_label" use="optional" />
+		<xsd:attribute name="total_subscriber" use="optional" />
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_service__type">
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="service_catelog" use="optional" />
+		<xsd:attribute name="service_type" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="service_label" use="optional" />
+		<xsd:attribute name="service_name" use="optional" />
+		<xsd:attribute name="order_no" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_channel_user__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="user_id" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_code_item__type">
+		<xsd:attribute name="item_code" use="optional" />
+		<xsd:attribute name="item_id" use="optional" />
+		<xsd:attribute name="item_title" use="optional" />
+		<xsd:attribute name="code_tab_code" use="optional" />
+		<xsd:attribute name="order_no" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_rpt_activity__type">
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="report_date" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+		<xsd:attribute name="total_count" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+		<xsd:attribute name="activity" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_msg_mediator__type">
+		<xsd:attribute name="os" use="optional" />
+		<xsd:attribute name="environment" use="optional" />
+		<xsd:attribute name="mediator_name" use="optional" />
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="mediator_type" use="optional" />
+		<xsd:attribute name="conf" use="optional" />
+	</xsd:complexType>
+</xsd:schema>

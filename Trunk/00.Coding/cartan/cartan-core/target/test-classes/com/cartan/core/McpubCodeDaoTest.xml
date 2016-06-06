@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_MCPUB_CODE  ID="1" CODE_TYPE="1" CODE_TYPE_DESC="1" CODE_NO="1" CODE_NAME="1" IS_USED="1" OPERATOR_ID="1"/>
+    <T_MCPUB_CODE  ID="2" CODE_TYPE="2" CODE_TYPE_DESC="2" CODE_NO="2" CODE_NAME="2" IS_USED="2" OPERATOR_ID="2"/>
+</dataset>

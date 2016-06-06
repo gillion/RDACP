@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_member_partake  id="1" GroupActId="1" GroupMemberId="1" partaketime="1" spending="1"/>
+    <t_member_partake  id="2" GroupActId="2" GroupMemberId="2" partaketime="2" spending="2"/>
+</dataset>

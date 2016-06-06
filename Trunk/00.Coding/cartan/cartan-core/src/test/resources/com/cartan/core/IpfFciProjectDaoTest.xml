@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_fci_project  ID="1" PROJECT_NAME="1" PROJECT_TYPE="1" PROJECT_DES="1" DEFAULT_VIEW_ID="1" SVN_REPOSITORY_PATH="1" SVN_USER="1" SVN_PASSWORD="1" MAX_REVISON_NUMBER="1" DD_LANGUAGE="1" DB_TYPE="1" DB_VERSION="1" IS_ACTIVE="1"/>
+    <t_ipf_fci_project  ID="2" PROJECT_NAME="2" PROJECT_TYPE="2" PROJECT_DES="2" DEFAULT_VIEW_ID="2" SVN_REPOSITORY_PATH="2" SVN_USER="2" SVN_PASSWORD="2" MAX_REVISON_NUMBER="2" DD_LANGUAGE="2" DB_TYPE="2" DB_VERSION="2" IS_ACTIVE="2"/>
+</dataset>

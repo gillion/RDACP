@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_DEPT  ID="1" DEPT_NO="1" DEPT_NAME="1"/>
+    <T_DEPT  ID="2" DEPT_NO="2" DEPT_NAME="2"/>
+</dataset>

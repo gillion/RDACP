@@ -1,0 +1,93 @@
+
+<h3>提示对话框使用例子</h3>
+
+<ol>
+    <li>
+        <p><strong>$.window.showTip</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>$.window.showTip("欢迎使用artDialog对话框组件！默认2.5秒后将自动关闭！");
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.showTip("欢迎使用artDialog对话框组件！默认2.5秒后将自动关闭！")' />
+    </li>
+    <li>
+        <p><strong>$.window.showTip</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>var dialogId = $.window.showTip("欢迎使用artDialog对话框组件！不自动关闭！", {duration:0});
+  </pre>
+        <input type="button" class="button" value="运行" onclick='window.dialogId = $.window.showTip("欢迎使用artDialog对话框组件！不自动关闭！", {duration:0});' />
+    </li>
+    <li>
+        <p><strong>$.window.closeTip</strong>(<em>dialogId</em>)</p>
+        <pre>$.window.closeTip(dialogId);
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.closeTip(window.dialogId)' />
+    </li>
+    <li>
+        <p><strong>$.window.showProgressTip</strong>(<em>msg</em>)</p>
+        <pre>var progressDialogId = $.window.showProgressTip("系统正在处理，请稍后...[5秒后进度条将自动关闭]");
+window.setTimeout(function(){$.window.closeProgressTip(progressDialogId);}, 5000);
+  </pre>
+        <input type="button" class="button" value="运行" onclick='window.progressDialogId =$.window.showProgressTip("系统正在处理，请稍后...[5秒后进度条将自动关闭]");window.setTimeout(function(){$.window.closeProgressTip(window.progressDialogId);}, 5000);' />
+    </li>
+    <li>
+        <p><strong>$.window.closeProgressTip</strong>(<em>dialogId</em>)</p>
+        <pre>$.window.closeProgressTip(dialogId);
+  </pre>
+    </li>
+    <li>
+        <p><strong>$.window.showSucceedMsg</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>$.window.showSucceedMsg("操作成功！默认2.5秒后将自动关闭！");
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.showSucceedMsg("操作成功！默认2.5秒后将自动关闭！");' />
+    </li>
+    <li>
+        <p><strong>$.window.showErrorMsg</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>$.window.showErrorMsg("系统异常，请与管理员联系！");
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.showErrorMsg("系统异常，请与管理员联系！");' />
+    </li>
+    <li>
+        <p><strong>$.window.showWarningMsg</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>$.window.showWarningMsg("姓名不能为空！");
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.showWarningMsg("姓名不能为空！");' />
+    </li>
+    <li>
+        <p><strong>$.window.alert</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>$.window.alert("姓名不能为空！");
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.alert("姓名不能为空！");' />
+    </li>
+    <li>
+        <p><strong>$.window.confirm</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>$.window.confirm("您确定要删除选中的记录吗？", {
+            yesBtnTitle:"删 除",
+            noBtnTitle:"关 闭",
+            yesHandle:function(){$.window.showTip("您选择了删除按钮！",{duration:1});},
+            noHandle:function(){$.window.showTip("您选择了关闭按钮！",{duration:1});}
+});
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.confirm("您确定要删除选中的记录吗？", {yesBtnTitle:"删 除", noBtnTitle:"关 闭", yesHandle:function(){$.window.showTip("您选择了删除按钮！",{duration:1});}, noHandle:function(){$.window.showTip("您选择了关闭按钮！",{duration:1});}});' />
+    </li>
+    <li>
+        <p><strong>$.window.showMessage</strong>(<em>msg</em>, <em>[options]</em>)</p>
+        <pre>$.window.showMessage("自定义消息框的按钮，想定义几个就定义几个！", {
+            button:[{
+                name: "确 定",
+                callback: function(){$.window.showTip("您选择了确定按钮！",{duration:1});},
+                focus:true
+            },{
+                name: "取 消",
+                callback: function(){$.window.showTip("您选择了取消按钮！",{duration:1});}
+            },{
+                name: "不可用",
+                callback: function(){},
+                disabled: true
+            },{
+                name: "关 闭",
+                callback: function(){$.window.showTip("您选择了关闭按钮！",{duration:1});}
+            }],
+            title: "自定义消息按钮对话框"
+});
+  </pre>
+        <input type="button" class="button" value="运行" onclick='$.window.showMessage("自定义消息框的按钮，想定义几个就定义几个！", {button:[{name: "确 定",callback: function(){$.window.showTip("您选择了确定按钮！",{duration:1});},focus:true},{name: "取 消",callback: function(){$.window.showTip("您选择了取消按钮！",{duration:1});}},{name: "不可用",callback: function(){},disabled: true},{name: "关 闭",callback: function(){$.window.showTip("您选择了关闭按钮！",{duration:1});} }],title: "自定义消息按钮对话框"});' />
+    </li>
+</ol>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_group_member  id="1" user="1" GroupInfoId="1" area="1" name="1" tel="1" unit="1" addr="1"/>
+    <t_group_member  id="2" user="2" GroupInfoId="2" area="2" name="2" tel="2" unit="2" addr="2"/>
+</dataset>

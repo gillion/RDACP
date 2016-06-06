@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_check_field  ID="1" IPF_CCM_BO_CHECK_ID="1" PROPERTY_ID="1" PROPERTY_NAME="1" PROPERTY_DESC="1" BO_NAME="1" SEQ_NO="1"/>
+    <t_ipf_ccm_bo_check_field  ID="2" IPF_CCM_BO_CHECK_ID="2" PROPERTY_ID="2" PROPERTY_NAME="2" PROPERTY_DESC="2" BO_NAME="2" SEQ_NO="2"/>
+</dataset>

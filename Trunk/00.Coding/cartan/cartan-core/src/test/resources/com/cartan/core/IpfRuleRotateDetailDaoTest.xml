@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rule_rotate_detail  ID="1" IPF_RULE_ROTATE_ID="1" LINE_ID="1" LOT_ATTRIBUTES="1" SORT_TYPE="1" DETAIL_DESC="1" IS_ACTIVE="1"/>
+    <t_ipf_rule_rotate_detail  ID="2" IPF_RULE_ROTATE_ID="2" LINE_ID="2" LOT_ATTRIBUTES="2" SORT_TYPE="2" DETAIL_DESC="2" IS_ACTIVE="2"/>
+</dataset>

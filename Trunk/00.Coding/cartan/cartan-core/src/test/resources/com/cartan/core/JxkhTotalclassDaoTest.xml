@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_TOTALCLASS  ID="1" CLASSTYPE="1" CLASS_NUM="1" CLASS_NAME="1" TEMP1="1" TEMP2="1"/>
+    <T_JXKH_TOTALCLASS  ID="2" CLASSTYPE="2" CLASS_NUM="2" CLASS_NAME="2" TEMP1="2" TEMP2="2"/>
+</dataset>

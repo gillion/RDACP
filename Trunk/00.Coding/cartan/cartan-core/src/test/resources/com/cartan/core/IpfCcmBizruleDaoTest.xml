@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bizrule  ID="1" RULE_TYPE="1" RULE_CLASS="1" RULE_CODE="1" RULE_NAME="1" RULE_DES="1" IS_SYSTEM_CREATE="1"/>
+    <t_ipf_ccm_bizrule  ID="2" RULE_TYPE="2" RULE_CLASS="2" RULE_CODE="2" RULE_NAME="2" RULE_DES="2" IS_SYSTEM_CREATE="2"/>
+</dataset>

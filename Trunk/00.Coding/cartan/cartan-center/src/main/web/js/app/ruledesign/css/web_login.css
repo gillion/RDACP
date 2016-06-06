@@ -1,0 +1,157 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #789373;
+	padding:0px;
+	margin:0px;
+	background-color: #B0EAF7;
+	background-image: url(../images/login/body_bground.jpg);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+input,div {
+	vertical-align:middle;
+}
+.header_login {
+	width:100%;
+	height:47px;
+	background:#011F31;
+}
+.logo_login {
+	width:660px;
+	height:47px;
+	margin:0 auto;
+	background-image: url(../images/login/logo_login.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.bodyer_login {
+	width:1004px;
+	height:594px;
+	margin:0 auto;
+	background-image: url(../images/login/body_content_bground.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.contentblank_login {
+	width:100%;
+	height:145px;
+	display:table;
+}
+
+
+ul,li{ 
+    list-style:none; 
+	margin:0px; 
+	padding:0px;
+}
+.tabcontent_login { 
+    width:660px; 
+	margin:0 auto;
+}
+.tabcontent_login ul {
+	float:left;
+	width:250px;
+}
+.tabcontent_login ul li { 
+    width:249px; 
+	height:86px; 
+	padding-top:20px; 
+	background:#0CBFE6; 
+	border-bottom:solid 1px #C3F1FB; 
+	border-left:solid 1px #C3F1FB;
+	text-align:center;
+	cursor:pointer;
+}
+.tabcontent_login ul li.hover{
+	color:red;
+	background-image: url(../images/login/tabmenu_actived.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	
+}
+.tabcontentbox {
+	float:left;
+	width:410px; 
+	height:322px;
+}
+.tabcontentsubbox { 
+    padding:20px;
+}
+
+
+.systemname {
+	width:300px;
+	height:50px;
+	padding-bottom:15px;
+	background-image: url(../images/login/system_nage.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin:0 auto;
+}
+.systemcontent {
+	width:300px;
+	height:50px;
+	line-height:50px;
+	margin:0 auto;
+}
+.systemwarning {
+	width:300px;
+	height:39px;
+	color:#FF0000;
+	margin:0 auto;
+}
+
+
+.btn_enter {
+	width:100px;
+	height:38px;
+	line-height:33px;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:Microsoft Yahei,SimSun,Arial,Helvetica, sans-serif;
+	font-size:16px;
+	background:#26AB0F;
+	border-radius:4px;
+	border:0px;
+	cursor:pointer;
+	margin-right:10px;
+}
+.btn_delete {
+	width:100px;
+	height:38px;
+	line-height:33px;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:Microsoft Yahei,SimSun,Arial,Helvetica, sans-serif;
+	font-size:16px;
+	background:#C3C3C3;
+	border-radius:4px;
+	border:0px;
+	cursor:pointer;
+	margin-right:10px;
+}
+.input_user {
+	width:276px;
+	height:30px;
+	line-height:30px;
+	border:solid 1px #CEE7CB;
+	background-color: #FDFFFF;
+	background-image: url(../images/login/icon_user.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:20px;
+	color:#789373;
+}
+.input_password {
+	width:276px;
+	height:30px;
+	line-height:30px;
+	background:#FDFFFF;
+	border:solid 1px #CEE7CB;
+	background-image: url(../images/login/icon_password.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:20px;
+	color:#789373;
+}

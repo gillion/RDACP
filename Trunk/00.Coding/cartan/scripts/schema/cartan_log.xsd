@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="cartan_log" targetNamespace="cartan_log">
+	<xsd:element name="t_log_notification" type="t_log_notification__type" />
+	<xsd:element name="t_log_sms" type="t_log_sms__type" />
+	<xsd:element name="t_log_activity" type="t_log_activity__type" />
+	<xsd:complexType name="t_log_notification__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="mediator_name" use="optional" />
+		<xsd:attribute name="os_name" use="optional" />
+		<xsd:attribute name="sender_id" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_log_sms__type">
+		<xsd:attribute name="channel_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="mediator_name" use="optional" />
+		<xsd:attribute name="phone_num" use="optional" />
+		<xsd:attribute name="sender_id" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="message_count" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="t_log_activity__type">
+		<xsd:attribute name="session_id" use="optional" />
+		<xsd:attribute name="app_version" use="optional" />
+		<xsd:attribute name="device_id" use="optional" />
+		<xsd:attribute name="service_name" use="optional" />
+		<xsd:attribute name="app_name" use="optional" />
+		<xsd:attribute name="service_version" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="device_os" use="optional" />
+		<xsd:attribute name="device_model" use="optional" />
+		<xsd:attribute name="ip_address" use="optional" />
+		<xsd:attribute name="app_user_id" use="optional" />
+		<xsd:attribute name="create_time" use="optional" />
+		<xsd:attribute name="user_agent" use="optional" />
+		<xsd:attribute name="activity" use="optional" />
+	</xsd:complexType>
+</xsd:schema>

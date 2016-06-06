@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_PYLOAN_SARM  ID="1" CLIENT_ID="1" ID_CARD_CLASS="1" ID_CARD_NUM="1" ISSUE_PLACE="1" NAME="1" INFO_SOURCES="1" OCCUR_TIME="1" CONTENT="1" DATA_DATE="1"/>
+    <T_PYLOAN_SARM  ID="2" CLIENT_ID="2" ID_CARD_CLASS="2" ID_CARD_NUM="2" ISSUE_PLACE="2" NAME="2" INFO_SOURCES="2" OCCUR_TIME="2" CONTENT="2" DATA_DATE="2"/>
+</dataset>

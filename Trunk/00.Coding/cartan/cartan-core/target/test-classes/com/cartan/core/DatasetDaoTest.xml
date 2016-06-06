@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_DATASET  ID="1" DATASET_NAME="1" DATASET_DES="1" DATASET_TYPE="1" REMARK="1"/>
+    <T_DATASET  ID="2" DATASET_NAME="2" DATASET_DES="2" DATASET_TYPE="2" REMARK="2"/>
+</dataset>

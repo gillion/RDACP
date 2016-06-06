@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<style type="text/css">body{height:100%;  margin:0px; padding:0px;}</style>
+<body>
+<div class="top"   style='border:0px solid #000;padding:5px;background-color:#FFF;color: #0078d2'>决策表->结果集
+    <br>
+</div>
+<div id="simpleedit_toolbar_condition" class="navbar navbar-inner" style="height: 38px;min-height: 38px; ">
+    <span id="simpleedit_toolbar" class="pull-left" style="padding: 3px;">
+        &nbsp;&nbsp;决策表名称：<input id='modelname'  name='modelname' height="30px" type='text' value=''  />
+
+        <a id="addBtn" onclick="javascript:window.location.href ='ruledesign.html#basic_manage/platform_RuleTable_manage'" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-update"></span>保 存</a>
+
+        <a id="inputBtn" onclick="javascript:window.location.href ='ruledesign.html#basic_manage/platform_RuleTableInput_manage'" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-createLink"></span>输入参数</a>
+
+        <a id="outputBtn" onclick="javascript:window.location.href ='ruledesign.html#basic_manage/platform_RuleTableOutput_manage'" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-createLink"></span>输出参数</a>
+
+
+    </span>
+</div>
+<div id="simplelist_toolbar_condition" class="navbar navbar-inner" style="height: 38px;min-height: 38px; ">
+    <span id="simplelist_toolbar" class="pull-left" style="padding: 3px;">
+        <a id="ttBtn1" onclick="javascript:addCell()" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-add"></span>添加列</a>
+        <a id="ttBtn2" onclick="javascript:removeCell()" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-delete"></span>删除列</a>
+        <a id="ttBtn3" onclick="javascript:clearCell()" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-i-folder-up"></span>清空列</a>
+        <a id="ttBtn4" onclick="javascript:addHtml()" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-add"></span>添加行</a>
+        <a id="ttBtn5" onclick="javascript:deleterow()" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-delete"></span>删除行</a>
+        <a id="ttBtn6" onclick="javascript:clearrow()" class="k-button k-button-icontext" style="margin-right:5px;" href="#">
+            <span class="k-icon k-i-folder-up"></span>清空行</a>
+    </span>
+</div>
+<table width="78%" border="1px" style='border:1px solid #000'>
+    <tr>
+        <td width="100%">
+
+            <div style='height:568px;border:0px solid #000;overflow:auto; '>
+
+                <table id="viewTabs" border="0" cellspacing="0" cellpadding="0" class="table_file">
+                    <tr>
+                        <td align="center" style="border:1px solid #c5c5c5;background:#e3e3e3;">参数1</td>
+                        <td align="center" style="border:1px solid #c5c5c5;background:#e3e3e3;;">参数2</td>
+                        <td align="center" style="border:1px solid #c5c5c5;background:#e3e3e3;;">参数3</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                        <td align="center"><input name="textfield" type="text" class="input_tablefile" id="textfield" /></td>
+                    </tr>
+
+                </table>
+            </div>
+        </td>
+    </tr></table>
+</body>
+
+</html>

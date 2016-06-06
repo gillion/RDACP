@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_shlp_detail  ID="1" IPF_CCM_SHLP_ID="1" SHLP_NAME="1" FIELD_NAME="1" FIELD_TEXT="1" LIST_POSITION="1" IS_VISIBLE="1" IS_INPUT="1" IS_OUTPUT="1" DETAIL_STATUS="1" DATA_TYPE="1" DECIMALS="1" DEFAULT_VALUE="1" COLUMN_LENGTH="1" CONDITION_POSITION="1" OPERATION="1" IS_ROLL_CHANGE="1" IS_EDITABLE="1" DDTEXT="1" IS_SORT="1" SORT_ORDER="1" SORT_TYPE="1"/>
+    <t_ipf_ccm_shlp_detail  ID="2" IPF_CCM_SHLP_ID="2" SHLP_NAME="2" FIELD_NAME="2" FIELD_TEXT="2" LIST_POSITION="2" IS_VISIBLE="2" IS_INPUT="2" IS_OUTPUT="2" DETAIL_STATUS="2" DATA_TYPE="2" DECIMALS="2" DEFAULT_VALUE="2" COLUMN_LENGTH="2" CONDITION_POSITION="2" OPERATION="2" IS_ROLL_CHANGE="2" IS_EDITABLE="2" DDTEXT="2" IS_SORT="2" SORT_ORDER="2" SORT_TYPE="2"/>
+</dataset>

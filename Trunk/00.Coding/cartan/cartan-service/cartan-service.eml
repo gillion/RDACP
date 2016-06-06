@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<lib name="Maven: org.unitils:unitils-spring:3.3" scope="TEST"/>
+	<lib name="Maven: org.unitils:unitils-core:3.3" scope="TEST"/>
+	<lib name="Maven: commons-collections:commons-collections:3.2" scope="TEST"/>
+	<lib name="Maven: ognl:ognl:2.6.9" scope="TEST"/>
+	<lib name="Maven: org.springframework:spring-test:2.5.2" scope="TEST"/>
+	<lib name="Maven: org.springframework:spring-tx:2.5.2" scope="TEST"/>
+	<lib name="Maven: org.unitils:unitils-database:3.3" scope="TEST"/>
+	<lib name="Maven: org.unitils:unitils-dbmaintainer:3.3" scope="TEST"/>
+	<lib name="Maven: org.hibernate:hibernate:3.2.5.ga" scope="TEST"/>
+	<lib name="Maven: net.sf.ehcache:ehcache:1.2.3" scope="TEST"/>
+	<lib name="Maven: asm:asm-attrs:1.5.3" scope="TEST"/>
+	<lib name="Maven: dom4j:dom4j:1.6.1" scope="TEST"/>
+	<lib name="Maven: antlr:antlr:2.7.6" scope="TEST"/>
+	<lib name="Maven: asm:asm:1.5.3" scope="TEST"/>
+	<lib name="Maven: org.dbunit:dbunit:2.2.2" scope="TEST"/>
+	<lib name="Maven: junit-addons:junit-addons:1.4" scope="TEST"/>
+	<lib name="Maven: xerces:xercesImpl:2.6.2" scope="TEST"/>
+	<lib name="Maven: xerces:xmlParserAPIs:2.6.2" scope="TEST"/>
+	<lib name="Maven: poi:poi:2.5.1-final-20040804" scope="TEST"/>
+	<lib name="Maven: org.slf4j:slf4j-nop:1.4.3" scope="TEST"/>
+	<lib name="Maven: commons-dbcp:commons-dbcp:1.2.2" scope="TEST"/>
+	<lib name="Maven: commons-pool:commons-pool:1.3" scope="TEST"/>
+	<lib name="Maven: org.springframework:spring-jdbc:2.5.2" scope="TEST"/>
+	<lib name="Maven: org.unitils:unitils-testng:3.3" scope="TEST"/>
+	<lib name="Maven: org.testng:testng:jdk15:5.8" scope="TEST"/>
+	<lib name="Maven: org.mockito:mockito-all:1.8.5" scope="TEST"/>
+</component>

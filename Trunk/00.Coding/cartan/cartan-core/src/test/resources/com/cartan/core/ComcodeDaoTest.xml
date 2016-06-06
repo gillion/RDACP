@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_COMCODE  ID="1" TYPECODE="1" CODE="1" NAME="1" SHORTNAME="1"/>
+    <T_COMCODE  ID="2" TYPECODE="2" CODE="2" NAME="2" SHORTNAME="2"/>
+</dataset>

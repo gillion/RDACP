@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_relation  ID="1" IPF_CCM_BO_ID="1" PROPERTY_NAME="1" SUB_BO_NAME="1" SUB_BO_REL_TYPE="1" OBJECT_TYPE="1" DESCRIPTION="1" SUB_BO_ORDER_NO="1" PERSISTENT_SAVE_TYPE="1" GRID_EDIT_TYPE="1" LINK_BO_NAME="1"/>
+    <t_ipf_ccm_bo_relation  ID="2" IPF_CCM_BO_ID="2" PROPERTY_NAME="2" SUB_BO_NAME="2" SUB_BO_REL_TYPE="2" OBJECT_TYPE="2" DESCRIPTION="2" SUB_BO_ORDER_NO="2" PERSISTENT_SAVE_TYPE="2" GRID_EDIT_TYPE="2" LINK_BO_NAME="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_strategy_param  ID="1" IPF_CCM_STRATEGY_ID="1" PARAM_TYPE="1" PARAM_NAME="1" PARAM_DES="1" RTM_CONFIG_CODE="1"/>
+    <t_ipf_ccm_strategy_param  ID="2" IPF_CCM_STRATEGY_ID="2" PARAM_TYPE="2" PARAM_NAME="2" PARAM_DES="2" RTM_CONFIG_CODE="2"/>
+</dataset>

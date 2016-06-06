@@ -1,0 +1,13 @@
+package com.cartan.center.ebs.sysUser;
+
+import com.cartan.center.ebs.sysUser.SysUserServiceEbsBase.Message;
+
+rule "supply formula"
+    when
+        m : Message( status == Message.SUPPLY)
+    then 
+        m.setMessage( "supply finish" );
+        m.setPrice(0+m.getRequire()*20);
+        m.setStatus(Message.FINISH); 
+        update(m); 
+end 

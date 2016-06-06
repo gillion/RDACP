@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_TASK_TRACE  ID="1" TASKTYPE="1" BSTYPE="1" SYEAR="1" MONTH1="1" MONTH2="1" MONTH3="1" MONTH4="1" MONTH5="1" MONTH6="1" MONTH7="1" MONTH8="1" MONTH9="1" MONTH10="1" MONTH11="1" MONTH12="1" PROJECT_NO="1" PROJECT_NAME="1" YEAR_TASK="1"/>
+    <T_JXKH_TASK_TRACE  ID="2" TASKTYPE="2" BSTYPE="2" SYEAR="2" MONTH1="2" MONTH2="2" MONTH3="2" MONTH4="2" MONTH5="2" MONTH6="2" MONTH7="2" MONTH8="2" MONTH9="2" MONTH10="2" MONTH11="2" MONTH12="2" PROJECT_NO="2" PROJECT_NAME="2" YEAR_TASK="2"/>
+</dataset>

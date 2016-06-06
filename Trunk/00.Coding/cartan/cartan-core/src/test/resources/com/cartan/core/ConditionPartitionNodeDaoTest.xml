@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_CONDITION_PARTITION_NODE  ID="1" CON_PARTITION_ID="1" CON_NODE_NAME="1" RELATION_MARK="1" VAR_NAME="1" OPT_CHAR="1" COMPARE_VALUE="1"/>
+    <T_CONDITION_PARTITION_NODE  ID="2" CON_PARTITION_ID="2" CON_NODE_NAME="2" RELATION_MARK="2" VAR_NAME="2" OPT_CHAR="2" COMPARE_VALUE="2"/>
+</dataset>

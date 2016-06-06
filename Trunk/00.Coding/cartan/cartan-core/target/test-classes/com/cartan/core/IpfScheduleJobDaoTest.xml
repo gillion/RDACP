@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_schedule_job  ID="1" JOB_NAME="1" JOB_GROUP="1" JOB_STATUS="1" CRON_EXPRESSION="1" JOB_DESC="1" RULE_NO="1" JOB_SERVICE="1" JOB_METHOD="1"/>
+    <t_ipf_schedule_job  ID="2" JOB_NAME="2" JOB_GROUP="2" JOB_STATUS="2" CRON_EXPRESSION="2" JOB_DESC="2" RULE_NO="2" JOB_SERVICE="2" JOB_METHOD="2"/>
+</dataset>

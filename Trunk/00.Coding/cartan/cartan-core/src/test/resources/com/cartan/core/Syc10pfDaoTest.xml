@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_SYC10PF  ID="1" DELL_BANK="1" PARENT_BANK="1" MONEY_CODE="1" PROPOSER_ACC="1" ACCOUNT_TYPE="1" BAIL_ACCOUNT="1" BAIL_BALANCE="1" STATUS_SIGN="1" SIGN="1" LOAN_SN="1" REMARK="1" INSERT_DATE="1"/>
+    <T_SYC10PF  ID="2" DELL_BANK="2" PARENT_BANK="2" MONEY_CODE="2" PROPOSER_ACC="2" ACCOUNT_TYPE="2" BAIL_ACCOUNT="2" BAIL_BALANCE="2" STATUS_SIGN="2" SIGN="2" LOAN_SN="2" REMARK="2" INSERT_DATE="2"/>
+</dataset>

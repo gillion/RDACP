@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_form_toolbar  ID="1" IPF_CCB_BO_ID="1" METHOD_NAME="1" METHOD_DESC="1" SEQ_NO="1" METHOD_ID="1" BUTTON_STYLE="1" DISABLED_EXPREE="1" IS_REFRESH_PARENT_BO="1" HOTKEY_TYPE="1" HOTKEY_VALUE="1" IS_HIDE="1"/>
+    <t_ipf_ccm_bo_form_toolbar  ID="2" IPF_CCB_BO_ID="2" METHOD_NAME="2" METHOD_DESC="2" SEQ_NO="2" METHOD_ID="2" BUTTON_STYLE="2" DISABLED_EXPREE="2" IS_REFRESH_PARENT_BO="2" HOTKEY_TYPE="2" HOTKEY_VALUE="2" IS_HIDE="2"/>
+</dataset>

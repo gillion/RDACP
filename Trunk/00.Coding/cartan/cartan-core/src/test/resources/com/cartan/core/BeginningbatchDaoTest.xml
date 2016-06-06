@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_BEGINNINGBATCH  ID="1" SPRODID="1" SWAREHOUSEID="1" NSAFESTOCK="1" NBEGINQTY="1" NBCOST="1" NBATCHNO="1" NQTY="1" DMAKDATE="1" DEFFECTDATE="1" SDWDM="1" SYEAR="1"/>
+    <T_BEGINNINGBATCH  ID="2" SPRODID="2" SWAREHOUSEID="2" NSAFESTOCK="2" NBEGINQTY="2" NBCOST="2" NBATCHNO="2" NQTY="2" DMAKDATE="2" DEFFECTDATE="2" SDWDM="2" SYEAR="2"/>
+</dataset>

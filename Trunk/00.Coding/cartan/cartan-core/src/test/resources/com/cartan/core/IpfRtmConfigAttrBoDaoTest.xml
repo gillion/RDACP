@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rtm_config_attr_bo  ID="1" IPF_RTM_CONFIG_ATTR_ID="1" IPF_RTM_CONFIG_ID="1" IPF_CCM_BO_ID="1" BO_NAME="1" BO_DESC="1" BO_ATTRIBUTE_NAME="1" IS_VISIBLE="1" IS_REQUIRED="1" DEFAULT_VALUE="1" SHLP_VALUE_FILED="1"/>
+    <t_ipf_rtm_config_attr_bo  ID="2" IPF_RTM_CONFIG_ATTR_ID="2" IPF_RTM_CONFIG_ID="2" IPF_CCM_BO_ID="2" BO_NAME="2" BO_DESC="2" BO_ATTRIBUTE_NAME="2" IS_VISIBLE="2" IS_REQUIRED="2" DEFAULT_VALUE="2" SHLP_VALUE_FILED="2"/>
+</dataset>

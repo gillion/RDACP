@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="core/js/lib/kendoui/kendo.common.min.css" />
+    <link rel="stylesheet" href="core/js/lib/kendoui/kendo.default.min.css" />
+
+    <script src="core/js/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script src="core/js/lib/kendoui/kendo.web.min.js"></script>
+    <script src="js/app/ruledesign/routers/PlatformSectionPartitionSelDialog.js"></script>
+    <script src="core/js/lib/rpc/AjaxEngine.js"></script>
+
+</head>
+<body>
+
+<div id="example">
+    <div id="grid"></div>
+    <script>
+        function getcodedes(id){
+            var result;
+            var resstr="";
+            if (id==""){
+                return resstr;
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "router?appKey=000001&method=sectionPartition.selectSectionPartition&v=1.0&format=json",
+                    data:{id:id},
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (transport) {
+                        result = transport;
+                        if (result.resultJson.length>0){
+                            resstr = result.resultJson[0].sectionName;
+                            return resstr;
+                        }
+                    }
+                });
+                return resstr;
+            }
+        }
+        $(document).ready(function () {
+            var crudServiceBgUrl = "http://liuxibin.vicp.cc:8088/router?appKey=000001&method=sectionPartitionVar.";
+            var crudServiceEnUrl = "SectionPartitionVar&v=1.0&format=json";
+
+            var partData = [
+                { IsAOrBWay: "大于等于", IsAOrBWayValue: ">=" },
+                { IsAOrBWay: "小于等于", IsAOrBWayValue: "<=" },
+                { IsAOrBWay: "等于", IsAOrBWayValue: "=" },
+                { IsAOrBWay: "大于", IsAOrBWayValue: ">" },
+                { IsAOrBWay: "大于", IsAOrBWayValue: "<" },
+                { IsAOrBWay: "不等于", IsAOrBWayValue: "<>" }
+            ];
+
+            var   dataSource = new kendo.data.DataSource({
+                        transport: {
+                            read:  {
+                                url: crudServiceBgUrl + "select"+crudServiceEnUrl,
+                                dataType: "json"
+                            },
+                            update: {
+                                url: crudServiceBgUrl + "update"+crudServiceEnUrl,
+                                dataType: "json"
+                            },
+                            destroy: {
+                                url: crudServiceBgUrl + "delete"+crudServiceEnUrl,
+                                dataType: "json"
+                            },
+                            create: {
+                                url: crudServiceBgUrl + "create"+crudServiceEnUrl,
+                                dataType: "json"
+                            },
+                            parameterMap: function (options, operation) {
+                               if (options.models) {
+                                   return options.models[0];
+                               }
+                            }
+                        },
+                        batch: true,
+                        pageSize: 20,
+                        schema: {
+                            model: {
+                                id: "id",
+                                fields:{
+                                    id: { editable: false, nullable: true },
+                                    sectionParitionId: {editable: false, nullable: true },
+                                    varName: { type: "string" },
+                                    sectionLowerMark: {},
+                                    sectionLowerLimit: { type: "string" },
+                                    sectionUpperMark: { type: "string" },
+                                    sectionUpperLimit: { type: "string" }
+                                }
+                            },
+                            data: function(response) {
+                                var result = response["resultJson"];
+
+                                return  result;
+                            }
+                        }
+                    });
+
+            var detailgrid =$("#grid").kendoGrid({
+                dataSource: dataSource,
+                pageable: true,
+                height: 550,
+                toolbar: [{
+                    "text" : "新增",
+                    "name" : "create"
+                }],
+                columns: [
+                    {field: "id", title:"主键", hidden:true, align:"center", width: "100px"},
+                    {field: "sectionParitionId", title:"分段模型", align:"center", width: "100px"},
+                    {field: "varName", title:"变量名称", align:"center", width: "100px"},
+                    {field: "sectionLowerMark", title:"下限符号", align:"center", width: "150px",
+                        editor: function (container, options) {
+                        $('<input id="sectionLowerMarkName" name="sectionLowerMarkName" data-text-field="IsAOrBWay" data-value-field="IsAOrBWayValue" data-bind="value:' + options.field + '" required="required"/>')
+                                .appendTo(container)
+                                .kendoDropDownList({
+                                    dataTextField: "IsAOrBWay",
+                                    dataValueField: "IsAOrBWayValue",
+                                    dataSource: partData,
+                                    filter: "contains",
+                                    suggest: false,
+                                    optionLabel: "请选择"
+                                });
+
+                    }
+                    },
+                    {field: "sectionLowerLimit", title:"下限", align:"center", width: "100px"},
+                    {field: "sectionUpperMark", title:"上限符号", align:"center", width: "150px",
+                        editor: function (container, options) {
+                            $('<input id="sectionUpperMarkName" name="sectionUpperMarkName" data-text-field="IsAOrBWay" data-value-field="IsAOrBWayValue" data-bind="value:' + options.field + '" required="required"/>')
+                                    .appendTo(container)
+                                    .kendoDropDownList({
+                                        dataTextField: "IsAOrBWay",
+                                        dataValueField: "IsAOrBWayValue",
+                                        dataSource: partData,
+                                        filter: "contains",
+                                        suggest: false,
+                                        optionLabel: "请选择"
+                                    });
+
+                        }},
+                    {field: "sectionUpperLimit", title:"上限", align:"center", width: "100px"},
+                    { command: [
+                        {"text" :{ edit:"修改", cancel: "取消", update: "保存" } , "name" : "edit" },
+                        { "text" : "删除", "name" : "destroy"}
+                    ], title: "&nbsp;", width: "250px" }
+                ],
+                groupable: true,
+                sortable: true,
+                serverPaging: false,               //分页
+                pageable: $.extend(true, {}, {                     //是否支持分页，如果支持，其相关的配置信息
+                    pageSizes: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+                    info: true,
+                    messages: {
+                        empty: "",
+                        itemsPerPage: "行每页",
+                        display: "共 {2} 条记录，显示第 {0}-{1} 行记录"
+                    }
+                }, true),
+                //collist,
+                editable: {
+                    confirmation: "是否确定要删除该记录？",
+                    mode:"inline"
+                }
+            });
+        });
+
+    </script>
+</div>
+
+<style type="text/css">
+    .customer-photo {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-size: 32px 35px;
+        background-position: center center;
+        vertical-align: middle;
+        line-height: 32px;
+        box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+        margin-left: 5px;
+    }
+
+    .customer-name {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 32px;
+        padding-left: 3px;
+    }
+</style>
+
+
+</body>
+</html>

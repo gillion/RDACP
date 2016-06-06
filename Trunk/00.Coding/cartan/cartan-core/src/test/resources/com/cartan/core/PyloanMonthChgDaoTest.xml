@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_PYLOAN_MONTH_CHG  ID="1" CLIENT_ID="1" ID_CARD_CLASS="1" ID_CARD_NUM="1" ISSUE_PLACE="1" NAME="1" LOAN_ACCOUNT_NUM="1" LOAN_MONTH="1" IS_PBK_ONTIME="1" ARREARAGE_AMOUNT="1" REMAIN_PERIOD_NUM="1" OVERDUE_BALANCE="1" EXECUTE_INT_RATE="1" IFCT_PBK_CORPUS="1" DATA_DATE="1"/>
+    <T_PYLOAN_MONTH_CHG  ID="2" CLIENT_ID="2" ID_CARD_CLASS="2" ID_CARD_NUM="2" ISSUE_PLACE="2" NAME="2" LOAN_ACCOUNT_NUM="2" LOAN_MONTH="2" IS_PBK_ONTIME="2" ARREARAGE_AMOUNT="2" REMAIN_PERIOD_NUM="2" OVERDUE_BALANCE="2" EXECUTE_INT_RATE="2" IFCT_PBK_CORPUS="2" DATA_DATE="2"/>
+</dataset>

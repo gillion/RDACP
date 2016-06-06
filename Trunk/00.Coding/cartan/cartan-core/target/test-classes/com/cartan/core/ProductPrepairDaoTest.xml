@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_PRODUCT_PREPAIR  ID="1" BILL_NO="1" PRODUCT_NAME="1" PRODUCT_SN="1" USER_DEPT="1" SEND_DATE="1" PREPAIR_MAN="1" PREPAIR_DATE="1" PREPAIR_STATUS="1" REMARK1="1" REMARK2="1"/>
+    <T_PRODUCT_PREPAIR  ID="2" BILL_NO="2" PRODUCT_NAME="2" PRODUCT_SN="2" USER_DEPT="2" SEND_DATE="2" PREPAIR_MAN="2" PREPAIR_DATE="2" PREPAIR_STATUS="2" REMARK1="2" REMARK2="2"/>
+</dataset>

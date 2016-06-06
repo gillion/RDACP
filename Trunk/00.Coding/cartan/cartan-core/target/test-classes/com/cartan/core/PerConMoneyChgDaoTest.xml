@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_PER_CON_MONEY_CHG  ID="1" REQ_NO="1" REQ_TYPE="1" CON_TYPE="1" CUS_CODE="1" CUS_NAME="1" DATA_DATE="1" PRV_STATUS="1" REQ_USER="1" REQ_DATE="1" PRV_USER="1" PRV_DATE="1" REMARK="1"/>
+    <T_PER_CON_MONEY_CHG  ID="2" REQ_NO="2" REQ_TYPE="2" CON_TYPE="2" CUS_CODE="2" CUS_NAME="2" DATA_DATE="2" PRV_STATUS="2" REQ_USER="2" REQ_DATE="2" PRV_USER="2" PRV_DATE="2" REMARK="2"/>
+</dataset>

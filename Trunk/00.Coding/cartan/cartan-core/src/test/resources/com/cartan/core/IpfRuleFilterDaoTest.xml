@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rule_filter  ID="1" FILTER_CODE="1" FILTER_NAME="1" FILTER_DESC="1" FILTER_EXPRESS="1" IS_ACTIVE="1" IS_SYSTEM_CREATE="1" IPF_CCM_BO_ID="1" BO_NAME="1"/>
+    <t_ipf_rule_filter  ID="2" FILTER_CODE="2" FILTER_NAME="2" FILTER_DESC="2" FILTER_EXPRESS="2" IS_ACTIVE="2" IS_SYSTEM_CREATE="2" IPF_CCM_BO_ID="2" BO_NAME="2"/>
+</dataset>

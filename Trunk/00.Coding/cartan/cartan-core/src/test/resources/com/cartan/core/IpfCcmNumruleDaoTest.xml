@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_numrule  ID="1" RULE_CODE="1" RULE_NAME="1" RULE_EXPRESSION="1" RULE_STATUS="1" INITIAL_VALUE="1" MAX_VALUE="1" GROWTH="1" REMARK="1" IS_ACTIVE="1" IPF_CCM_BO_ID="1" BO_NAME="1" IPF_CCM_BO_PROPERTY_ID="1" PROPERTY_NAME="1"/>
+    <t_ipf_ccm_numrule  ID="2" RULE_CODE="2" RULE_NAME="2" RULE_EXPRESSION="2" RULE_STATUS="2" INITIAL_VALUE="2" MAX_VALUE="2" GROWTH="2" REMARK="2" IS_ACTIVE="2" IPF_CCM_BO_ID="2" BO_NAME="2" IPF_CCM_BO_PROPERTY_ID="2" PROPERTY_NAME="2"/>
+</dataset>

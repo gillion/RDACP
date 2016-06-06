@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_ui_layout  ID="1" UI_LAYOUT_NAME="1" DESCRIPTION="1"/>
+    <t_ipf_ccm_ui_layout  ID="2" UI_LAYOUT_NAME="2" DESCRIPTION="2"/>
+</dataset>

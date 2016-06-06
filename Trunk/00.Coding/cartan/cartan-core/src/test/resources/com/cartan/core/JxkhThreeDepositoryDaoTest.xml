@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_THREE_DEPOSITORY  ID="1" DATA_DATE="1" ACCOUNT_NAME="1" ACCOUNT_NUM="1" SECURITIES="1" CUS_MANAGER="1" REMARKS="1"/>
+    <T_JXKH_THREE_DEPOSITORY  ID="2" DATA_DATE="2" ACCOUNT_NAME="2" ACCOUNT_NUM="2" SECURITIES="2" CUS_MANAGER="2" REMARKS="2"/>
+</dataset>

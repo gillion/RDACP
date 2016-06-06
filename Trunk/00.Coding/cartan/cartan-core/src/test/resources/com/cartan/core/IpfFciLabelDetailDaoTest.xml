@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_fci_label_detail  ID="1" IPF_FCI_LABEL_ID="1" IPF_FCI_VIEW_ID="1" CONFIG_ITEM_TYPE="1" CONFIG_ITEM_CODE="1" CONFIG_ITEM_ID="1" REVISION_NUMBER="1" RELATION_MEMBER_ID="1" IS_ACTIVE="1"/>
+    <t_ipf_fci_label_detail  ID="2" IPF_FCI_LABEL_ID="2" IPF_FCI_VIEW_ID="2" CONFIG_ITEM_TYPE="2" CONFIG_ITEM_CODE="2" CONFIG_ITEM_ID="2" REVISION_NUMBER="2" RELATION_MEMBER_ID="2" IS_ACTIVE="2"/>
+</dataset>

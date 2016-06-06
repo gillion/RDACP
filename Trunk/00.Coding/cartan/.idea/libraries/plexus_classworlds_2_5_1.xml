@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-classworlds-2.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/plexus-classworlds-2.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

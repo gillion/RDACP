@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rtm_type_bo_attr  ID="1" IPF_RTM_TYPE_BO_ID="1" PROPERTY_NAME="1" FIELD_TEXT="1"/>
+    <t_ipf_rtm_type_bo_attr  ID="2" IPF_RTM_TYPE_BO_ID="2" PROPERTY_NAME="2" FIELD_TEXT="2"/>
+</dataset>

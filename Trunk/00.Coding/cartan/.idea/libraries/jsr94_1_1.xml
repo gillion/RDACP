@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jsr94-1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/jsr94-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

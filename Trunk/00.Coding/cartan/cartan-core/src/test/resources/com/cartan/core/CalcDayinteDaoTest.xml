@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_CALC_DAYINTE  ID="1" PUTOUTNO="1" STERM="1" ORGID="1" PAYCALCDAYINTE="1" ACCCALCDAYINTEBASE="1" ACTUALCALCINTE="1" CALCTYPE="1"/>
+    <T_CALC_DAYINTE  ID="2" PUTOUTNO="2" STERM="2" ORGID="2" PAYCALCDAYINTE="2" ACCCALCDAYINTEBASE="2" ACTUALCALCINTE="2" CALCTYPE="2"/>
+</dataset>

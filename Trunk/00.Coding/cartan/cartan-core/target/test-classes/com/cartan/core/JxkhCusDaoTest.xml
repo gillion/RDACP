@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_CUS  ID="1" CUS_TYPE="1" CUS_CODE="1" CUS_NAME="1" DATA_DATE="1" LINETYPENAME="1" LINETYPE="1"/>
+    <T_JXKH_CUS  ID="2" CUS_TYPE="2" CUS_CODE="2" CUS_NAME="2" DATA_DATE="2" LINETYPENAME="2" LINETYPE="2"/>
+</dataset>

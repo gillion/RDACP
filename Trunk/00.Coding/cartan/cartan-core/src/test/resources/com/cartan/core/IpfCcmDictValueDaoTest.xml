@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_dict_value  ID="1" IPF_CCM_DICT_ID="1" CODE_VALUE="1" DISPLAY_VALUE="1" SEQ_NO="1" GROUP_VALUE="1" REMARK="1"/>
+    <t_ipf_ccm_dict_value  ID="2" IPF_CCM_DICT_ID="2" CODE_VALUE="2" DISPLAY_VALUE="2" SEQ_NO="2" GROUP_VALUE="2" REMARK="2"/>
+</dataset>

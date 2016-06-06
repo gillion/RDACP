@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_method_rule  ID="1" IPF_CCB_BO_METHOD_ID="1" RULE_NO="1" RULE_NAME="1" INVOKE_POINT="1" INVOKE_ORDER="1" RULE_ID="1"/>
+    <t_ipf_ccm_bo_method_rule  ID="2" IPF_CCB_BO_METHOD_ID="2" RULE_NO="2" RULE_NAME="2" INVOKE_POINT="2" INVOKE_ORDER="2" RULE_ID="2"/>
+</dataset>

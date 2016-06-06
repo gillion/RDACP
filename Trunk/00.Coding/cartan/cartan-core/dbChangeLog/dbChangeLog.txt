@@ -1,0 +1,3 @@
+2013-07-01 by chenxh
+1.[cartan_comman]新增t_upload_file表，用于保存上传的文件的元数据信息（文件内容保存到硬盘中）
+2.[cartan_comman]t_app_issue表的url字段删除，新增app_file_id字段（该字段是t_upload_file的外键）

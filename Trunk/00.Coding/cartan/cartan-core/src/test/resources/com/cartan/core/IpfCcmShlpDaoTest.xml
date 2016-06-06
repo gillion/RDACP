@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_shlp  ID="1" SHLP_NAME="1" SHLP_STATUS="1" DATA_SOURCE="1" DATA_SOURCE_TYPE="1" VALUE_COLUMN="1" DISPLAY_COLUMN="1" RULE_NO="1"/>
+    <t_ipf_ccm_shlp  ID="2" SHLP_NAME="2" SHLP_STATUS="2" DATA_SOURCE="2" DATA_SOURCE_TYPE="2" VALUE_COLUMN="2" DISPLAY_COLUMN="2" RULE_NO="2"/>
+</dataset>

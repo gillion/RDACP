@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_dml_view_column  ID="1" IPF_DML_VIEW_ID="1" COLUMN_NAME="1" FIELD_TEXT="1" DATA_TYPE="1" FIELD_LENGTH="1" DECIMALS="1" IS_NOT_NULL="1" IS_PRIMARY_KEY="1"/>
+    <t_ipf_dml_view_column  ID="2" IPF_DML_VIEW_ID="2" COLUMN_NAME="2" FIELD_TEXT="2" DATA_TYPE="2" FIELD_LENGTH="2" DECIMALS="2" IS_NOT_NULL="2" IS_PRIMARY_KEY="2"/>
+</dataset>

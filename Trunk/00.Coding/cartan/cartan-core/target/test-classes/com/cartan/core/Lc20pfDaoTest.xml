@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_LC20PF  ID="1" PRODUCT_CODE="1" PURCHASE_DATE="1" PURCHASE_SUBBRANCH="1" PURCHASE_SN="1" MONEY_ACCOUNT_NUM="1" SUB_NUM_OF_OPENING_ACC="1" PURCHASE_SUM="1" BALANCE="1" END_MONEY="1" THE_SIGN="1" ADV_TERMINATE_DATE="1" STOP_PAY_SIGN="1"/>
+    <T_LC20PF  ID="2" PRODUCT_CODE="2" PURCHASE_DATE="2" PURCHASE_SUBBRANCH="2" PURCHASE_SN="2" MONEY_ACCOUNT_NUM="2" SUB_NUM_OF_OPENING_ACC="2" PURCHASE_SUM="2" BALANCE="2" END_MONEY="2" THE_SIGN="2" ADV_TERMINATE_DATE="2" STOP_PAY_SIGN="2"/>
+</dataset>

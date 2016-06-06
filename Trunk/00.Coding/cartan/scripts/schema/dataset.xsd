@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:dflt="cartan_common">
+	<xsd:import namespace="cartan_common" schemaLocation="cartan_common.xsd" />
+	<xsd:import namespace="cartan_log" schemaLocation="cartan_log.xsd" />
+	<xsd:element name="dataset">
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="unbounded">
+				<xsd:element name="t_rpt_activity30" type="dflt:t_rpt_activity30__type" />
+				<xsd:element name="t_service_issue" type="dflt:t_service_issue__type" />
+				<xsd:element name="t_rpt_notification" type="dflt:t_rpt_notification__type" />
+				<xsd:element name="dbmaintain_scripts" type="dflt:dbmaintain_scripts__type" />
+				<xsd:element name="t_app_issue" type="dflt:t_app_issue__type" />
+				<xsd:element name="t_service_acl" type="dflt:t_service_acl__type" />
+				<xsd:element name="t_rpt_sms30" type="dflt:t_rpt_sms30__type" />
+				<xsd:element name="t_code_table" type="dflt:t_code_table__type" />
+				<xsd:element name="t_channel_device" type="dflt:t_channel_device__type" />
+				<xsd:element name="t_device_app" type="dflt:t_device_app__type" />
+				<xsd:element name="t_sys_user" type="dflt:t_sys_user__type" />
+				<xsd:element name="t_sys_parameter" type="dflt:t_sys_parameter__type" />
+				<xsd:element name="t_app" type="dflt:t_app__type" />
+				<xsd:element name="t_device" type="dflt:t_device__type" />
+				<xsd:element name="t_rpt_sms" type="dflt:t_rpt_sms__type" />
+				<xsd:element name="t_rpt_notification30" type="dflt:t_rpt_notification30__type" />
+				<xsd:element name="t_msg_channel" type="dflt:t_msg_channel__type" />
+				<xsd:element name="t_service" type="dflt:t_service__type" />
+				<xsd:element name="t_channel_user" type="dflt:t_channel_user__type" />
+				<xsd:element name="t_code_item" type="dflt:t_code_item__type" />
+				<xsd:element name="t_rpt_activity" type="dflt:t_rpt_activity__type" />
+				<xsd:element name="t_msg_mediator" type="dflt:t_msg_mediator__type" />
+				<xsd:any namespace="cartan_common" />
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

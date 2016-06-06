@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_environment  ID="1" USER_CODE="1" PROJECT_NAME="1" PROJECT_PATH="1" SRC_PATH="1" TEMPLATE_PATH="1" WEB_CONTENT_NAME="1" TARGET_PROJECT_NAME="1" TARGET_PROJECT_PATH="1"/>
+    <t_ipf_ccm_environment  ID="2" USER_CODE="2" PROJECT_NAME="2" PROJECT_PATH="2" SRC_PATH="2" TEMPLATE_PATH="2" WEB_CONTENT_NAME="2" TARGET_PROJECT_NAME="2" TARGET_PROJECT_PATH="2"/>
+</dataset>

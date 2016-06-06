@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.eclipse.sisu.plexus-0.0.0.M5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/org.eclipse.sisu.plexus-0.0.0.M5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

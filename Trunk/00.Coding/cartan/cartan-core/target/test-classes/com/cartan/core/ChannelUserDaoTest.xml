@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_channel_user  id="1" channel_name="1" user_id="1" create_time="1"/>
+    <t_channel_user  id="2" channel_name="2" user_id="2" create_time="2"/>
+</dataset>

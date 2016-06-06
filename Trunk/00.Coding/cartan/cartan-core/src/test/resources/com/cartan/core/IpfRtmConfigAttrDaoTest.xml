@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rtm_config_attr  ID="1" IPF_RTM_CONFIG_ID="1" SEQ_NO="1" DISPLAY_LABEL="1" DATA_TYPE="1" UI_TYPE="1" DICT_TABLE_NAME="1" DICT_GROUP_VALUE="1" SEARCH_HELP="1" SH_VALUE_COLUMN="1" SH_DISPLAY_COLUMN="1"/>
+    <t_ipf_rtm_config_attr  ID="2" IPF_RTM_CONFIG_ID="2" SEQ_NO="2" DISPLAY_LABEL="2" DATA_TYPE="2" UI_TYPE="2" DICT_TABLE_NAME="2" DICT_GROUP_VALUE="2" SEARCH_HELP="2" SH_VALUE_COLUMN="2" SH_DISPLAY_COLUMN="2"/>
+</dataset>

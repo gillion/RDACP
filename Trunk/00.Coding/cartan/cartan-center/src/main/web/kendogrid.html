@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="core/js/lib/kendoui/kendo.common.min.css" />
+    <link rel="stylesheet" href="core/js/lib/kendoui/kendo.default.min.css" />
+
+    <script src="core/js/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script src="core/js/lib/kendoui/kendo.web.min.js"></script>
+
+
+
+</head>
+<body>
+<input type="radio" value="Red" name="color" data-bind="checked: selectedColor" />Red
+<input type="radio" value="Green" name="color" data-bind="checked: selectedColor" />Green
+<input type="radio" value="Blue" name="color" data-bind="checked: selectedColor" />Blue
+<script>
+    var viewModel = kendo.observable({
+        selectedColor: "Green"
+    });
+
+    kendo.bind($("input"), viewModel);
+</script>
+<div id="example">
+    <div id="grid"></div>
+    <script>
+
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r!=null) return (r[2]); return null;
+        }
+        $(document).ready(function () {
+           // alert(GetQueryString("test"));
+           // alert(GetQueryString("obj"));
+            alert($("*[name='color']").val());
+            // var crudServiceBaseUrl = "//demos.telerik.com/kendo-ui/service",
+            var crudServiceBgUrl = "http://liuxibin.vicp.cc:8088/router?appKey=000001&method=comstyle.";
+            var crudServiceEnUrl = "Comstyle&v=1.0&format=json";
+
+            var jsonstr="{";
+            jsonstr+="\"id\": { \"type\": \"string\",\"editable\": false, \"nullable\": true },";
+            jsonstr+="\"code\": { \"type\": \"string\",\"validation\": { \"required\": true } },";
+            jsonstr+="\"name\": { \"type\": \"string\",\"validation\": { \"required\": true } }";
+            jsonstr+="}";
+           // alert(jsonstr);
+            var fieldlist =  $.parseJSON(jsonstr);
+           // alert(fieldlist);
+            var jsonarray=[];
+           // var jsonarray = eval('('+jsonstr+')');
+            var arr= {field: "id", title:"类别编号",  align:"center", width: "100px"};
+            jsonarray.push(arr);
+            var arr1=  {field: "code", title:"类别代码", align:"center", width: "100px"};
+            jsonarray.push(arr1);
+            var arr2= {field: "name", title:"类别名称", align:"center", width: "100px"};
+            jsonarray.push(arr2);
+            var arr3= {
+                command: [
+                {"text" : { edit:"修改", cancel: "取消", update: "保存" } , "name" : "edit" },
+                { "text" : "删除", "name" : "destroy"}
+                ],
+                title: "&nbsp;", width: "250px" };
+            jsonarray.push(arr3);
+          //  alert(jsonarray);
+            jsonstr =  JSON.stringify(jsonarray);
+          //  alert(jsonstr);
+            collist= jsonarray;
+
+            /*
+            var fieldlist = {
+                id: { type: "string",editable: false, nullable: true },
+                code: { type: "string",validation: { required: true } },
+                name: { type: "string",validation: { required: true } }
+
+            };
+             ProductID: { editable: false, nullable: true },
+             ProductName: { validation: { required: true } },
+             UnitPrice: { type: "number", validation: { required: true, min: 1} },
+             Discontinued: { type: "boolean" },
+             UnitsInStock: { type: "number", validation: { min: 0, required: true } }
+
+            var collist= [
+                {field: "id", title:"类别编号",  align:"center", width: "100px"},
+                {field: "code", title:"类别代码", align:"center", width: "100px"},
+                {field: "name", title:"类别名称", align:"center", width: "100px"},
+                { command: [{
+                    "text" : "修改",
+                    "name" : "edit"
+                }, {
+                    "text" : "删除",
+                    "name" : "destroy"
+                }], title: "&nbsp;", width: "250px" }
+            ];        */
+
+                 var   dataSource = new kendo.data.DataSource({
+                        transport: {
+                            read:  {
+                                url: crudServiceBgUrl + "select"+crudServiceEnUrl,
+                                // url: crudServiceBaseUrl + "/Products",
+                                dataType: "json"
+                            },
+                            update: {
+                                url: crudServiceBgUrl + "update"+crudServiceEnUrl,
+                                //url: crudServiceBaseUrl + "/Products/Update",
+                                dataType: "json"
+                            },
+                            destroy: {
+                                url: crudServiceBgUrl + "delete"+crudServiceEnUrl,
+                                //url: crudServiceBaseUrl + "/Products/Destroy",
+                                dataType: "json"
+                            },
+                            create: {
+                                url: crudServiceBgUrl + "create"+crudServiceEnUrl,
+                                //url: crudServiceBaseUrl + "/Products/Create",
+                                dataType: "json"
+                            },
+                            parameterMap: function(options, operation) {
+                                if (operation !== "read" && options.models) {
+                                    //var data = kendo.stringify(options.models);
+                                    return options.models[0];
+                                }
+                            }
+                        },
+                        batch: true,
+                        pageSize: 20,
+                        schema: {
+                            model: {
+                                id: "id",
+                                fields:fieldlist
+                            },
+                            data: function(response) {
+                                var result = response["resultJson"];
+                                return  result;
+                            }
+                        }
+                    });
+
+            $("#grid").kendoGrid({
+                dataSource: dataSource,
+                pageable: true,
+                height: 550,
+                toolbar: [{
+                    "text" : "新增",
+                    "name" : "create"
+                }],
+                columns: collist,
+                editable: "inline"
+            });
+        });
+        /*
+        $(document).ready(function () {
+            var provinces = [{ "ProvinceID": 1, "ProvinceNo": "110000", "ProvinceName": "北京市" }, { "ProvinceID": 2, "ProvinceNo": "120000", "ProvinceName": "天津市" }, { "ProvinceID": 3, "ProvinceNo": "130000", "ProvinceName": "河北省" }, { "ProvinceID": 4, "ProvinceNo": "140000", "ProvinceName": "山西省" }, { "ProvinceID": 5, "ProvinceNo": "150000", "ProvinceName": "内蒙古" }, { "ProvinceID": 6, "ProvinceNo": "210000", "ProvinceName": "辽宁省" }, { "ProvinceID": 7, "ProvinceNo": "220000", "ProvinceName": "吉林省" }, { "ProvinceID": 8, "ProvinceNo": "230000", "ProvinceName": "黑龙江" }, { "ProvinceID": 9, "ProvinceNo": "310000", "ProvinceName": "上海市" }, { "ProvinceID": 10, "ProvinceNo": "320000", "ProvinceName": "江苏省" }, { "ProvinceID": 11, "ProvinceNo": "330000", "ProvinceName": "浙江省" }, { "ProvinceID": 12, "ProvinceNo": "340000", "ProvinceName": "安徽省" }, { "ProvinceID": 13, "ProvinceNo": "350000", "ProvinceName": "福建省" }, { "ProvinceID": 14, "ProvinceNo": "360000", "ProvinceName": "江西省" }, { "ProvinceID": 15, "ProvinceNo": "370000", "ProvinceName": "山东省" }, { "ProvinceID": 16, "ProvinceNo": "410000", "ProvinceName": "河南省" }, { "ProvinceID": 17, "ProvinceNo": "420000", "ProvinceName": "湖北省" }, { "ProvinceID": 18, "ProvinceNo": "430000", "ProvinceName": "湖南省" }, { "ProvinceID": 19, "ProvinceNo": "440000", "ProvinceName": "广东省" }, { "ProvinceID": 20, "ProvinceNo": "450000", "ProvinceName": "广西" }, { "ProvinceID": 21, "ProvinceNo": "460000", "ProvinceName": "海南省" }, { "ProvinceID": 22, "ProvinceNo": "500000", "ProvinceName": "重庆市" }, { "ProvinceID": 23, "ProvinceNo": "510000", "ProvinceName": "四川省" }, { "ProvinceID": 24, "ProvinceNo": "520000", "ProvinceName": "贵州省" }, { "ProvinceID": 25, "ProvinceNo": "530000", "ProvinceName": "云南省" }, { "ProvinceID": 26, "ProvinceNo": "540000", "ProvinceName": "西藏" }, { "ProvinceID": 27, "ProvinceNo": "610000", "ProvinceName": "陕西省" }, { "ProvinceID": 28, "ProvinceNo": "620000", "ProvinceName": "甘肃省" }, { "ProvinceID": 29, "ProvinceNo": "630000", "ProvinceName": "青海省" }, { "ProvinceID": 30, "ProvinceNo": "640000", "ProvinceName": "宁夏" }, { "ProvinceID": 31, "ProvinceNo": "650000", "ProvinceName": "新疆" }, { "ProvinceID": 32, "ProvinceNo": "710000", "ProvinceName": "台湾省" }, { "ProvinceID": 33, "ProvinceNo": "810000", "ProvinceName": "香港" }, { "ProvinceID": 34, "ProvinceNo": "820000", "ProvinceName": "澳门" }];
+
+            $("#grid").kendoGrid({
+                dataSource: {
+                    dataType: "json",
+                    //type: "odata",
+                    transport: {
+                        //read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                           read: "http://liuxibin.vicp.cc:8088/router?appKey=000001&method=comcode.selectComcode&v=1.0&format=json"
+
+                    },
+
+                    schema: {
+                        model: {
+                            fields: {
+                            id: { type: "string" },typecode: { type: "string" },code: { type: "string" },name: { type: "string" },shortname: { type: "string" }
+                        }
+                        },
+                        data: function(response) {
+                            var result = response["resultJson"];
+                            return  result;
+                        }
+                    },
+                 //   type: "odata",
+                    //transport: {
+                       // read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                     //   read:  "//liuxibin.vicp.cc:8088/router?appKey=000001&method=comcode.selectComcode&v=1.0&format=json"
+                  //  },
+                    pageSize: 20
+                },
+                height: 550,
+                groupable: true,
+                sortable: true,
+                serverPaging: false,               //分页
+                pageable: $.extend(true, {}, {                     //是否支持分页，如果支持，其相关的配置信息
+                    pageSizes: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+                    info: true,
+                    messages: {
+                        empty: "",
+                        itemsPerPage: "行每页",
+                        display: "共 {2} 条记录，显示第 {0}-{1} 行记录"
+                    }
+                }, true),
+
+                columns: [
+                    {field: "id", title:"代码编号", hidden:"true", align:"center", width: "100px"},
+                     {field: "typecode", title:"代码类别", align:"center", width: "100px"},
+                    {field: "code", title:"常用代码", align:"center", width: "100px"},
+                    {field: "name", title:"中文名称", align:"center", width: "100px"},
+                    {field: "shortname", title:"缩写简称", align:"center", width: "100px"}
+                ]
+            });
+        });
+        */
+    </script>
+</div>
+
+<style type="text/css">
+    .customer-photo {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-size: 32px 35px;
+        background-position: center center;
+        vertical-align: middle;
+        line-height: 32px;
+        box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+        margin-left: 5px;
+    }
+
+    .customer-name {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 32px;
+        padding-left: 3px;
+    }
+</style>
+
+
+</body>
+</html>

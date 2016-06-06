@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_DATASET_VAR  ID="1" DATASET_ID="1" VAR_NAME="1" VAR_DES="1" IS_DERIVED="1" IS_SET="1" VAR_TYPE="1" SPAN_BEGIN="1" SPAN_END="1" IS_OUTPUT="1" DEF_VALUE="1" REMARK="1"/>
+    <T_DATASET_VAR  ID="2" DATASET_ID="2" VAR_NAME="2" VAR_DES="2" IS_DERIVED="2" IS_SET="2" VAR_TYPE="2" SPAN_BEGIN="2" SPAN_END="2" IS_OUTPUT="2" DEF_VALUE="2" REMARK="2"/>
+</dataset>

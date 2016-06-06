@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_METAL  ID="1" SUBBRANCH_NUM="1" SUBBRANCH_NAME="1" CUS_NAME="1" ID_CARD_NUM="1" CARD_ID="1" DATA_DATE="1" CUS_MANAGER="1"/>
+    <T_JXKH_METAL  ID="2" SUBBRANCH_NUM="2" SUBBRANCH_NAME="2" CUS_NAME="2" ID_CARD_NUM="2" CARD_ID="2" DATA_DATE="2" CUS_MANAGER="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_fci_view  ID="1" VIEW_NAME="1" PROJECT_NAME="1" VIEW_DESC="1" SVN_BRANCHES_PATH="1" IS_ACTIVE="1" CONNECTION_STRING="1" IPF_FCI_PROJECT_ID="1" SOURCE_LABEL_ID="1" IS_PERMISSION_PAGE_ONLY="1"/>
+    <t_ipf_fci_view  ID="2" VIEW_NAME="2" PROJECT_NAME="2" VIEW_DESC="2" SVN_BRANCHES_PATH="2" IS_ACTIVE="2" CONNECTION_STRING="2" IPF_FCI_PROJECT_ID="2" SOURCE_LABEL_ID="2" IS_PERMISSION_PAGE_ONLY="2"/>
+</dataset>

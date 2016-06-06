@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rtm_type_bo  ID="1" IPF_RTM_TYPE_ID="1" IPF_CCM_BO_ID="1" BO_NAME="1" BO_DESC="1" PROPERTY_NAME="1" PROPERTY_UTILITY="1" EXTERNAL_BO_NAME="1" EXTERNAL_MATCH_PROPERTY="1" EXTERNAL_RESULT_PROPERTY="1" EXTERNAL_BO_ID="1" TRIGGER_PROPERTY_NAME="1"/>
+    <t_ipf_rtm_type_bo  ID="2" IPF_RTM_TYPE_ID="2" IPF_CCM_BO_ID="2" BO_NAME="2" BO_DESC="2" PROPERTY_NAME="2" PROPERTY_UTILITY="2" EXTERNAL_BO_NAME="2" EXTERNAL_MATCH_PROPERTY="2" EXTERNAL_RESULT_PROPERTY="2" EXTERNAL_BO_ID="2" TRIGGER_PROPERTY_NAME="2"/>
+</dataset>

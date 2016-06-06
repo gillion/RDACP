@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_ccm_bo_method_param  ID="1" IPF_CCM_BO_METHOD_ID="1" CONSTANT_VALUE="1" IS_CONDITION="1" METHOD_NAME="1" PARAM_NAME="1" PARAM_REF="1" PARAM_TYPE="1" BO_NAME_REF="1"/>
+    <t_ipf_ccm_bo_method_param  ID="2" IPF_CCM_BO_METHOD_ID="2" CONSTANT_VALUE="2" IS_CONDITION="2" METHOD_NAME="2" PARAM_NAME="2" PARAM_REF="2" PARAM_TYPE="2" BO_NAME_REF="2"/>
+</dataset>

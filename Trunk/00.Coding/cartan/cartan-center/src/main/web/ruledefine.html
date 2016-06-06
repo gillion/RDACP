@@ -1,0 +1,296 @@
+<html lang="zh-CN">
+<head>
+    <title>规则定义</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script type="text/javascript" src="js/combox.js"></script>
+    <style type="text/css">
+        a:hover{text-decoration: none;}
+        .btn{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 24px;
+            border-radius: 4px;
+            background-color: #63b7ff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #99c6ff;
+        }
+        .btn{
+            font-style: normal;
+        }
+        .bgbtn {width:16px; height:16px; padding:0; margin:2px 0 0 1px; border:0 none;
+            background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+            background-image:url("./js/app/ruledesign/css/zTreeStyle/img/zTreeStandard.png"); *background-image:url("./js/app/ruledesign/css/zTreeStyle/img/zTreeStandard.gif")
+        }
+        .bgbtn.arrow {
+            background-position:-110px -80px;
+        }
+        .bgbtn.open {
+            background-position:-110px -16px;
+        }
+        .bgbtn.close {
+            background-position:-110px -0px;
+        }
+        .bgbtn.add {
+            background-position:-144px -0px;
+        }
+        .bgbtn.remove {
+            background-position:-110px -64px;
+
+        }
+        .bgbtn.edit {
+            background-position:-110px -48px;
+        }
+        .bgbtn.docu {
+            background-position:-110px -32px;
+        }
+        .div-inline{
+            display:inline;
+            font-size: 12px;
+        }
+
+        .combox_input{border:0px solid gray;background-color:white;}.combox_text{vertical-align:middle;position:relative;border:none;}
+        .combox_container{background:white;border:1px solid silver;overflow:auto}
+        .combox_dpList{list-style:none;margin:0;padding:0;background-color:#fff}
+        .combox_row{text-indent:4px;height:20px;line-height:20px;font-size:12px;margin:0;padding:0;}
+        .combox_row_mouseover{background-color:gray;color:white;text-indent:4px;height:20px;line-height:20px;font-size:12px;}
+        .combox_row_mouseout{background-color:white;color:black;text-indent:4px;height:20px;line-height:20px;font-size:12px;}
+    </style>
+</head>
+<script type="text/javascript" >
+    var a=0;
+    var ln=0;
+
+    function removeAllChild(divid)
+    {
+        var div = document.getElementById(divid);
+        while(div.hasChildNodes()) //当div下还存在子节点时 循环继续
+        {
+            div.removeChild(div.firstChild);
+        }
+    }
+
+    function addline(maindiv){
+        var div=document.createElement("div");
+        div.innerHTML="";
+        div.id=maindiv+"-"+ln;
+        document.getElementById(maindiv).appendChild(div);
+        //添加公式DIV
+        var caldiv=document.createElement("div");
+        caldiv.style.display="inline";
+        caldiv.innerHTML="";
+        caldiv.id="cal"+maindiv+"-"+ln;
+        div.appendChild(caldiv);
+
+        addclose(caldiv.id);
+
+        var divid=div.id;
+
+        var arrow=generateInput('button',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a,'bgbtn add btn');
+        arrow.onclick = function(){
+            addclose(caldiv.id);
+        }
+
+        var del=generateInput('button',maindiv+"-"+ln,"del"+"-"+maindiv+"-"+ln+"-"+a,"arr"+"-"+maindiv+"-"+ln+"-"+a,'bgbtn remove btn');
+        del.onclick = function(){
+            removeAllChild(divid);
+            div.parentNode.removeChild(div);
+            //document.getElementById(maindiv).removeChild(document.getElementById(divid));
+        }
+
+        ln++;
+        a++;
+    }
+    function addclose(divid){
+        /*
+         generateInput('text',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a);
+         generateInput('text',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a);
+         generateInput('text',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a);
+         */
+        var deldiv = generateInput('button',divid,"arr"+"-"+divid+"-"+a,"arr"+"-"+divid+"-"+a,'bgbtn edit btn');
+
+        var arguments= new Array();
+        var oOption =  new Option("","")
+        arguments.push(oOption);
+        var oOption =  new Option("客户信息","01")
+        arguments.push(oOption);
+        var oOption =  new Option("授信信息","02")
+        arguments.push(oOption);
+        var oOption =  new Option("中间结果","03")
+        arguments.push(oOption);
+
+        var modeldiv=generateCombox(divid,"model"+"-"+divid+"-"+a,"model"+"-"+divid+"-"+a,arguments,"combox");
+        var labeldiv= generateLabel(divid,"model"+"-"+divid+"-"+a,".",'div-inline');
+
+        var arguments= new Array();
+        var oOption =  new Option("","")
+        arguments.push(oOption);
+        var oOption =  new Option("年收入","04")
+        arguments.push(oOption);
+        var oOption =  new Option("授信比例","05")
+        arguments.push(oOption);
+        var oOption =  new Option("消费品价值","06")
+        arguments.push(oOption);
+        var propdiv=generateCombox(divid,"prop"+"-"+divid+"-"+a,"prop"+"-"+divid+"-"+a,arguments,"combox");
+        var arguments= new Array();
+        var oOption =  new Option(";",";")
+        arguments.push(oOption);
+        var oOption =  new Option("大于等于",">=")
+        arguments.push(oOption);
+        var oOption =  new Option("小于等于","<=")
+        arguments.push(oOption);
+        var oOption =  new Option("等于","==")
+        arguments.push(oOption);
+        var oOption =  new Option("大于",">")
+        arguments.push(oOption);
+        var oOption =  new Option("小于","<")
+        arguments.push(oOption);
+        var caldiv=generateCombox(divid,"cal"+"-"+divid+"-"+a,"cal"+"-"+divid+"-"+a,arguments,"combox");
+        select_transform();
+
+    }
+
+    function select_transform() {
+        var sel_ary = document.getElementsByTagName('select');
+        for (var i = 0; i < sel_ary.length; i++) {
+            if (!sel_ary[i].multiple && sel_ary[i].style.display != 'none') {
+                if (hasCss('combox', sel_ary[i].className))
+                    (new combox(sel_ary[i])).transform();
+            }
+        }
+    }
+    function hasCss(cssName, cssNameAry) {
+        var cssAry = cssNameAry.split(/\s/);
+        for (var i = 0, css; css = cssAry[i]; i++) {
+            if (cssName.toLowerCase() == css.toLowerCase()) {
+                return true;
+            }
+        }
+        return false;
+    }
+    function add(divid){
+
+        var divlabel=document.createElement("div");
+        divlabel.style.display="inline";
+        divlabel.id=divid+"-"+a;
+        divlabel.innerHTML="test";
+        div.appendChild(divlabel);
+
+        var alink=document.createElement("a");
+        alink.href="javascript:add('"+div.id+"')";
+        alink.innerHTML="追加";
+        div.appendChild(alink);
+
+        a++;
+    }
+    function generateInputDiv(){
+        var testDiv=document.createElement("div");
+        for(var i=0;i<6; i++){
+            testDiv.setAttribute("id","div"+i);
+            generateInput('text',"div"+i,'tem1','tem1');
+            generateInput('button',"div"+i,'tem2','tem2','bgbtn remove btn');
+        }
+        document.body.appendChild(testDiv);
+    }
+
+    function generateLabel(divname,id,innerHtml,classname){
+        var divlabel=document.createElement("div");
+        divlabel.style.display="inline";
+        divlabel.id=id;
+        divlabel.innerHTML=innerHtml;
+        if(classname == null || classname == ""){
+            classname = ""
+        }else{
+            divlabel.className = classname;
+        }
+
+        var tab=document.getElementById(divname); //获得表格
+        tab.appendChild(divlabel);
+        return divlabel;
+    }
+    function generateCombox(divname,id,name,arguments,classname){
+        var mySelect = document.createElement("select");
+        mySelect.id = id;
+        if(classname == null || classname == ""){
+            classname = ""
+        }else{
+            mySelect.className = classname;
+        }
+
+        for(var i=0; i<arguments.length; i++){
+            var oOption = arguments[i];
+            mySelect.add(oOption);
+        }
+        var tab=document.getElementById(divname); //获得表格
+        tab.appendChild(mySelect);
+        return mySelect;
+    }
+    function generateInput(type,divname,id,name,classname){
+        var input;
+        if(document.all){
+            if(name != null && name != ""){
+                input = document.createElement('<input name="' + name + '">');//IE代码
+            }else{
+                input = document.createElement('<input');//IE代码
+            }
+        }else{
+            input = document.createElement('input'); //其他
+            if(name != null && name != ""){
+                input.name = name;
+            }
+        }
+
+        if(type == null || type == ""){
+            type = "text"
+        }else{
+            input.type = type;
+        }
+        if(type == "text"){
+            input.style.cssText="width:50px;border:0px";
+        }
+        if(id != null && id != ""){
+            input.id = id;
+        }
+        if(classname == null || classname == ""){
+            classname = ""
+        }else{
+            input.className = classname;
+        }
+        input.value = "";
+        var tab=document.getElementById(divname); //获得表格
+        tab.appendChild(input);
+        return input;
+        //document.body.applyElement(input);
+        //document.body.appendChild(input);
+    };
+
+</script>
+
+<body>
+<!--<input>标签按钮-->
+<div class="btn" onclick="addline('var-define');">变量定义(+)</div>
+<div id="var-define"></div>
+<br>
+<br>
+<br>
+<div class="btn" onclick="addline('con-decide');">条件判断(+)</div>
+<div id="con-decide"></div>
+<br>
+<br>
+<br>
+<div class="btn" onclick="addline('rule-action');">规则动作(+)</div>
+<div id="rule-action"></div>
+
+<br>
+<br>
+<br>
+<div class="btn" >规则注释</div>
+<div id="rule-memo">
+<textarea name="yj" cols="100" rows="10">执行结果：</textarea>
+</div>
+
+</body>
+</html>

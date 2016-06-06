@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-plugin-api-3.2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/maven-plugin-api-3.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

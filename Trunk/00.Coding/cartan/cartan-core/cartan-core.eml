@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/resources"/>
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<lib name="Maven: com.ridge:ridge-test:1.0.0-SNAPSHOT" scope="TEST"/>
+	<lib name="Maven: org.unitils:unitils-dbunit:3.3" scope="TEST"/>
+	<lib name="Maven: org.unitils:unitils-core:3.3" scope="TEST"/>
+	<lib name="Maven: commons-collections:commons-collections:3.2" scope="TEST"/>
+	<lib name="Maven: ognl:ognl:2.6.9" scope="TEST"/>
+	<lib name="Maven: org.unitils:unitils-testng:3.3" scope="TEST"/>
+	<lib name="Maven: org.testng:testng:jdk15:5.8" scope="TEST"/>
+	<lib name="Maven: org.mockito:mockito-all:1.8.5" scope="TEST"/>
+</component>

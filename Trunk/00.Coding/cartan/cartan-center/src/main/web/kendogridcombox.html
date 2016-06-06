@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>KendoUI Test Page</title>
+
+    <link href="http://cdn.kendostatic.com/2012.3.1114/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2012.3.1114/styles/kendo.default.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2012.3.1114/styles/kendo.dataviz.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2012.3.1114/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2012.3.1114/js/kendo.all.min.js"></script>
+</head>
+<body>
+<div id="grid"></div>
+<script>
+    $("#grid").kendoGrid({
+        dataSource: {
+            data: [
+                {foo: 1, bar: 11},
+                {foo: 2, bar: 12},
+                {foo: 3, bar: 13},
+                {foo: 4, bar: 14},
+                {foo: 5, bar: 15},
+                {foo: 6, bar: 16},
+                {foo: 7, bar: 17}
+            ],
+            schema: {
+                model: {
+                    id: "foo",
+                    fields: {
+                        foo: {type: "string", validation: { required: true } },
+                        bar: {type: "number", validation: { required: true, min: 1 } }
+                    }
+                }
+            }
+        },
+        columns: [
+            {field: "foo", title: "Foo"},
+            {field: "bar", title: "Bar", editor: barEditor,template: "#=bar#"},
+            {command: ["edit", "destroy"]}
+        ],
+        editable: "inline",
+        toolbar: ["create"]
+    })
+
+    function barEditor(container, options) {
+        $('<input name="name" data-text-field="name" data-value-field="id" data-bind="value:' + options.field + '" required="required" />')
+                .appendTo(container)
+                .kendoComboBox({
+                    autoBind: false,
+                    dataSource: {
+                        data: [
+                            {name: "Name1", id: 11},
+                            {name: "Name2", id: 12}
+                        ]
+                    }
+                });
+        $('$<span class="k-invalid-msg" data-for="name"></span>').appendTo(container);
+    }
+</script>
+</body>
+</html>

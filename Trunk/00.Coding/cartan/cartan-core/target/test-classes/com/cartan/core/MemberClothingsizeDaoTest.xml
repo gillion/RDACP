@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_member_clothingsize  id="1" name="1" depart="1" height="1" weight="1" clothingSize="1"/>
+    <t_member_clothingsize  id="2" name="2" depart="2" height="2" weight="2" clothingSize="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_rpt_sms30  id="1" channel_name="1" mediator_name="1" total_count="1" report_date="1"/>
+    <t_rpt_sms30  id="2" channel_name="2" mediator_name="2" total_count="2" report_date="2"/>
+</dataset>

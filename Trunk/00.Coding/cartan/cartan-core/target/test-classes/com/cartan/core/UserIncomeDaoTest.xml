@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_USER_INCOME  ID="1" GROUP_LOGINID="1" GROUP_NAME="1" GROUP_DEPT="1" GROUP_LEVEL="1" GROUP_PERLEVEL="1" GROUP_INDATE="1" GROUP_TYPE="1" GROUP_TYPE_FY="1" GROUP_STATUS="1"/>
+    <T_USER_INCOME  ID="2" GROUP_LOGINID="2" GROUP_NAME="2" GROUP_DEPT="2" GROUP_LEVEL="2" GROUP_PERLEVEL="2" GROUP_INDATE="2" GROUP_TYPE="2" GROUP_TYPE_FY="2" GROUP_STATUS="2"/>
+</dataset>

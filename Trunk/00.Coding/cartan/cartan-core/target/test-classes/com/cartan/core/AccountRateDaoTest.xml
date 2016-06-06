@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_ACCOUNT_RATE  ID="1" RATE_TYPE="1" CORP_NAME="1" ACCOUNT_NO="1" RATE="1" DATA_DATE="1"/>
+    <T_ACCOUNT_RATE  ID="2" RATE_TYPE="2" CORP_NAME="2" ACCOUNT_NO="2" RATE="2" DATA_DATE="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <t_ipf_rule_filter_detail  ID="1" IPF_RULE_FILTER_ID="1" LINE_ID="1" ATTRIBUTE="1" OPERAND="1" LITERAL_VALUE="1" AND_OR="1" LEFT_PAREN="1" RIGHT_PAREN="1"/>
+    <t_ipf_rule_filter_detail  ID="2" IPF_RULE_FILTER_ID="2" LINE_ID="2" ATTRIBUTE="2" OPERAND="2" LITERAL_VALUE="2" AND_OR="2" LEFT_PAREN="2" RIGHT_PAREN="2"/>
+</dataset>

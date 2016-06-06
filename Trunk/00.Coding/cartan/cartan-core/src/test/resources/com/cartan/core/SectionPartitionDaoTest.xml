@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_SECTION_PARTITION  ID="1" SECTION_NAME="1" STATUS="1" MODIFY_DATE="1" MODIFYED="1" OWNER="1" LOCKED="1"/>
+    <T_SECTION_PARTITION  ID="2" SECTION_NAME="2" STATUS="2" MODIFY_DATE="2" MODIFYED="2" OWNER="2" LOCKED="2"/>
+</dataset>

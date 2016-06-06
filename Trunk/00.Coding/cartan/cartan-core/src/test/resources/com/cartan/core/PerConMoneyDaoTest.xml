@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_PER_CON_MONEY  ID="1" REQ_NO="1" LINETYPE="1" SOPER_CD="1" CUS_CODE="1" CUS_NAME="1" CUS_MANAGER_ID="1" CUS_MANAGER_NAME="1" TRACE_MONEY="1"/>
+    <T_PER_CON_MONEY  ID="2" REQ_NO="2" LINETYPE="2" SOPER_CD="2" CUS_CODE="2" CUS_NAME="2" CUS_MANAGER_ID="2" CUS_MANAGER_NAME="2" TRACE_MONEY="2"/>
+</dataset>

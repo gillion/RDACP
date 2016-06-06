@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_MID_DATA  ID="1" ACCOUNT_CODE="1" ACCOUNT_NAME="1" INCOME_MONEY="1" DATA_DATE="1" TEMP1="1" TEMP2="1" TEMP3="1" ACCOUNT_NUM="1" SREMARK="1"/>
+    <T_JXKH_MID_DATA  ID="2" ACCOUNT_CODE="2" ACCOUNT_NAME="2" INCOME_MONEY="2" DATA_DATE="2" TEMP1="2" TEMP2="2" TEMP3="2" ACCOUNT_NUM="2" SREMARK="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_RULE_TABLE_OUTPUT  ID="1" RULE_TABLE_ID="1" OUTPUT_LOCATION="1" OUTPUT_VAR="1" OUTPUT_VALUE="1"/>
+    <T_RULE_TABLE_OUTPUT  ID="2" RULE_TABLE_ID="2" OUTPUT_LOCATION="2" OUTPUT_VAR="2" OUTPUT_VALUE="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_RULE  ID="1" RULE_NAME="1" RULESET_ID="1" IS_USED="1" PRI_LEVEL="1" CONTENT_TYPE="1" EFFECT_DATE="1" INVALID_DATE="1" CREATOR="1" CREATE_DATE="1" MODIFY_DATE="1" MODIFYED="1" OWNER="1" LOCKED="1"/>
+    <T_RULE  ID="2" RULE_NAME="2" RULESET_ID="2" IS_USED="2" PRI_LEVEL="2" CONTENT_TYPE="2" EFFECT_DATE="2" INVALID_DATE="2" CREATOR="2" CREATE_DATE="2" MODIFY_DATE="2" MODIFYED="2" OWNER="2" LOCKED="2"/>
+</dataset>

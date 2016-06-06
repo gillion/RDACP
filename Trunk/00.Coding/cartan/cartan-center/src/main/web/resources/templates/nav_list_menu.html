@@ -1,0 +1,11 @@
+<%  var menuItem = null, subMenuItemList = null, subMenu = null;   %>
+<%  for(var i=0, itemCount=data.length; i<itemCount; i++){   %>
+<%		menuItem = data[i]; subMenuItemList=menuItem["children"];   %>
+<a href="#<%=menuItem['code']%>" class="nav-header" data-toggle="collapse"><i class="<%=menuItem['iconcls']%>"></i><%=menuItem['name']%></a>
+<ul id="<%=menuItem['code']%>" class="nav nav-list in collapse">
+    <%  for(var j=0, subCount=subMenuItemList.length; j<subCount; j++){   %>
+    <%		subMenu = subMenuItemList[j];   %>
+    <li><a href="<%=subMenu['url']%>"><%=subMenu['name']%></a></li>
+    <%  }%>
+</ul>
+<%  }%>

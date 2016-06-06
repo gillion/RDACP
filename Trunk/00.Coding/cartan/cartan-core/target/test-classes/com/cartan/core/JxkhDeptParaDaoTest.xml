@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_DEPT_PARA  ID="1" DEPT="1" BSTYPE="1" END_MONTH="1" BEGIN_MONTH="1" BASE_RESULT="1" INCREMENTAL="1" DOUBLES="1" INCOME_DATE="1"/>
+    <T_JXKH_DEPT_PARA  ID="2" DEPT="2" BSTYPE="2" END_MONTH="2" BEGIN_MONTH="2" BASE_RESULT="2" INCREMENTAL="2" DOUBLES="2" INCOME_DATE="2"/>
+</dataset>

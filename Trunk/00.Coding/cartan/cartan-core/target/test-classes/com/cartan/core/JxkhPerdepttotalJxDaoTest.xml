@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_JXKH_PERDEPTTOTAL_JX  ID="1" SYEAR="1" SMONTH="1" SENDDATE="1" STYPE="1" DEPT="1" INCOME_DATE="1" BLANCEAVG_BASE="1" BALANCEAVG_ALL="1" BALANCEAVG_INCREMENTAL="1" MONTH_TASK="1" INCREMENTAL_TIME="1" LAST_RESULT="1"/>
+    <T_JXKH_PERDEPTTOTAL_JX  ID="2" SYEAR="2" SMONTH="2" SENDDATE="2" STYPE="2" DEPT="2" INCOME_DATE="2" BLANCEAVG_BASE="2" BALANCEAVG_ALL="2" BALANCEAVG_INCREMENTAL="2" MONTH_TASK="2" INCREMENTAL_TIME="2" LAST_RESULT="2"/>
+</dataset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../../../../../../cartan/scripts/schema/dataset.xsd">
+    <T_SECTION_PARTITION_VAR  ID="1" SECTION_PARITION_ID="1" VAR_NAME="1" SECTION_LOWER_MARK="1" SECTION_LOWER_LIMIT="1" SECTION_UPPER_MARK="1" SECTION_UPPER_LIMIT="1"/>
+    <T_SECTION_PARTITION_VAR  ID="2" SECTION_PARITION_ID="2" VAR_NAME="2" SECTION_LOWER_MARK="2" SECTION_LOWER_LIMIT="2" SECTION_UPPER_MARK="2" SECTION_UPPER_LIMIT="2"/>
+</dataset>

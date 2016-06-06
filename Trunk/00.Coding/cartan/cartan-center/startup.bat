@@ -1,0 +1,1 @@
+F:\tools\java\maven\bin\mvn jetty:run

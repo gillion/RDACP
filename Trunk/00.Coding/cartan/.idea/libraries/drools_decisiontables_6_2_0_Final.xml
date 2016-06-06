@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="drools-decisiontables-6.2.0.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolslib/drools-decisiontables-6.2.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
