@@ -1,0 +1,1046 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_menu {
+    background-image: url('../编辑规则流_files/u0_menu.png');
+}
+
+.u0_menu {
+    position:absolute;
+    left:5px;
+    top:31px;
+    width:115px;
+    height:255px;
+}
+
+#u0_menu {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:112px;
+    height:252px;
+}
+
+#u1 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:105px;
+    height:245px
+}
+
+.u2_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:20px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:0px;
+    top:20px;
+    width:100px;
+    height:20px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:0px;
+    top:40px;
+    width:100px;
+    height:20px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:100px;
+    height:20px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:100px;
+    height:20px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:0px;
+    top:100px;
+    width:100px;
+    height:20px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:0px;
+    top:120px;
+    width:100px;
+    height:20px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:0px;
+    top:140px;
+    width:100px;
+    height:20px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:0px;
+    top:160px;
+    width:100px;
+    height:20px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:0px;
+    top:180px;
+    width:100px;
+    height:20px;
+}
+
+#u20_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:0px;
+    top:200px;
+    width:100px;
+    height:20px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../编辑规则流_files/u2_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:0px;
+    top:220px;
+    width:100px;
+    height:20px;
+}
+
+#u24_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_normal {
+    background-image: url('../编辑规则流_files/u26_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:124px;
+    top:166px;
+    width:100px;
+    height:25px;
+}
+
+#u26_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../编辑规则流_files/u26_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:321px;
+    top:122px;
+    width:100px;
+    height:25px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../编辑规则流_files/u26_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:321px;
+    top:214px;
+    width:100px;
+    height:25px;
+}
+
+#u30_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_line {
+    background-image: url('../编辑规则流_files/u32_line.png');
+}
+
+.u32_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u32 {
+    position:absolute;
+    left:224px;
+    top:174px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u33_line {
+    background-image: url('../编辑规则流_files/u33_line.png');
+}
+
+.u33_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:90px;
+}
+
+.u33 {
+    position:absolute;
+    left:267px;
+    top:136px;
+    width:10px;
+    height:90px;
+    
+}
+
+.u34_end {
+    background-image: url('../编辑规则流_files/u34_end.png');
+}
+
+.u34_end {
+    position:absolute;
+    left:39px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u34_line {
+    background-image: url('../编辑规则流_files/u34_line.png');
+}
+
+.u34_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u34 {
+    position:absolute;
+    left:272px;
+    top:130px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u35_end {
+    background-image: url('../编辑规则流_files/u35_end.png');
+}
+
+.u35_end {
+    position:absolute;
+    left:39px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u35_line {
+    background-image: url('../编辑规则流_files/u35_line.png');
+}
+
+.u35_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u35 {
+    position:absolute;
+    left:273px;
+    top:221px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u36 {
+    position:absolute;
+    left:230px;
+    top:158px;
+    width:36px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37 {
+    position:absolute;
+    left:275px;
+    top:114px;
+    width:36px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38 {
+    position:absolute;
+    left:279px;
+    top:205px;
+    width:36px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_end {
+    background-image: url('../编辑规则流_files/u39_end.png');
+}
+
+.u39_end {
+    position:absolute;
+    left:39px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u39_line {
+    background-image: url('../编辑规则流_files/u39_line.png');
+}
+
+.u39_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u39 {
+    position:absolute;
+    left:470px;
+    top:176px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u40_line {
+    background-image: url('../编辑规则流_files/u40_line.png');
+}
+
+.u40_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:90px;
+}
+
+.u40 {
+    position:absolute;
+    left:465px;
+    top:136px;
+    width:10px;
+    height:90px;
+    
+}
+
+.u41_line {
+    background-image: url('../编辑规则流_files/u41_line.png');
+}
+
+.u41_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u41 {
+    position:absolute;
+    left:422px;
+    top:131px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u42_line {
+    background-image: url('../编辑规则流_files/u42_line.png');
+}
+
+.u42_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u42 {
+    position:absolute;
+    left:422px;
+    top:221px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u43 {
+    position:absolute;
+    left:429px;
+    top:115px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44 {
+    position:absolute;
+    left:429px;
+    top:200px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45 {
+    position:absolute;
+    left:474px;
+    top:160px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_normal {
+    background-image: url('../编辑规则流_files/u26_normal.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:518px;
+    top:166px;
+    width:100px;
+    height:25px;
+}
+
+#u46_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48_normal {
+    background-image: url('../编辑规则流_files/u26_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:668px;
+    top:166px;
+    width:100px;
+    height:25px;
+}
+
+#u48_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../编辑规则流_files/u26_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:818px;
+    top:168px;
+    width:100px;
+    height:25px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_end {
+    background-image: url('../编辑规则流_files/u52_end.png');
+}
+
+.u52_end {
+    position:absolute;
+    left:39px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u52_line {
+    background-image: url('../编辑规则流_files/u52_line.png');
+}
+
+.u52_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u52 {
+    position:absolute;
+    left:769px;
+    top:174px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u53 {
+    position:absolute;
+    left:768px;
+    top:158px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_end {
+    background-image: url('../编辑规则流_files/u54_end.png');
+}
+
+.u54_end {
+    position:absolute;
+    left:39px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u54_line {
+    background-image: url('../编辑规则流_files/u54_line.png');
+}
+
+.u54_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:48px;
+    height:3px;
+}
+
+.u54 {
+    position:absolute;
+    left:618px;
+    top:174px;
+    width:48px;
+    height:10px;
+    
+}
+
+.u55 {
+    position:absolute;
+    left:622px;
+    top:158px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
