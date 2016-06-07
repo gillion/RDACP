@@ -330,10 +330,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.json.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="menu.json.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/data/menu.json.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="64" selection-start="1984" selection-end="1984" vertical-scroll-proportion="0.76079136">
+            <state line="63" column="64" selection-start="1984" selection-end="1984" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initialize.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="68" selection-start="2902" selection-end="2902" vertical-scroll-proportion="0.40515652">
               <folding />
             </state>
           </provider>
@@ -359,7 +368,6 @@
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfReqRuleManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewSelDialog.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlTableManageRouter.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlColumnManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlConstraintManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlConstraintColumnManageRouter.js" />
@@ -372,6 +380,7 @@
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlElementTextManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlScriptPublishManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/data/menu.json.js" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js" />
       </list>
     </option>
   </component>
@@ -1355,7 +1364,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19924243" sideWeight="0.6089194" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4716981" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24166666" sideWeight="0.6089194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3348485" sideWeight="0.6089194" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49056605" sideWeight="0.4848485" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="92" width="1096" height="544" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -1472,96 +1481,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewSelDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="46" selection-start="3653" selection-end="3661" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlTableManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="49" selection-start="4093" selection-end="4093" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlColumnManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="49" selection-start="8820" selection-end="8820" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlConstraintManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="49" selection-start="5877" selection-end="5877" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlConstraintColumnManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="51" selection-start="5571" selection-end="5571" vertical-scroll-proportion="0.03646833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlIndexManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="34" selection-start="5380" selection-end="5380" vertical-scroll-proportion="0.03499079">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlIndexColumnManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="36" selection-start="5348" selection-end="5348" vertical-scroll-proportion="0.03646833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="50" selection-start="4067" selection-end="4067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewColumnManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="50" selection-start="7092" selection-end="7092" vertical-scroll-proportion="0.03499079">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewSqlManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="51" selection-start="5523" selection-end="5523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlElementManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="50" selection-start="4253" selection-end="4253" vertical-scroll-proportion="0.03807615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlElementTextManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="53" selection-start="5619" selection-end="5619" vertical-scroll-proportion="0.03807615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="74" selection-start="2917" selection-end="2956" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlScriptPublishManageRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="74" selection-start="4483" selection-end="4600" vertical-scroll-proportion="0.039832287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/ruledesign.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="40" selection-start="29" selection-end="29" vertical-scroll-proportion="19.0">
@@ -1571,7 +1490,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/data/menu.json.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="64" selection-start="1984" selection-end="1984" vertical-scroll-proportion="0.76079136">
+        <state line="63" column="64" selection-start="1984" selection-end="1984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="68" selection-start="2902" selection-end="2902" vertical-scroll-proportion="0.40515652">
           <folding />
         </state>
       </provider>
