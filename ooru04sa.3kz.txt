@@ -1,0 +1,13 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   Trunk/00.Coding/cartan/.idea/vcs.xml
+#	modified:   Trunk/00.Coding/cartan/.idea/workspace.xml
+#	modified:   Trunk/00.Coding/cartan/cartan-center/src/main/web/ruledesign.html
+#	new file:   Trunk/00.Coding/cartan/scripts/cartan_common2016102801.sql
+#
+
