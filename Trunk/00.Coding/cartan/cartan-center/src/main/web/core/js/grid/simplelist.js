@@ -529,7 +529,7 @@ define(["jquery",
                             url = url || "";
                             alert("简要列表加载数据的地址不存在：" + url);
                         } else {
-                            alert("简要列表加载异常,请与管理员联系：" + transport.errorThrown);
+                        //    alert("简要列表加载异常,请与管理员联系：" + transport.errorThrown);
                         }
                     }
                 }, this.get("dataSource")),

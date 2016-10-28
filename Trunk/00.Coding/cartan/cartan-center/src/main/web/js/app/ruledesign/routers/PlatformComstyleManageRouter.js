@@ -1,6 +1,6 @@
 
 /**
- * LoginUser
+ * 代码类别
  *
  * @author 刘溪滨 (13720880048@163.com)
  * @version 1.0 @Date: 2015-11-18 上午9:10
@@ -17,20 +17,15 @@ define(["types/Class",
 		AjaxEngine){    
 	
     
-    function showEditDetilDialog(tp, titles, id, url, content, height){
-    	var kendoUIWindow = SimpleListUtil.showkdDialog(id, content, 350, height, titles);
-        
-    	
-        
-        
+    function showEditDetilDialog(tp, titles, id, url, content){
+    	var kendoUIWindow = SimpleListUtil.showkdDialog(id, content, 350, 190, titles);
 
         if (tp==1){
-        $("#submitBtn").click(function(){    	
-        $("#submitBtn").attr("disabled", true);
+        $("#submitBtn").click(function(){
             new AjaxEngine(url,
                 {
                     async: false,                              
-                    data:{id: $("#id").val(),user: $("#user").val(),pwd: $("#pwd").val(),power: $("#power").val()},
+                    data:{id: $("#id").val(),code: $("#code").val(),name: $("#name").val()},
                     dataType: 'json',
                     complete: function(transport){
                         result = transport.responseText;
@@ -40,18 +35,16 @@ define(["types/Class",
                         var table0=$("#simplelist_list").data("kendoGrid");
                         table0.dataSource.read();
                         table0.refresh();
-                        $("#submitBtn").attr("disabled", false);
                     }
                 }
             );
         });
     	} else{
         $("#QueryBtn").click(function(){
-            $("#QueryBtn").attr("disabled", true);
             new AjaxEngine(url,
                 {
                     async: false,
-                    data:{id: $("#id").val(),user: $("#user").val(),pwd: $("#pwd").val(),power: $("#power").val()},
+                    data:{id: $("#id").val(),code: $("#code").val(),name: $("#name").val()},
                     dataType: 'json',
                     complete: function(transport){
                         var result = transport.responseText;
@@ -63,15 +56,12 @@ define(["types/Class",
                             for(var i= 0, count=result.resultJson.length; i<count; i++){
                                 data = result.resultJson[i];
 
-        						
-        						
                             }
                         }
-
+                        
                         var table0=$("#simplelist_list").data("kendoGrid");
                         table0.dataSource.data([]);
                         table0.dataSource.data(result.resultJson);
-                        $("#QueryBtn").attr("disabled", false);
                         kendoUIWindow.close();
                     }
                 }
@@ -83,13 +73,12 @@ define(["types/Class",
         
     }
     
-    var PlatformLoginUserManageRouter = BaseRouter.extend({
+    var PlatformComstyleManageRouter = BaseRouter.extend({
         routes: {
-            "basic_manage/platform_LoginUser_manage": "showPlatformLoginUserManageList",  
-            "basic_manage/platform_ckLoginUser_manage": "showPlatformckLoginUserManageList",
-            "basic_manage/platform_modifyPwdUser_manage": "showPlatformModifyPwdManageList"
+            "basic_manage/platform_Comstyle_manage": "showPlatformComstyleManageList",  
+            "basic_manage/platform_ckComstyle_manage": "showPlatformckComstyleManageList"
         },
-        showPlatformckLoginUserManageList: function(){
+        showPlatformckComstyleManageList: function(){
             $("#Submit").click(function(){
                 var sid=SimpleListUtil.getSessionId();
                 if (SimpleListUtil.cklogin(sid)=="1"){
@@ -99,62 +88,53 @@ define(["types/Class",
                 }
             });
         },
-        showPlatformModifyPwdManageList: function(){
-            $("#Submit").click(function(){
-                var sid=SimpleListUtil.getSessionId();
-                if (SimpleListUtil.cklogin(sid)=="1"){
-                    SimpleListUtil.modifyPwd(sid);
-                }
-            });
-        },
-        showPlatformLoginUserManageList: function(){
+        showPlatformComstyleManageList: function(){
             //var sid=SimpleListUtil.getSessionId();
             //SimpleListUtil.ckSession(sid);            
-            var platformLoginUserManageListView = new SimpleListView({
-                id: "platform_loginUser_manage_list",
-                title: "基础管理 > LoginUser",
+            var platformComstyleManageListView = new SimpleListView({
+                id: "platform_comstyle_manage_list",
+                title: "基础管理 > 代码类别",
                 buttonCount:3,
 
                 ready: function(){
-                    this.setSimpleListHeader("LoginUser");
+                    this.setSimpleListHeader("代码类别");
                     this.addToolbarBtn("addBtn", "新 增", function(){
                         var detailstr="";
                         detailstr+="<div id='content' align='center'>";
-                        detailstr+="<table>";       
-                        detailstr+="<input id='id' name='编号' hidden='true' style='...'/>";                          
+                        detailstr+="<table>";                       
+                        detailstr+="<input id='id' name='类别编号' hidden='true' style='...'/>";                          
                         detailstr+="<tr><td>";
-                        detailstr+="<label id='luser' align='right'>账号：</label>";
+                        detailstr+="<label id='lcode' align='right'>类别代码：</label>";
                         detailstr+="</td><td>";
-                		detailstr+="<input id='user' name='账号' style='...'/>";
+
+						
+                		detailstr+="<input id='code' name='类别代码' style='...'/>";
                         detailstr+="</td></tr>";
                         detailstr+="<tr><td>";
-                        detailstr+="<label id='lpwd' align='right'>密码：</label>";
+                        detailstr+="<label id='lname' align='right'>类别名称：</label>";
                         detailstr+="</td><td>";
-                		detailstr+="<input id='pwd' name='密码' style='...'/>";
-                        detailstr+="</td></tr>";
-                        detailstr+="<tr><td>";
-                        detailstr+="<label id='lpower' align='right'>权限：</label>";
-                        detailstr+="</td><td>";
-                		detailstr+="<input id='power' name='权限' style='...'/>";
+
+						
+                		detailstr+="<input id='name' name='类别名称' style='...'/>";
                         detailstr+="</td></tr>";
                         detailstr+="</table>";
                         detailstr+="</div>";
                         detailstr+="<div align='center'>";
                         detailstr+="<input id='submitBtn'  name='submitBtn' type='button' value='保 存' />";
                         detailstr+="</div>";
-                        showEditDetilDialog(1,"新增","0" ,"router?appKey=000001&method=loginUser.createLoginUser&v=1.0&format=json",$(detailstr),130);
+                        showEditDetilDialog(1,"新增","0" ,"router?appKey=000001&method=comstyle.createComstyle&v=1.0&format=json",$(detailstr));
                         dialogId = null;
                     }, "add");
                     this.addToolbarBtn("deleteBtn", "删 除",function(){
-                        var rowCount = platformLoginUserManageListView.getGridObject().select().length;
+                        var rowCount = platformComstyleManageListView.getGridObject().select().length;
                         if (rowCount>0){
                         for(var i=0; i<rowCount; i++){
-                            rowEl = platformLoginUserManageListView.getGridObject().select().get(i);
-                            var id = SimpleListUtil.getColumnValue(platformLoginUserManageListView.getGridObject(),rowEl, "id");
-                            new AjaxEngine("router?appKey=000001&method=loginUser.deleteLoginUser&v=1.0&format=json",
+                            rowEl = platformComstyleManageListView.getGridObject().select().get(i);
+                            var ID = SimpleListUtil.getColumnValue(platformComstyleManageListView.getGridObject(),rowEl, "id");
+                            new AjaxEngine("router?appKey=000001&method=comstyle.deleteComstyle&v=1.0&format=json",
                             {
                                 async: false,
-                                data:{id: id},
+                                data:{id: ID},
                                 dataType: 'json',
                                 complete: function(transport){
                                     result = transport.responseText;
@@ -175,43 +155,47 @@ define(["types/Class",
                         var detailstr="";
                         detailstr+="<div id='content' align='center'>";
                         detailstr+="<table>";
-                        detailstr+="<input id='id' name='编号' hidden='true' style='...'/>";                          
+                        detailstr+="<input id='id' name='类别编号' hidden='true' style='...'/>";                          
+
                         detailstr+="<tr><td>";
-                        detailstr+="<label id='luser' align='right'>账号：</label>";
+                        detailstr+="<label id='lcode' align='right'>类别代码：</label>";
                         detailstr+="</td><td>";
-                		detailstr+="<input id='user' name='账号' style='...'/>";
-                        detailstr+="</td></tr>";                        
+
+						
+                		detailstr+="<input id='code' name='类别代码' style='...'/>";
+                        detailstr+="</td></tr>";
+                        
+
                         detailstr+="<tr><td>";
-                        detailstr+="<label id='lpwd' align='right'>密码：</label>";
+                        detailstr+="<label id='lname' align='right'>类别名称：</label>";
                         detailstr+="</td><td>";
-                		detailstr+="<input id='pwd' name='密码' style='...'/>";
-                        detailstr+="</td></tr>";                        
-                        detailstr+="<tr><td>";
-                        detailstr+="<label id='lpower' align='right'>权限：</label>";
-                        detailstr+="</td><td>";
-                		detailstr+="<input id='power' name='权限' style='...'/>";
-                        detailstr+="</td></tr>";                        
+
+						
+                		detailstr+="<input id='name' name='类别名称' style='...'/>";
+                        detailstr+="</td></tr>";
+                        
+                        
                         detailstr+="</table>";
                         detailstr+="</div>";
                         detailstr+="<div align='center'>";
                         detailstr+="<input id='QueryBtn'  name='QueryBtn' type='button' value='查 询'  />";
                         detailstr+="</div>";
-                        showEditDetilDialog(2,"查询","2" ,"router?appKey=000001&method=loginUser.selectLoginUser&v=1.0&format=json",$(detailstr),130);
+                        showEditDetilDialog(2,"查询","2" ,"router?appKey=000001&method=comstyle.selectComstyle&v=1.0&format=json",$(detailstr));
                         dialogId = null;
-                    }, "filter");
+                    });
                 },
 
                 dataSource: {
                     serverPaging: false,
                     transport: {
                         read: {
-                            url: "router?appKey=000001&method=loginUser.selectLoginUser&v=1.0&format=json"
+                            url: "router?appKey=000001&method=comstyle.selectComstyle&v=1.0&format=json"
                         }
                     },
                     schema: {
                         model: {
                             fields: {
-                        		id: { type: "string" },user: { type: "string" },pwd: { type: "string" },power: { type: "string" }
+                        		id: { type: "string" },code: { type: "string" },name: { type: "string" }
                             }
                         },
                         parse: function(response) {
@@ -220,13 +204,16 @@ define(["types/Class",
                         //返回的数据
                         data: function(response) {
                             var result = response["resultJson"];
+
                             if($.isArray(result)){
                                 var data = null;
                                 for(var i= 0, count=result.length; i<count; i++){
                                     data = result[i];
+
+
                                 }
                             }
-                            result = platformLoginUserManageListView.appendColValue(result);
+                            result = platformComstyleManageListView.appendColValue(result);
                             return result;
                         },
                         //记录条数
@@ -237,11 +224,14 @@ define(["types/Class",
                     }
                 },
                 columns: [
-                          {field: "chk", type:"chk", title: "&nbsp;", value:"id"},
-                          {field: "id", title:"编号", hidden:"true", align:"center", width: "100px"},
-                    		{field: "user", title:"账号", align:"center", width: "100px"},
-                    		{field: "pwd", title:"密码", align:"center", width: "100px"},
-                    		{field: "power", title:"权限", align:"center", width: "100px"},
+                          {field: "chk", type:"chk", title: "&nbsp;", value:"ID"},
+                          {field: "id", title:"类别编号", hidden:"true", align:"center", width: "100px"},
+
+    						
+                    		{field: "code", title:"类别代码", align:"center", width: "100px"},
+
+    						
+                    		{field: "name", title:"类别名称", align:"center", width: "100px"},
                     {
                         width: 100,
                         title: "操作列",
@@ -250,10 +240,10 @@ define(["types/Class",
                             name: "修 改",
                             click: function(e) {
                                 var rowEl = SimpleListUtil.getCurrentRow(e.target);
-                                platformLoginUserManageListView.selectRow(rowEl);
+                                platformComstyleManageListView.selectRow(rowEl);
                                 var Id = SimpleListUtil.getSelectedColumnValue(this, "id");
                                 var dialogId = "detail_edit_dialog_" + Id;
-                                var columnArray = platformLoginUserManageListView.get("columns");
+                                var columnArray = platformComstyleManageListView.get("columns");
                                 var col = null;
                                 var colName = null;
                                 var value = null;
@@ -268,38 +258,23 @@ define(["types/Class",
                                 var detailstr="";
                                 detailstr+="<div id='content' align='center'>";
                                 detailstr+="<table>";
-                                detailstr+="<input id='id' name='编号' hidden='true' value='"+ColumnValue["id"]+"' style='...'/>";
+                                detailstr+="<input id='id' name='类别编号' hidden='true' value='"+ColumnValue["id"]+"' style='...'/>";
 
                                 detailstr+="<tr><td>";
-                                detailstr+="<label id='luser' align='right'>账号：</label>";
+                                detailstr+="<label id='lcode' align='right'>类别代码：</label>";
                                 detailstr+="</td><td>";
-          						
+
         						
-        						
-        						
-                        		detailstr+="<input id='user' name='账号' value='"+ColumnValue["user"]+"' style='...'/>";
+                        		detailstr+="<input id='code' name='类别代码' value='"+ColumnValue["code"]+"' style='...'/>";
                                 detailstr+="</td></tr>";
                                 
 
                                 detailstr+="<tr><td>";
-                                detailstr+="<label id='lpwd' align='right'>密码：</label>";
+                                detailstr+="<label id='lname' align='right'>类别名称：</label>";
                                 detailstr+="</td><td>";
-          						
-        						
-        						
-        						
-                        		detailstr+="<input id='pwd' name='密码' value='"+ColumnValue["pwd"]+"' style='...'/>";
-                                detailstr+="</td></tr>";
-                                
 
-                                detailstr+="<tr><td>";
-                                detailstr+="<label id='lpower' align='right'>权限：</label>";
-                                detailstr+="</td><td>";
-          						
         						
-        						
-        						
-                        		detailstr+="<input id='power' name='权限' value='"+ColumnValue["power"]+"' style='...'/>";
+                        		detailstr+="<input id='name' name='类别名称' value='"+ColumnValue["name"]+"' style='...'/>";
                                 detailstr+="</td></tr>";
                                 
 				                detailstr+="</table>";
@@ -307,7 +282,7 @@ define(["types/Class",
 				                detailstr+="<div align='center'>";
 				                detailstr+="<input id='submitBtn'  name='submitBtn' type='button' value='保 存' />";
 				                detailstr+="</div>";
-                                showEditDetilDialog(1,"修改",dialogId ,"router?appKey=000001&method=loginUser.updateLoginUser&v=1.0&format=json", $(detailstr),130);
+                                showEditDetilDialog(1,"修改",dialogId ,"router?appKey=000001&method=comstyle.updateComstyle&v=1.0&format=json", $(detailstr));
                                 dialogId = null;
                             }
 
@@ -316,9 +291,9 @@ define(["types/Class",
                 ]
             });
 
-            this.changePage(platformLoginUserManageListView);
+            this.changePage(platformComstyleManageListView);
         }
     });
 
-    return PlatformLoginUserManageRouter;
+    return PlatformComstyleManageRouter;
 });

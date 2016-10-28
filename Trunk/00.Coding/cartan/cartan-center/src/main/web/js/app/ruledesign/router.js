@@ -19,6 +19,7 @@ define(["types/Class",
             routes: {
                 "": "index",
                 "login": "login",   //登录界面     \
+                "logout": "logout",   //登录界面  \
                 "ruletree":"ruletree",
                 "home": "home"    //首页
             },
@@ -46,6 +47,14 @@ define(["types/Class",
                 var loginView = new BaseView({id: "login", title: "登陆界面", viewTemplate:  LoginViewTemplate, data: {}});
                 this.changePage(loginView);
                 this.showPlatformckLoginUserManageList();
+            },
+            logout: function(){
+                var menuView = new BaseView({el: "#sidebar-nav", viewTemplate:  navListMenuTemplate, data: menuData["menus"], ready: function(){
+//                    alert("菜单加载完毕");
+                }});
+                this.changePage(menuView);;  //显示菜单
+                var loginView = new BaseView({id: "logout", title: "退出界面", viewTemplate:  LoginViewTemplate, data: {}});
+                this.changePage(loginView);
             },
             home: function(){
                 Log.info("home Action");

@@ -61,5 +61,41 @@ window.menuData = {
                     "leaf": 1,
                     "parentcode": "06"
                 }]
+    },{
+        "code": "02",
+        "name": "框架设计",
+        "leaf": 0,
+        "iconcls": "icon-check",
+        children:[{
+            "code": "0201",
+            "name": "基本配置",
+            "url": "ruledesign.html#basic_manage/platform_Codegener_manage",
+            "leaf": 1,
+            "parentcode": "01"
+        },{
+            "code": "0202",
+            "name": "关联模型",
+            "url": "ruledesign.html#basic_manage/platform_CodegenerTable_manage",
+            "leaf": 1,
+            "parentcode": "01"
+        },{
+            "code": "0203",
+            "name": "复选组件",
+            "url": "ruledesign.html#basic_manage/platform_CodegenerCheckbox_manage",
+            "leaf": 1,
+            "parentcode": "01"
+        },{
+            "code": "0204",
+            "name": "单选组件",
+            "url": "ruledesign.html#basic_manage/platform_CodegenerRadio_manage",
+            "leaf": 1,
+            "parentcode": "01"
+        },{
+            "code": "0205",
+            "name": "弹出组件",
+            "url": "ruledesign.html#basic_manage/platform_CodegenerSelect_manage",
+            "leaf": 1,
+            "parentcode": "01"
+        }]
     }]
 };

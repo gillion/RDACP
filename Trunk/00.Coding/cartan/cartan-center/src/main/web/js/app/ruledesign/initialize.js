@@ -6,6 +6,12 @@
  */
 define(["Application",
         "js/app/ruledesign/router",
+        "js/app/ruledesign/routers/PlatformCodegenerCheckboxManageRouter",
+        "js/app/ruledesign/routers/PlatformCodegenerComboboxManageRouter",
+        "js/app/ruledesign/routers/PlatformCodegenerManageRouter",
+        "js/app/ruledesign/routers/PlatformCodegenerRadioManageRouter",
+        "js/app/ruledesign/routers/PlatformCodegenerSelectManageRouter",
+        "js/app/ruledesign/routers/PlatformCodegenerTableManageRouter",
         "js/app/ruledesign/routers/PlatformDatasetManageRouter",
         "js/app/ruledesign/routers/PlatformDatasetVarManageRouter",
         "js/app/ruledesign/routers/PlatformSectionPartitionManageRouter",
@@ -22,39 +28,50 @@ define(["Application",
         "js/demoRouter",
         "js/testRouter",
         "bootstrap"
-], function(Application, AppRouter, 
-		PlatformDatasetManageRouter,
-		PlatformDatasetVarManageRouter,
-		PlatformSectionPartitionManageRouter,
-		PlatformSectionPartitionVarManageRouter,
-		PlatformConditionPartitionManageRouter,
-		PlatformConditionPartitionNodeManageRouter,
-		PlatformRuleTreeManageRouter,
-		PlatformRuleTreeOutputManageRouter,
-		PlatformRuleTableManageRouter,
-		PlatformRuleTableInputManageRouter,
-		PlatformRuleTableOutputManageRouter,
-		PlatformRulesetManageRouter,
-		PlatformRuleManageRouter,
+], function(Application, AppRouter,
+        PlatformCodegenerCheckboxManageRouter,
+        PlatformCodegenerComboboxgeRouter,
+        PlatformCodegenerManageRouter,
+        PlatformCodegenerRadioManageRouter,
+        PlatformCodegenerSelectManageRouter,
+        PlatformCodegenerTableManageRouter,
+        PlatformDatasetManageRouter,
+        PlatformDatasetVarManageRouter,
+        PlatformSectionPartitionManageRouter,
+        PlatformSectionPartitionVarManageRouter,
+        PlatformConditionPartitionManageRouter,
+        PlatformConditionPartitionNodeManageRouter,
+        PlatformRuleTreeManageRouter,
+        PlatformRuleTreeOutputManageRouter,
+        PlatformRuleTableManageRouter,
+        PlatformRuleTableInputManageRouter,
+        PlatformRuleTableOutputManageRouter,
+        PlatformRulesetManageRouter,
+        PlatformRuleManageRouter,
             DemoRouter, TestRouter){
     //在此可以进行应用的初始化操作
     var MyApplication = Application.extend({
         applicationDidFinishLaunching: function(){
             new AppRouter(this.getAppRouterOption());    //注册该应用的路由
-            //new PlatformUserManageRouter(this.getAppRouterOption());    //注册路由：基础管理-基础用户管理
-    		new PlatformDatasetManageRouter(this.getAppRouterOption());
-    		new PlatformDatasetVarManageRouter(this.getAppRouterOption());
-    		new PlatformSectionPartitionManageRouter(this.getAppRouterOption());
-    		new PlatformSectionPartitionVarManageRouter(this.getAppRouterOption());
-    		new PlatformConditionPartitionManageRouter(this.getAppRouterOption());
-    		new PlatformConditionPartitionNodeManageRouter(this.getAppRouterOption());
-    		new PlatformRuleTreeManageRouter(this.getAppRouterOption());
-    		new PlatformRuleTreeOutputManageRouter(this.getAppRouterOption());
-    		new PlatformRuleTableManageRouter(this.getAppRouterOption());
-    		new PlatformRuleTableInputManageRouter(this.getAppRouterOption());
-    		new PlatformRuleTableOutputManageRouter(this.getAppRouterOption());
-    		new PlatformRulesetManageRouter(this.getAppRouterOption());
-    		new PlatformRuleManageRouter(this.getAppRouterOption());
+            new PlatformCodegenerCheckboxManageRouter(this.getAppRouterOption());
+            new PlatformCodegenerComboboxgeRouter(this.getAppRouterOption());
+            new PlatformCodegenerManageRouter(this.getAppRouterOption());
+            new PlatformCodegenerRadioManageRouter(this.getAppRouterOption());
+            new PlatformCodegenerSelectManageRouter(this.getAppRouterOption());
+            new PlatformCodegenerTableManageRouter(this.getAppRouterOption());
+            new PlatformDatasetManageRouter(this.getAppRouterOption());
+            new PlatformDatasetVarManageRouter(this.getAppRouterOption());
+            new PlatformSectionPartitionManageRouter(this.getAppRouterOption());
+            new PlatformSectionPartitionVarManageRouter(this.getAppRouterOption());
+            new PlatformConditionPartitionManageRouter(this.getAppRouterOption());
+            new PlatformConditionPartitionNodeManageRouter(this.getAppRouterOption());
+            new PlatformRuleTreeManageRouter(this.getAppRouterOption());
+            new PlatformRuleTreeOutputManageRouter(this.getAppRouterOption());
+            new PlatformRuleTableManageRouter(this.getAppRouterOption());
+            new PlatformRuleTableInputManageRouter(this.getAppRouterOption());
+            new PlatformRuleTableOutputManageRouter(this.getAppRouterOption());
+            new PlatformRulesetManageRouter(this.getAppRouterOption());
+            new PlatformRuleManageRouter(this.getAppRouterOption());
             new DemoRouter(this.getAppRouterOption());   //注册Demo的路由
             new TestRouter(this.getAppRouterOption());   //注册测试的路由
             return true;

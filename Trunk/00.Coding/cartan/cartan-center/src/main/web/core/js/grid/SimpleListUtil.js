@@ -343,7 +343,7 @@ define(["jquery",
                         result = $.parseJSON(result);
                         if (result.resultString=="1"){
                         } else {
-                            location.replace("demo.html#login");
+                            location.replace("loginUser.html#login");
                         }
 
                     }
@@ -355,7 +355,7 @@ define(["jquery",
             new AjaxEngine("router?appKey=000001&method=loginUser.isExistLoginUser&v=1.0&format=json",
                 {
                     async: false,
-                    data:{sessionId: sid,id: $("#id").val(),pwd: $("#pwd").val()},
+                    data:{sessionId: sid,id: $("#id").val(),pwd: $("#pwd").val(),power:$("#projectName").val()},
                     dataType: 'json',
                     complete: function(transport){
                         var result = transport.responseText;
@@ -366,8 +366,9 @@ define(["jquery",
             );
             return isSuccess;
         },
-        addSession: function(sid){
-            new AjaxEngine("router?appKey=000001&method=loginUser.addSession&v=1.0&format=json",
+        getUserId: function(sid){
+            var restr ="";
+                new AjaxEngine("router?appKey=000001&method=codegener.getUserId&v=1.0&format=json",
                 {
                     async: false,
                     data:{sessionId: sid},
@@ -375,9 +376,45 @@ define(["jquery",
                     complete: function(transport){
                         var result = transport.responseText;
                         result = $.parseJSON(result);
+                        restr=result.resultString;
+
+                    }
+                }
+            );
+            return restr;
+        },
+        modifyPwd: function(sid){
+            new AjaxEngine("router?appKey=000001&method=loginUser.modifyPwd&v=1.0&format=json",
+                {
+                    async: false,
+                    data:{sessionId: sid,pwd: $("#modifyPwd").val()},
+                    dataType: 'json',
+                    complete: function(transport){
+                        var result = transport.responseText;
+                        result = $.parseJSON(result);
+                        if (result.resultString=="1"){
+                            alert("修改成功！")
+                            location.replace("ruledesign.html?projectName="+$("#projectName").val()+"");
+                        } else {
+                            alert("未登录系统！")
+                            location.replace("loginUser.html#login");
+                        }
+                    }
+                }
+            );
+        },
+        addSession: function(sid){
+            new AjaxEngine("router?appKey=000001&method=loginUser.addSession&v=1.0&format=json",
+                {
+                    async: false,
+                    data:{sessionId: sid,userId: $("#id").val(),userName: $("#id").val(),projectName:$("#projectName").val()},
+                    dataType: 'json',
+                    complete: function(transport){
+                        var result = transport.responseText;
+                        result = $.parseJSON(result);
                         if (result.resultString=="1"){
                             alert("登录成功！")
-                            location.replace("demo.html");
+                            location.replace("ruledesign.html?projectName="+$("#projectName").val()+"");
                         } else {
                             alert("登录失败！")
                             location.reload();
@@ -458,7 +495,6 @@ define(["jquery",
                         if (result.resultJson.length>0) {
                             styleid=result.resultJson[0].id;
                         }
-
                         new AjaxEngine("router?appKey=000001&method=comcode.selectComcode&v=1.0&format=json",
                             {
                                 async: false,

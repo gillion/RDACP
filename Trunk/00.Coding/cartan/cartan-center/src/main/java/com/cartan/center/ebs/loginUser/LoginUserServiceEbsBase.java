@@ -4,6 +4,8 @@
  */
 package com.cartan.center.ebs.loginUser;
 
+import com.cartan.core.loginSession.domain.LoginSession;
+import com.cartan.core.loginSession.service.LoginSessionService;
 import com.rop.annotation.NeedInSessionType;
 import com.rop.annotation.ServiceMethod;
 import com.rop.annotation.ServiceMethodBean;
@@ -15,7 +17,12 @@ import com.cartan.core.loginUser.domain.LoginUser;
 import com.cartan.core.loginUser.service.LoginUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.log4j.Logger;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
 import com.ridge.util.CodeUtils;
 
 @ServiceMethodBean
@@ -30,6 +37,17 @@ public class LoginUserServiceEbsBase {
     @Autowired
     public void setLoginUserService(LoginUserService loginUserService) {
         this.loginUserService = loginUserService;
+    }
+
+    private LoginSessionService loginSessionService;
+
+    public LoginSessionService getLoginSessionService() {
+        return loginSessionService;
+    }
+
+    @Autowired
+    public void setLoginSessionService(LoginSessionService loginSessionService) {
+        this.loginSessionService = loginSessionService;
     }
     /**
      * 返回报文id
@@ -61,13 +79,32 @@ public class LoginUserServiceEbsBase {
     public Object addSession(LoginUserGetSessionRequest request) {
     	LoginUserGetSessionResponse loginUserGetSessionResponse = new LoginUserGetSessionResponse();
         if (request.getRopRequestContext().getRopContext().getSessionManager().getSession(request.getSessionId())==null){
-            SimpleSession session = new SimpleSession();
-            request.getRopRequestContext().getRopContext().getSessionManager().addSession(request.getSessionId(), session);
-            loginUserGetSessionResponse.setResultString("1");
+
         } else {
-        	loginUserGetSessionResponse.setResultString("0");
+            request.getRopRequestContext().getRopContext().getSessionManager().removeSession(request.getSessionId());
+            loginUserGetSessionResponse.setResultString("1");
+            LoginSession loginSession=new LoginSession();
+            loginSession.setSessionid(request.getSessionId());
+            ArrayList<LoginSession> loginSessions= loginSessionService.selectWithCondition(loginSession);
+            if (loginSessions.size()>0) {
+                loginSessionService.deleteLoginSession(loginSessions.get(0).getId());
+            }
         }
+        SimpleSession session = new SimpleSession();
+        request.getRopRequestContext().getRopContext().getSessionManager().addSession(request.getSessionId(), session);
+        LoginSession loginSession=new LoginSession();
+        loginSession.setId(CodeUtils.uuid());
+        loginSession.setSessionid(request.getSessionId());
+        loginSession.setLoginUser(request.getUserId());
+        loginSession.setUserName(request.getUserName());
+        loginSession.setProjectName(request.getProjectName());
+        Calendar c1 = Calendar.getInstance();
+        c1.setTime(new Date());
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd H:m:s");
+        loginSession.setLoginTime(format.format(c1.getTime()));
+        loginSessionService.createLoginSession(loginSession);
         loginUserGetSessionResponse.setSessionId(request.getSessionId());
+        loginUserGetSessionResponse.setResultString("1");
         return loginUserGetSessionResponse;
     }
 
@@ -86,6 +123,12 @@ public class LoginUserServiceEbsBase {
         } else {
             request.getRopRequestContext().getRopContext().getSessionManager().removeSession(request.getSessionId());
             loginUserGetSessionResponse.setResultString("1");
+            LoginSession loginSession=new LoginSession();
+            loginSession.setSessionid(request.getSessionId());
+            ArrayList<LoginSession> loginSessions= loginSessionService.selectWithCondition(loginSession);
+            if (loginSessions.size()>0) {
+                loginSessionService.deleteLoginSession(loginSessions.get(0).getId());
+            }
         }
         return loginUserGetSessionResponse;
     }
@@ -140,10 +183,42 @@ public class LoginUserServiceEbsBase {
         }
     }
     /**
-     * 变更记录
+     * 返回报文id
      * @param request 输入请求
      * @return Response 输出报文
      */
+    @ServiceMethod(method = "loginUser.modifyPwd", version = "1.0",
+            needInSession = NeedInSessionType.NO)
+    public Object modifyPwd(LoginUserGetSessionRequest request) {
+        LoginUserGetSessionResponse loginUserGetSessionResponse = new LoginUserGetSessionResponse();
+        if (request.getRopRequestContext().getRopContext().getSessionManager().getSession(request.getSessionId())==null){
+            loginUserGetSessionResponse.setResultString("0");
+            loginUserGetSessionResponse.setSessionId(request.getSessionId());
+        } else {
+            String userId="";
+            LoginSession loginSession=new LoginSession();
+            loginSession.setSessionid(request.getSessionId());
+            ArrayList<LoginSession> loginSessions= loginSessionService.selectWithCondition(loginSession);
+            if (loginSessions.size()>0) {
+                userId = loginSessions.get(0).getLoginUser();
+            }
+            LoginUser loginUser=new LoginUser();
+            loginUser=loginUserService.getLoginUser(userId);
+            if (request.getPwd()!=null){
+                loginUser.setPwd(request.getPwd());
+            }
+            loginUserService.updateLoginUser(loginUser);
+            loginUserGetSessionResponse.setResultString("1");
+            loginUserGetSessionResponse.setSessionId(request.getSessionId());
+
+        }
+        return loginUserGetSessionResponse;
+    }
+            /**
+             * 变更记录
+             * @param request 输入请求
+             * @return Response 输出报文
+             */
     @ServiceMethod(method = "loginUser.updateLoginUser", version = "1.0",
             needInSession = NeedInSessionType.NO)
     public Object updateLoginUser(LoginUserUpdateRequest request) {

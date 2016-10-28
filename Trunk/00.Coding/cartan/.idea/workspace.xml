@@ -100,17 +100,6 @@
     <file path="/PlatformSysUserManageRouter.js" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1452656337577" ignored="false" />
     <file path="/PlatformLoginUserManageRouter.js" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453257945089" ignored="false" />
     <file path="/LoginUserServiceEbsBase.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453170937256" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/request/LoginUserCreateRequest.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267690" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/response/LoginUserUpdateResponse.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267690" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/response/LoginUserSelectResponse.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267690" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/response/LoginUserSelectAllResponse.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267690" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/response/LoginUserGetSessionResponse.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267690" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/response/LoginUserDeleteResponse.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267690" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/response/LoginUserCreateResponse.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267690" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/request/LoginUserUpdateRequest.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267691" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/request/LoginUserSelectRequest.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267691" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/request/LoginUserGetSessionRequest.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267691" ignored="false" />
-    <file path="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/request/LoginUserDeleteRequest.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453195267691" ignored="false" />
     <file path="/PlatformMemberPartakeManageRouter.js" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1454386461468" ignored="false" />
     <file path="/select_grid.jsp" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1453801035150" ignored="false" />
     <file path="/SystemFunUtil.js" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1454055911723" ignored="false" />
@@ -145,7 +134,7 @@
     <file path="/importipf.html" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1461240995276" ignored="false" />
     <file path="/english.html" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1461223164847" ignored="false" />
     <file path="/finance.html" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1462723916724" ignored="false" />
-    <file path="/ruledesign.html" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1477634590726" ignored="false" />
+    <file path="/ruledesign.html" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1477643623127" ignored="false" />
     <file path="/PlatformConditionPartitionNodeManageRouter.js" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1463124139937" ignored="false" />
     <file path="$PROJECT_DIR$/cartan-core/src/test/resources/spring/RuleContext.xml" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1463132889535" ignored="false" />
     <file path="$PROJECT_DIR$/cartan-core/src/test/resources/spring/SectionPartitionVarContext.xml" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1463132889535" ignored="false" />
@@ -237,6 +226,8 @@
     <file path="/PlatformIpfCcmUiLayoutSelDialog.js" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1464835046464" ignored="false" />
     <file path="/PlatformIpfFciProjectManageRouter.js" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1464846485779" ignored="false" />
     <file path="$PROJECT_DIR$/cartan-core/src/main/java/com/cartan/core/ipfFciProject/service/IpfFciProjectServiceBase.java" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1464848261535" ignored="false" />
+    <file path="E:/mywork/cartan/cartan-center/src/main/web/loginUser.html" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1477646142973" ignored="false" />
+    <file path="/loginUser.html" changelist="bc7d1449-b08f-40a5-81d7-1ccd40580148" time="1477647797193" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,19 +299,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConditionPartitionNodeServiceEbsBase.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/conditionPartitionNode/ConditionPartitionNodeServiceEbsBase.java">
+      <file leaf-file-name="PlatformCodegenerManageRouter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformCodegenerManageRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="108" selection-start="9737" selection-end="9737" vertical-scroll-proportion="0.25742576">
+            <state line="372" column="87" selection-start="18947" selection-end="18962" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodegenerSelectMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cartan-core/src/main/java/com/cartan/core/codegenerSelect/dao/CodegenerSelectMapper.java">
+      <file leaf-file-name="PlatformLoginUserManageRouter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/routers/PlatformLoginUserManageRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+            <state line="95" column="38" selection-start="3407" selection-end="3407" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleListUtil.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/core/js/grid/SimpleListUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="400" column="38" selection-start="13101" selection-end="13101" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simplelist.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/core/js/grid/simplelist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="530" column="93" selection-start="19267" selection-end="19267" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1477647520429" expanded="false" signature="9396:9411" placeholder="..." />
+                <marker date="1477647520429" expanded="false" signature="15876:15894" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginUserServiceEbsBase.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/LoginUserServiceEbsBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="0" selection-start="3571" selection-end="3571" vertical-scroll-proportion="0.3326613">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginUser.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/loginUser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="105" selection-start="1361" selection-end="1361" vertical-scroll-proportion="-14.678572">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initialize.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/initialize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodegenerServiceEbsBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/codegener/CodegenerServiceEbsBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="586" column="103" selection-start="26687" selection-end="26687" vertical-scroll-proportion="-4.56">
               <folding />
             </state>
           </provider>
@@ -351,22 +399,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlTableManageRouter.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlColumnManageRouter.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlConstraintManageRouter.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlConstraintColumnManageRouter.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlIndexManageRouter.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlIndexColumnManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewColumnManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlViewSqlManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlElementManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlElementTextManageRouter.js" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformIpfDmlScriptPublishManageRouter.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/data/menu.json.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js" />
-        <option value="$PROJECT_DIR$/cartan-center/src/main/web/ruledesign.html" />
         <option value="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/conditionPartitionNode/ConditionPartitionNodeServiceEbsBase.java" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/data/menu.json.js" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/ruledesign.html" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/router.js" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/routers/PlatformLoginUserManageRouter.js" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/router.js" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/LoginUserServiceEbsBase.java" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/core/js/grid/simplelist.js" />
+        <option value="$PROJECT_DIR$/cartan-center/src/main/web/loginUser.html" />
       </list>
     </option>
   </component>
@@ -540,6 +588,526 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="cartan" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loginSession" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loginSession" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groupMember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groupMember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruledesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="member" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="member" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ebs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cartan-center" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ebs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loginUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1124,14 +1692,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.4939394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5368782" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6740995" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5368782" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39106146" sideWeight="0.90909094" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39106146" sideWeight="0.90909094" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43396226" sideWeight="0.5098485" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17341977" sideWeight="0.40137222" order="2" side_tool="true" content_ui="tabs" />
@@ -1144,7 +1712,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19903949" sideWeight="0.6089386" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4716981" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23906083" sideWeight="0.6089386" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2379936" sideWeight="0.6089386" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4905028" sideWeight="0.4848485" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="92" width="1096" height="544" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -1295,59 +1863,117 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/ruledesign.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/ruledesign.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.9873016" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/initialize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="71" selection-start="3127" selection-end="3127" vertical-scroll-proportion="1.6634921" />
+        <state line="26" column="61" selection-start="1509" selection-end="1509" vertical-scroll-proportion="25.24">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/data/menu.json.js">
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="64" selection-start="1984" selection-end="1984" vertical-scroll-proportion="1.3428571" />
+        <state line="50" column="68" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/resources/conf/conf.properties">
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/initialize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/ruledesign.html">
+    <entry file="file://$PROJECT_DIR$/cartan-core/src/main/java/com/cartan/core/groupMember/domain/GroupMember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="55" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.37380952">
+        <state line="7" column="13" selection-start="111" selection-end="111" vertical-scroll-proportion="0.26814517">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-core/src/main/java/com/cartan/core/codegenerSelect/dao/CodegenerSelectMapper.java">
+    <entry file="file://$PROJECT_DIR$/cartan-core/src/main/java/com/cartan/core/loginSession/domain/LoginSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+        <state line="7" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.26814517">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/conditionPartitionNode/ConditionPartitionNodeServiceEbsBase.java">
+    <entry file="file://$PROJECT_DIR$/cartan-core/src/main/java/com/cartan/core/loginSession/dao/LoginSessionMapperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="108" selection-start="9737" selection-end="9737" vertical-scroll-proportion="0.25742576">
+        <state line="27" column="28" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.5279503">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-core/src/main/java/com/cartan/core/loginSession/service/LoginSessionServiceBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="43" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.37096775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/ruledesign/routers/PlatformCodegenerManageRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="372" column="87" selection-start="18947" selection-end="18962" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/templates/modifyPwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="79" selection-start="511" selection-end="511" vertical-scroll-proportion="0.040598292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/loginUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="105" selection-start="1361" selection-end="1361" vertical-scroll-proportion="-14.678572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/core/js/grid/simplelist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="530" column="93" selection-start="19267" selection-end="19267" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1477647520429" expanded="false" signature="9396:9411" placeholder="..." />
+            <marker date="1477647520429" expanded="false" signature="15876:15894" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/core/js/grid/SimpleListUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="400" column="38" selection-start="13101" selection-end="13101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/web/js/app/member/routers/PlatformLoginUserManageRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="38" selection-start="3407" selection-end="3407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/codegener/CodegenerServiceEbsBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="586" column="103" selection-start="26687" selection-end="26687" vertical-scroll-proportion="-4.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartan-center/src/main/java/com/cartan/center/ebs/loginUser/LoginUserServiceEbsBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3571" selection-end="3571" vertical-scroll-proportion="0.3326613">
           <folding />
         </state>
       </provider>

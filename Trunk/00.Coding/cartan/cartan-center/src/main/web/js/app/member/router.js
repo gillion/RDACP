@@ -9,16 +9,19 @@ define(["types/Class",
         "base/BaseRouter",
         "base/BaseView",
         "text!js/app/member/templates/login.html",
+        "text!js/app/member/templates/modifyPwd.html",
         "text!templates/home.html",
         'text!templates/nav_list_menu.html',
         'js/app/member/data/menu.json'
-    ], function(Class, Log, BaseRouter, BaseView, LoginViewTemplate, HomeViewTemplate, navListMenuTemplate){
+    ], function(Class, Log, BaseRouter, BaseView, LoginViewTemplate, ModifyPwdViewTemplate, HomeViewTemplate, navListMenuTemplate){
 
 
         var MyAppRouter = BaseRouter.extend({
             routes: {
                 "": "index",
                 "login": "login",   //登录界面
+                "modifyPwd": "modifyPwd",   //修改密码界面
+                "logout": "logout",   //登录界面
                 "home": "home"    //首页
             },
             initialize: function() {
@@ -39,6 +42,24 @@ define(["types/Class",
                 }});
                 this.changePage(menuView);;  //显示菜单
                 var loginView = new BaseView({id: "login", title: "登陆界面", viewTemplate:  LoginViewTemplate, data: {}});
+                this.changePage(loginView);
+                this.showPlatformckLoginUserManageList();
+            },
+            modifyPwd: function(){
+                var menuView = new BaseView({el: "#sidebar-nav", viewTemplate:  navListMenuTemplate, data: menuData["menus"], ready: function(){
+//                    alert("菜单加载完毕");
+                }});
+                // this.changePage(menuView);;  //显示菜单
+                var modifyPwdView = new BaseView({id: "modifyPwd", title: "修改密码", viewTemplate:  ModifyPwdViewTemplate, data: {}});
+                this.changePage(modifyPwdView);
+                this.showPlatformModifyPwdManageList();
+            },
+            logout: function(){
+                var menuView = new BaseView({el: "#sidebar-nav", viewTemplate:  navListMenuTemplate, data: menuData["menus"], ready: function(){
+//                    alert("菜单加载完毕");
+                }});
+                //this.changePage(menuView);;  //显示菜单
+                var loginView = new BaseView({id: "login", title: "退出界面", viewTemplate:  LoginViewTemplate, data: {}});
                 this.changePage(loginView);
                 this.showPlatformckLoginUserManageList();
             },
