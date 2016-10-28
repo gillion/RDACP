@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cartan-center/cartan-center.iml" filepath="$PROJECT_DIR$/cartan-center/cartan-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/cartan-core/cartan-core.iml" filepath="$PROJECT_DIR$/cartan-core/cartan-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cartan-parent/cartan-parent.iml" filepath="$PROJECT_DIR$/cartan-parent/cartan-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/cartan-service/cartan-service.iml" filepath="$PROJECT_DIR$/cartan-service/cartan-service.iml" />
     </modules>
   </component>
