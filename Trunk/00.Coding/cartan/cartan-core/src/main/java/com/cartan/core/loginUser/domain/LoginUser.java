@@ -10,6 +10,7 @@ public class LoginUser implements Serializable{
 	private String user;//账号
 	private String pwd;//密码
 	private String power;//权限
+	private String templateType;//templateType
 	
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	public String getId() {
@@ -45,6 +46,15 @@ public class LoginUser implements Serializable{
 	
 	public void setPower(String value) {
 		this.power = value;
+	}
+	
+
+	public String getTemplateType() {
+		return this.templateType;
+	}
+	
+	public void setTemplateType(String value) {
+		this.templateType = value;
 	}
 	
 

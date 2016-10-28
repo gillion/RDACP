@@ -37,6 +37,9 @@ public class LoginUserSqlProvider {
         if(StringUtils.isNotBlank(loginUser.getPower())){
         	conditionsStr.append(" and power like  CONCAT('%',#{loginUser.power},'%')");
         }
+        if(StringUtils.isNotBlank(loginUser.getTemplateType())){
+        	conditionsStr.append(" and templateType like  CONCAT('%',#{loginUser.templateType},'%')");
+        }
         return  conditionsStr.toString();
     }
 }

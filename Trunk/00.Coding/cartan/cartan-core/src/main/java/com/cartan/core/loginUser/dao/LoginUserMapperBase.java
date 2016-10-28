@@ -9,13 +9,13 @@ public interface LoginUserMapperBase {
 	@Select("SELECT * FROM cartan_common.t_login_user s WHERE s.id = #{id}")
 	LoginUser getLoginUser(String id);
 	
-	@Insert("INSERT INTO cartan_common.t_login_user(id,user,pwd,power) VALUES(#{id},#{user},#{pwd},#{power})")
+	@Insert("INSERT INTO cartan_common.t_login_user(id,user,pwd,power,templateType) VALUES(#{id},#{user},#{pwd},#{power},#{templateType})")
     void createLoginUser(LoginUser loginUser);
     
     @Delete("DELETE FROM cartan_common.t_login_user WHERE id = #{id}")
     void deleteLoginUser(String id);
 
-    @Update("update cartan_common.t_login_user set user=#{user},pwd=#{pwd},power=#{power} where id = #{id}")
+    @Update("update cartan_common.t_login_user set user=#{user},pwd=#{pwd},power=#{power},templateType=#{templateType} where id = #{id}")
     void updateLoginUser(LoginUser loginUser);
 
     @Select("select count(*) c from cartan_common.t_login_user")

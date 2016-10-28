@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import com.cartan.center.ebs.ruleset.FileProperties;
 
 @ServiceMethodBean
 public class RulesetServiceEbsBase {
@@ -265,6 +266,8 @@ public class RulesetServiceEbsBase {
                     request.getRopRequestContext().getLocale(), request.getId());
         } else{
                  /*
+            FileProperties props_CorpTotal = new FileProperties("d:/CodeGener/config.properties");
+            String sysname = props_CorpTotal.getProperty("sysname");
             try {
                 Runtime.getRuntime().exec("cmd /c start c:/CodeGener/Gener.bat");
             } catch (IOException e) {
