@@ -15,7 +15,7 @@ public class RulesetSqlProvider {
 
     public static String getSql(Map<String, Object> parameter){
 
-        StringBuffer conditionsStr=new StringBuffer("select * from cartan_common.T_RULESET where 1=1 ");
+        StringBuffer conditionsStr=new StringBuffer("select * from cartan_common.t_ruleset where 1=1 ");
 
 
         if(parameter.get("conditions")!=null){

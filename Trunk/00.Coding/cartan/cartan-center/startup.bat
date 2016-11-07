@@ -1,1 +1,1 @@
-F:\tools\java\maven\bin\mvn jetty:run
+E:\tools\java\maven\bin\mvn jetty:run
