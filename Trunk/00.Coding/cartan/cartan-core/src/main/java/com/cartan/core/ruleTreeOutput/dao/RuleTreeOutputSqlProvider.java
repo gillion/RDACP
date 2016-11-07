@@ -15,7 +15,7 @@ public class RuleTreeOutputSqlProvider {
 
     public static String getSql(Map<String, Object> parameter){
 
-        StringBuffer conditionsStr=new StringBuffer("select * from cartan_common.T_RULE_TREE_OUTPUT where 1=1 ");
+        StringBuffer conditionsStr=new StringBuffer("select * from cartan_common.t_rule_tree_output where 1=1 ");
 
 
         if(parameter.get("conditions")!=null){
