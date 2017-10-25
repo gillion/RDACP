@@ -50,13 +50,13 @@
 		</#list>
 	</sql>
 
-<sql id="ui_query_condition">
+<sql id="ui_query_conditon">
 <where>
 	1 = 1
 	<if test="conditions!=null and conditions.size() >0">
 		<foreach collection="conditions" item="condition" index="index">
 		<#list table.columns as column>
-		<if test="condition.fieldname!=null and condition.fieldname=='${column.sqlName}' and condition.fieldvalue !=null">
+		<if test="condition.fieldname!=null and condition.fieldname=='${column.sqlName}' and conditon.fieldvalue !=null">
 			<if test="condition.union!=null and condition.union=='and' ">
 				AND
 			</if>
@@ -116,88 +116,88 @@ select
 FROM ${table.sqlName}
 <include refid="ui_query_condition"/>
 GROUP BY
-<include refid="ui_groupby_condition"/>
+<include refid="ui_groupby_conditon"/>
 </select>
 
-<sql id="ui_sum_condition">
-	<if test="groupfields!=null and groupfields.size()>0">
-		<foreach collection="groupfields" item="condition" index="index">
-			<if test="index==0">
-				<#list table.columns as column>
-					<if test="condition.relation!=null and condition.relation=='sum'">
-						<if test="condition.fieldname !=null and condition.fieldname=='${column.sqlName}'">
-							<foreach collection="condition.fieldvalue" item="item" index="itemindex">
-								<#list table.columns as itemcolumn>
-									<if test="item!=null and item=='${itemcolumn.sqlName}'">
-										${itemcolumn.sqlName},
-									</if>
-								</#list>
-							</foreach>
-							sum(${column.sqlName}) as ${column.sqlName}
-						</if>
-					</if>
-				</#list>
+<sql id="ui_sum_conditon">
+<if test="groupfields!=null and groupfields.size()>0">
+	<foreach collection="groupfields" item="conditon" index="index">
+		<if test="index==0">
+		<#list table.columns as column>
+		<if test="condition.relation!=null and condition.relation=='sum'">
+		<if test="conditon.fieldname !=null and conditon.fieldname=='${column.sqlName}'">
+		<foreach collection="conditon.fieldvalue" item="item" index="itemindex">
+			<#list table.columns as itemcolumn>
+			<if test="item!=null and item=='${itemcolumn.sqlName}'">
+				${itemcolumn.sqlName},
 			</if>
+		</#list>
+	</foreach>
+	sum(${column.sqlName}) as ${column.sqlName}
+</if>
+</if>
+		</#list>
+		</if>
 		</foreach>
-	</if>
-</sql>
+		</if>
+		</sql>
 
 <sql id="ui_groupby_condition">
-	<if test="groupfields!=null and groupfields.size()>0">
-		<foreach collection="groupfields" item="condition" index="index">
-			<if test="index==0">
-				<#list table.columns as column>
-					<if test="condition.relation!=null and condition.relation =='sum'">
-						<if test="condition.fieldname!=null and condition.fieldname=='${column.sqlName}' ">
-							<foreach collection="condition.fieldvalue" item="item" index="itemindex">
-								<#list table.columns as itemcolumn>
-									<if test="item!=null and item=='${itemcolumn.sqlName}'">
-										<if test="itemindex==0">
-											${itemcolumn.sqlName}
-										</if>
-										<if test="itemindex!=0">
-											,${itemcolumn.sqlName}
-										</if>
-									</if>
-								</#list>
-							</foreach>
-						</if>
-					</if>
-				</#list>
+<if test="groupfields!=null and groupfields.size()>0">
+	<foreach collection="groupfields" item="condition" index="index">
+		<if test="index==0">
+		<#list table.columns as column>
+		<if test="condition.relation!=null and condition.relation =='sum'">
+			<if test="condition.fieldname!=null and condition.fieldname=='${column.sqlName}' ">
+				<foreach collection="condition.fieldvalue' item="item" index="itemindex">
+									<#list table.columns as itemcolumn>
+										<if test="item!=null and item=='${itemcolumn.sqlName}'">
+				<if test="itemindex==0">
+					${itemcolumn.sqlName}
+				</if>
+				<if test="itemindex!=0">
+					,${itemcolumn.sqlName}
+				</if>
 			</if>
+		</#list>
+	</foreach>
+</if>
+</if>
+		</#list>
+		</if>
 		</foreach>
-	</if>
-</sql>
+		</if>
+		</sql>
 
 <sql id="ui_orderby_condition">
-	<if test="conditions!=null and conditions.size()>0">
-		<foreach collection="conditions" item="condition" index="index">
-			<if test="condition.relation!=null and condition.relation =='orderby'">
-				<foreach collection="condition.fieldvalue" item="item" index="itemindex">
-					<#list table.columns as itemcolumn>
-						<if test="item!=null and item=='${itemcolumn.sqlName}'">
-							<if test="itemindex==0">
-								ORDER BY ${itemcolumn.sqlName}
-							</if>
-							<if test="itemindex!=0">
-								,${itemcolumn.sqlName}
-							</if>
-						</if>
-					</#list>
-				</foreach>
-				<if test="condition.fieldname==null">
-					desc
-				</if>
-				<if test="condition.fieldname!=null and condition.fieldname=='desc'">
-					desc
-				</if>
-				<if test="condition.fieldname!=null and condition.fieldname=='asc'">
-					asc
-				</if>
+<if test="conditions!=null and conditions.size()>0">
+	<foreach collection="conditions" item="condition" index="index">
+		<if test="condition.relation!=null and condition.relation =='orderby'">
+			<foreach collection="condition.fieldvalue' item="item" index="itemindex">
+								<#list table.columns as itemcolumn>
+									<if test="item!=null and item=='${itemcolumn.sqlName}'">
+			<if test="itemindex==0">
+				ORDER BY ${itemcolumn.sqlName}
 			</if>
+			<if test="itemindex!=0">
+				,${itemcolumn.sqlName}
+			</if>
+		</if>
+	</#list>
+</foreach>
+<if test="conditon.fieldname==null">
+	desc
+</if>
+<if test="condition.fieldname!=null and condition.fieldname=='desc'">
+	desc
+</if>
+<if test="condition.fieldname!=null and condition.fieldname=='asc'">
+	asc
+</if>
+</if>
 		</foreach>
-	</if>
-</sql>
+		</if>
+		</sql>
 
 <select id="findPageByCondOrder" resultMap="${classNameLower}ResultMap" parameterType="${basepackage}.common.pojo.${moduleName}.${className}">
 select *
@@ -232,43 +232,43 @@ from ${table.sqlName}
 
 
 <sql id="ui_same_condition">
-	<if test="samefields!=null and samefields.size()>0">
-		<foreach collection="samefields" item="condition" index="index">
-			<if test="index==0">
-				<if test="condition.relation!=null and condition.relation =='same'">
-					<foreach collection="condition.fieldvalue" item="item" index="itemindex">
-						<#list table.columns as itemcolumn>
-							<if test="item!=null and item=='${itemcolumn.sqlName}'">
-								and a.${itemcolumn.sqlName} = t.${itemcolumn.sqlName}
-							</if>
-						</#list>
-					</foreach>
-				</if>
+<if test="samefields!=null and samefields.size()>0">
+	<foreach collection="samefields" item="condition" index="index">
+		<if test="index==0">
+			<if test="condition.relation!=null and condition.relation =='same'">
+				<foreach collection="condition.fieldvalue' item="item" index="itemindex">
+								<#list table.columns as itemcolumn>
+									<if test="item!=null and item=='${itemcolumn.sqlName}'">
+				and a.${itemcolumn.sqlName} = t.${itemcolumn.sqlName}
 			</if>
+		</#list>
+	</foreach>
+</if>
+</if>
 		</foreach>
-	</if>
-</sql>
+		</if>
+		</sql>
 
 <sql id="ui_sumoravg_condition">
-	<if test="conditions!=null and conditions.size()>0">
-		<foreach collection="conditions" item="condition" index="index">
-			<if test="condition.relation!=null and condition.relation =='sum'">
-				<foreach collection="condition.fieldvalue" item="item" index="itemindex">
-					<#list table.columns as itemcolumn>
-						<if test="item!=null and item=='${itemcolumn.sqlName}'">
-							<if test="itemindex==0">
-								sum(${itemcolumn.sqlName}) as ${itemcolumn.sqlName}
-							</if>
-							<if test="itemindex!=0">
-								,sum(${itemcolumn.sqlName}) as ${itemcolumn.sqlName}
-							</if>
-						</if>
-					</#list>
-				</foreach>
+<if test="conditions!=null and conditions.size()>0">
+	<foreach collection="conditions" item="condition" index="index">
+		<if test="condition.relation!=null and condition.relation =='sum'">
+			<foreach collection="condition.fieldvalue' item="item" index="itemindex">
+								<#list table.columns as itemcolumn>
+									<if test="item!=null and item=='${itemcolumn.sqlName}'">
+			<if test="itemindex==0">
+				sum(${itemcolumn.sqlName}) as ${itemcolumn.sqlName}
 			</if>
+			<if test="itemindex!=0">
+				,sum(${itemcolumn.sqlName}) as ${itemcolumn.sqlName}
+			</if>
+		</if>
+	</#list>
+</foreach>
+</if>
 		</foreach>
-	</if>
-</sql>
+		</if>
+		</sql>
 
 <select id="findSumOrAvgInfo" resultMap="${classNameLower}ResultMap" parameterType="map">
 SELECT
@@ -282,7 +282,7 @@ FROM ${table.sqlName}
 <include refid="Base_Column_List"/>
 		from ${table.sqlName}
 <#if isHasKey==1>where ${prikey} = ${leftbit}${pricolumn}${rightbit}<#else>${firstprikey} = ${leftbit}${firstpricolumn}${rightbit}</#if>
-</select>
+		</select>
 
 
 <select id="findByIds" resultMap="${classNameLower}ResultMap" parameterType="java.util.List">
@@ -293,7 +293,7 @@ FROM ${table.sqlName}
 	<#if isHasKey==1>where ${prikey} in <#else>where ${firstprikey} in</#if>
 <foreach collection="list" item="id" index="index" open="(" close=")" separator=",">${leftbit}id${rightbit}</foreach>
 </if>
-</select>
+		</select>
 
 <select id="find" resultMap="${classNameLower}ResultMap" parameterType="map">
 select
@@ -308,8 +308,8 @@ select * from (select tt.*.rownum as rn from (select
 from ${table.sqlName} t
 <include refid="ui_query_condition"/>
 <#if isHasKey==1>order by t.${prikey}desc) tt<#else>order by t.${firstprikey} desc) tt</#if>
-<![CDATA[ WHERE rownum<=${leftbit}pageVO.endIndex${rightbit}) WHERE rn>=${leftbit}pageVO.startIndex${rightbit}]]>
-</select>
+		<![CDATA[ WHERE rownum<=${leftbit}pageVO.endIndex${rightbit}) WHERE rn>=${leftbit}pageVO.startIndex${rightbit}]]>
+		</select>
 
 <select id="findByPageCount" parameterType="map" resultType="int">
 SELECT count(*) as count FROM ${table.sqlName}
@@ -319,16 +319,16 @@ SELECT count(*) as count FROM ${table.sqlName}
 <insert id="insert" parameterType="${basepackage}.common.pojo.${moduleName}.${className}">
 <#if priSqlType=="VARCHAR2"||priSqlType=="NVARCHAR2"||priSqlType=="CHAR">
 <#else>
-	<#if isHasKey ==1>
-	<selectKey keyProperty="${classNameLower}.${pricolumn}" resultType="long" order="BEFORE">
-		SELECT ${seqname}.NEXTVAL as ${pricolumn} FROM DUAL
-	</selectKey>
-	<#else>
-	<selectKey keyProperty="${classNameLower}.${firstpricolumn}" resultType="long" order="BEFORE">
-		SELECT ${seqname}.NEXTVAL as ${firstpricolumn} FROM DUAL
-	</selectKey>
-	</#if>
+<#if isHasKey ==1>
+<selectKey keyProperty="${classNameLower}.${pricolumn}" resultType="long" order="BEFORE">
+	SELECT ${seqname}.NEXTVAL as ${pricolumn} FROM DUAL
+</selectKey>
+<#else>
+<selectKey keyProperty="${classNameLower}.${firstpricolumn}" resultType="long" order="BEFORE">
+	SELECT ${seqname}.NEXTVAL as ${firstpricolumn} FROM DUAL
+</selectKey>
 </#if>
+		</#if>
 		INSERT INTO ${table.sqlName}(
 <#assign keycount = 0>
 <#list table.columns as column>
@@ -376,7 +376,7 @@ ${leftbit}${classNameLower}.${column.columnNameLower}${rightbit},
 
 		</insert>
 
-<update id="update" parameterType="${basepackage}.common.pojo.${moduleName}.${className}">
+<update id="update${className}" parameterType="${basepackage}.common.pojo.${moduleName}.${className}">
 update ${table.sqlName}
 <set>
 	<#assign keycount = 0>
@@ -426,17 +426,21 @@ ${column.sqlName} =${leftbit}${column.columnNameLower}${rightbit},
 <#else>
 		WHERE ${firstprikey} = ${leftbit}${firstpricolumn}${rightbit}
 		</#if>
-</delete>
-
-<delete id="batchDelete" parameterType="map">
+		</delete>
+<delete id="deleteById" parameterType="map">
 <#if isHasKey == 1>
 delete from ${table.sqlName} where ${prikey} in <foreach collection="voList" item="vo" open="(" close=")" separator=",">${leftbit}vo.${pricolumn}${rightbit}</foreach>
 <#else>
 delete from ${table.sqlName} where ${firstprikey} in <foreach collection="voList" item="vo" open="(" close=")" separator=",">${leftbit}vo.${firstpricolumn}${rightbit}</foreach>
 </#if>
+		</delete>
+
+<delete id="delete" parameterType="${basepackage}.common.pojo.${moduleName}.${className}">
+delete from ${table.sqlName}
+<include refid="ui_find_condition"/>
 </delete>
 
-<sql id="ui_find_condition">
+<sql id="ui_find_conditon">
 <where>
 	1 = 1
 	<#list table.columns as column>

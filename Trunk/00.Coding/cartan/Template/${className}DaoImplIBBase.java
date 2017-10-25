@@ -49,6 +49,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cn.ibm.view.PageVO;
+import cn.ibm.view.PagedResult;
+import cn.ibm.view.ConditionVO;
+import java.math.BigDecimal;
 
 /**
  * tableName: ${table.tableAlias}
@@ -60,6 +64,49 @@ import java.util.Map;
  */
 @Repository
 public class ${className}DaoImplIBBase extends BaseDaoImpl<${className},String> implements ${className}DaoIBBase{
+
+	<#if isHasKey==1>
+	public ${className} selectById(@Param("${pricolumn}"<#if priSqlType=="VARCHAR2"||priSqlType=="NVARCHAR2"||priSqlType=="CHAR">String<#else>Long</#if> ${pricolumn});
+	<#else>
+	public ${className} selectById(@Param("${firstpricolumn}" Long ${firstpricolumn});
+	</#if>
+
+	List<${className}>findByIds(List<<#if isHasKey==1><#if priSqlType=="VARCHAR2"||priSqlType=="NVARCHAR2"||priSqlType=="CHAR">String<#else>Long</#if><#else>Long</#if>> ids);
+
+	List<${className}>find(@Param("conditions") List<ConditionVO> conditions);
+
+	List<${className}>findByPage(@Param("pageVO") PageVO pageVO,@Param("conditions") List<ConditionVO> conditions);
+
+	public int insert(@Param("${classNameLower}") ${className} ${classNameLower});
+
+	public int update(@Param("${classNameLower}") ${className} ${classNameLower});
+
+	public int delete(@Param("${classNameLower}") ${className} ${classNameLower});
+
+	<#if isHasKey==1>
+	public int deleteById(@Param("${pricolumn}"<#if priSqlType=="VARCHAR2"||priSqlType=="NVARCHAR2"||priSqlType=="CHAR">String<#else>Long</#if> ${pricolumn});
+	<#else>
+	public int deleteById(@Param("${firstpricolumn}" Long ${firstpricolumn});
+	</#if>
+	public int findByEntityCount(@Param("conditions") List<ConditionVO> conditions);
+
+	public int getSequence();
+
+	public int deleteByCond(@Param("conditions") List<ConditionVO> conditions);
+
+	List<${className}>findSumByCond(@Param("groupfields") List<ConditionVO> groupfields,@Param("conditions") List<ConditionVO> conditions);
+
+	public PagedResult<${className}> findPageByCondOrder(@Param("pageVO") PageVO pageVO,@Param("conditions") List<ConditionVO> conditions);
+
+	public int findPageByCondOrderCount(@Param("pageVO") PageVO pageVO,@Param("conditions") List<ConditionVO> conditions);
+
+	List<${className}> findSameByCond(@Param("samefields") List<ConditionVO> samefields,@Param("conditions") List<ConditionVO> conditions);
+
+	List<${className}> findSumOrAvgInfo(@Param("conditions") List<ConditionVO> conditions);
+
+	int batchDelete(@Param("voList") List<${className}> voList);
+
+	List<${className}> findInstanceListInfo(@Param("${classNameLower}") ${className} ${classNameLower});
 
     /**
      * 根据ID获取对象
