@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/pdms/!svn/ver/417/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/twoTable/grid
+END
+common_var.include
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/pdms/!svn/ver/69/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/twoTable/grid/common_var.include
+END
+${clazz.underLineName}_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/pdms/!svn/ver/402/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/twoTable/grid/$%7Bclazz.underLineName%7D_edit.jsp
+END
+${clazz.underLineName}_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/pdms/!svn/ver/417/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/twoTable/grid/$%7Bclazz.underLineName%7D_list.jsp
+END

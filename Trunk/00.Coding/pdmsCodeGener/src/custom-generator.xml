@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>
+		代码生成器配置文件: 
+		1.会为所有的property生成property_dir属性,如pkg=com.company => pkg_dir=com/company
+		2.可以引用环境变量: ${env.JAVA_HOME} or System.properties: ${user.home},property之间也可以相互引用
+	</comment>
+	
+	<entry key="zh_connstr">128.196.32.29:3001</entry>
+	<entry key="domainhome">crmc_ces</entry>
+	<entry key="username">crmc_ces</entry>
+	<entry key="outRoot">C:/deploy/cartan/code</entry>
+	<entry key="Srvname">mSrv1.sh</entry>
+  	<entry key="weblogicinstall">/home/mw/weblogic/wls1036</entry>
+	<entry key="JAVAPATH">/usr/local/java/jdk1.6.0_43</entry>  
+  	<entry key="SADIR">/home/ap/sa/sa</entry>
+	
+	<entry key="securityManagermode">ON</entry>
+	<entry key="seekManagerdynamicSeek">ON</entry>
+	<entry key="seekManageronStartUpSeek">ON</entry>
+	
+
+	<entry key="consoleuri">/NCES/</entry>
+	<entry key="secnodeid">112010</entry>
+	<entry key="registrationip1">128.196.36.81</entry>
+	<entry key="registrationip2">128.196.36.82</entry>
+	<entry key="registrationip3">128.196.36.83</entry>
+	<entry key="registrationport1">8101</entry>
+	<entry key="registrationport2">8101</entry>
+	<entry key="registrationport3">8101</entry>
+	
+	<entry key="basepackage">com.cartan.center</entry>
+	<entry key="urlroot"></entry>
+	<!-- 
+	<entry key="urlroot">http://liuxibin.vicp.cc:8088/</entry>
+	<entry key="moduleName">portal</entry>	
+	 -->
+	
+	
+	<!-- 需要移除的表名前缀,使用逗号进行分隔多个前缀,示例值: t_,v_ -->
+	
+	<!-- oracle需要指定jdbc.schema,其它数据库忽略此项配置  -->
+	<!-- 
+	<entry key="tableRemovePrefixes">_T,_t,T,t</entry>
+	<entry key="schemaName">OCRMDB</entry>
+	<entry key="jdbc.schema">OCRMDB</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">SYSTEM</entry>
+	<entry key="jdbc.password">ocrm</entry>
+	<entry key="jdbc.url">jdbc:oracle:thin:@192.168.128.135:1521:OCRMDB</entry>
+	<entry key="jdbc.driver">oracle.jdbc.driver.OracleDriver</entry>	
+	
+	<entry key="schemaName">PDMS</entry>
+	<entry key="jdbc.schema">PDMS</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">pdms</entry>
+	<entry key="jdbc.password">pdms123</entry>
+	<entry key="jdbc.url">jdbc:db2://10.188.180.232:50000/pdms:currentSchema=PDMS;</entry>
+	<entry key="jdbc.driver">com.ibm.db2.jcc.DB2Driver</entry>
+	
+	
+	<entry key="schemaName">PDMS</entry>
+	<entry key="jdbc.schema">PDMS</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">db2admin</entry>
+	<entry key="jdbc.password">admin</entry>
+	<entry key="jdbc.url">jdbc:db2://192.168.128.131:50000/pdms:currentSchema=PDMS;</entry>
+	<entry key="jdbc.driver">com.ibm.db2.jcc.DB2Driver</entry>
+	<entry key="tableRemovePrefixes">_T,_t,T,t,T_,t_</entry>
+	
+	
+	
+	<entry key="tableRemovePrefixes">_T,_t,T,t</entry>
+	<entry key="schemaName">SYSTEM</entry>
+	<entry key="jdbc.schema">SYSTEM</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">system</entry>
+	<entry key="jdbc.password">system</entry>
+	<entry key="jdbc.url">jdbc:oracle:thin:@192.168.128.134:1521:JFGL</entry>
+	<entry key="jdbc.driver">oracle.jdbc.driver.OracleDriver</entry>	
+	
+	<entry key="tableRemovePrefixes">_T,_t,T,t,T_,t_</entry>
+	<entry key="schemaName">cartan_common</entry>
+	<entry key="jdbc.schema">cartan_common</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">root</entry>
+	<entry key="jdbc.password">anotherlxb</entry>
+	<entry key="jdbc.url">jdbc:mysql://127.0.0.1:3306/cartan_common?useUnicode=true</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+	
+	
+	
+	<entry key="tableRemovePrefixes">diyou_,_T,_t,T,t,T_,t_</entry>
+	<entry key="schemaName">njb</entry>
+	<entry key="jdbc.schema">njb</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">root</entry>
+	<entry key="jdbc.password">root</entry>
+	<entry key="jdbc.url">jdbc:mysql://172.16.126.132:3306/njb?useUnicode=true</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+	
+	<entry key="tableRemovePrefixes">_T,_t,T,t,T_,t_</entry>
+	<entry key="schemaName">cartan_common</entry>
+	<entry key="jdbc.schema">cartan_common</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">root</entry>
+	<entry key="jdbc.password">root</entry>
+	<entry key="jdbc.url">jdbc:mysql://127.0.0.1:3306/cartan_common?useUnicode=true</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+	
+	<entry key="tableRemovePrefixes">diyou_,_T,_t,T_,t_</entry>
+	<entry key="schemaName">train</entry>
+	<entry key="jdbc.schema">train</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">root</entry>
+	<entry key="jdbc.password">anotherlxb123</entry>
+	<entry key="jdbc.url">jdbc:mysql://39.106.32.159:3506/train?useUnicode=true</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+	
+	
+	
+	<entry key="tableRemovePrefixes">DB_</entry>
+	<entry key="schemaName">rescoure_rec</entry>
+	<entry key="jdbc.schema">rescoure_rec</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">root</entry>
+	<entry key="jdbc.password">root</entry>
+	<entry key="jdbc.url">jdbc:mysql://10.39.144.215:4000/rescoure_rec?useUnicode=true</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+	
+	-->
+	
+	<entry key="tableRemovePrefixes">diyou_,_T,_t,T_,t_</entry>
+	<entry key="schemaName">njb</entry>
+	<entry key="jdbc.schema">njb</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">root</entry>
+	<entry key="jdbc.password">root</entry>
+	<entry key="jdbc.url">jdbc:mysql://172.16.126.132:3306/njb?useUnicode=true</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+	
+	
+	<!-- 数据库类型映射  -->
+	<entry key="java_typemapping.java.sql.Timestamp">Date</entry>
+	<entry key="java_typemapping.java.sql.Date">Date</entry>
+	<entry key="java_typemapping.java.sql.Time">Date</entry>	
+	<entry key="java_typemapping.java.lang.Byte">Long</entry>
+	<entry key="java_typemapping.java.lang.Short">Long</entry>
+	<entry key="java_typemapping.java.lang.Integer">Long</entry>
+	<entry key="java_typemapping.java.lang.String">String</entry>	
+	<entry key="java_typemapping.java.math.BigDecimal">BigDecimal</entry>	
+	<entry key="java_typemapping.java.lang.Boolean">Boolean</entry>
+	<entry key="java_typemapping.java.lang.Long">Long</entry>
+	<!-- 数据库映射END -->
+</properties>

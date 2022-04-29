@@ -1,0 +1,22 @@
+<#assign className = table.className>   
+<#assign classNameLower = className?uncap_first> 
+CREATE TABLE ${table.sqlName}(
+<#list table.columns as column>
+<#if !column.sqlName?starts_with("DEFINE")>
+<#if column.sqlTypeName=="VARCHAR2"||column.sqlTypeName=="CHAR">
+${column.sqlName} ${column.sqlTypeName}(${column.size}),//${column.columnAlias}
+<#elseif column.sqlTypeName=="NUMBER" >
+${column.sqlName} ${column.sqlTypeName}(${column.size},${column.decimalDigits}),//${column.columnAlias}
+<#else>
+${column.sqlName} ${column.sqlTypeName},//${column.columnAlias}
+</#if>
+</#if>
+</#list>
+CONSTRAINT ${table.sqlName}_PK PRIMARY KEY (<#assign porpNo = 0><#list table.columns as column><#if column.pk><#assign porpNo=porpNo+1><#if porpNo==1>${column.sqlName}<#else>,${column.sqlName}</#if></#if></#list>)
+);
+comment on table ${table.sqlName}
+  is ${table.remarks};
+<#list table.columns as column>
+comment on column ${table.sqlName}.${column.sqlName}
+  is ${column.columnAlias};
+</#list>

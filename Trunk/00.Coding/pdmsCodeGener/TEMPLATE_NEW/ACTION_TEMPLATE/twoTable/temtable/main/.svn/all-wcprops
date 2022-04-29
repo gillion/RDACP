@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/pdms/!svn/ver/417/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/ACTION_TEMPLATE/twoTable/temtable/main
+END
+${clazz.className}Action.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/pdms/!svn/ver/3235/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/ACTION_TEMPLATE/twoTable/temtable/main/$%7Bclazz.className%7DAction.java
+END
+struts-${moduleName}.xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/pdms/!svn/ver/3235/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/ACTION_TEMPLATE/twoTable/temtable/main/struts-$%7BmoduleName%7D.xml.ftl
+END
+struts-${clazz.className}.xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/pdms/!svn/ver/417/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/ACTION_TEMPLATE/twoTable/temtable/main/struts-$%7Bclazz.className%7D.xml.ftl
+END

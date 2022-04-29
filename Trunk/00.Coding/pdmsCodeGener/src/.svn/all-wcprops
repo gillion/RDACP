@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/pdms/!svn/ver/3307/trunk/codegener/pdmsCodeGener/src
+END
+config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/pdms/!svn/ver/3347/trunk/codegener/pdmsCodeGener/src/config.properties
+END
+案例初始化脚本.txt
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/pdms/!svn/ver/3235/trunk/codegener/pdmsCodeGener/src/%E6%A1%88%E4%BE%8B%E5%88%9D%E5%A7%8B%E5%8C%96%E8%84%9A%E6%9C%AC.txt
+END
+custom-generator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/pdms/!svn/ver/3347/trunk/codegener/pdmsCodeGener/src/custom-generator.xml
+END
+案例配置说明.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/pdms/!svn/ver/3235/trunk/codegener/pdmsCodeGener/src/%E6%A1%88%E4%BE%8B%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.txt
+END

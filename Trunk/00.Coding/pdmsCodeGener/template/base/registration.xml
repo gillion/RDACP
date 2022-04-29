@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<registrationlist> 
+  <registration id="${registrationip1}:${registrationport1}"> 
+    <fathergroup>console</fathergroup>  
+    <group>nftr</group>  
+    <node>mSrv1</node>  
+    <ip>${registrationip1}</ip>  
+    <port>${registrationport1}</port>  
+    <message>mSrv1</message>  
+    <needreg>yes</needreg> 
+  </registration>
+  <registration id="${registrationip2}:${registrationport2}"> 
+    <fathergroup>console</fathergroup>  
+    <group>nftr</group>  
+    <node>mSrv2</node>  
+    <ip>${registrationip2}</ip>  
+    <port>${registrationport2}</port>  
+    <message>mSrv2</message>  
+    <needreg>yes</needreg> 
+  </registration>
+  <registration id="${registrationip3}:${registrationport3}"> 
+    <fathergroup>console</fathergroup>  
+    <group>nftr</group>  
+    <node>mSrv3</node>  
+    <ip>${registrationip3}</ip>  
+    <port>${registrationport3}</port>  
+    <message>mSrv3</message>  
+    <needreg>yes</needreg> 
+  </registration>
+</registrationlist>
+
+

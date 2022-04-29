@@ -1,0 +1,1 @@
+cp /home/ap/sa/setup.jar ./setup;cd ./setup;/usr/local/java/jdk1.6.0_43/bin/jar -xvf setup.jar;sh batchStart.sh;cd ./output;sh cpbase.sh;

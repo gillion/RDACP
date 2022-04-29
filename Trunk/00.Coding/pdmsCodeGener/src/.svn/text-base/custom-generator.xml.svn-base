@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>
+		代码生成器配置文件: 
+		1.会为所有的property生成property_dir属性,如pkg=com.company => pkg_dir=com/company
+		2.可以引用环境变量: ${env.JAVA_HOME} or System.properties: ${user.home},property之间也可以相互引用
+	</comment>
+	<entry key="basepackage">com.pdms</entry>
+	<!-- 
+	<entry key="moduleName">portal</entry>	
+	 -->
+	<entry key="outRoot">E:\heip-generator-output</entry>
+	
+	
+	<!-- 需要移除的表名前缀,使用逗号进行分隔多个前缀,示例值: t_,v_ -->
+	
+	<!-- oracle需要指定jdbc.schema,其它数据库忽略此项配置  -->
+	<!-- 
+	<entry key="tableRemovePrefixes">_T,_t</entry>
+	<entry key="schemaName">HEIP</entry>
+	<entry key="jdbc.schema">HEIP</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">heip</entry>
+	<entry key="jdbc.password">123456</entry>
+	<entry key="jdbc.url">jdbc:oracle:thin:@192.168.40.128:1521:orcl</entry>
+	<entry key="jdbc.driver">oracle.jdbc.driver.OracleDriver</entry>	
+	 
+	<entry key="schemaName">PDMS</entry>
+	<entry key="jdbc.schema">PDMS</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">pdms</entry>
+	<entry key="jdbc.password">pdms123</entry>
+	<entry key="jdbc.url">jdbc:db2://10.188.180.232:50000/pdms:currentSchema=PDMS;</entry>
+	<entry key="jdbc.driver">com.ibm.db2.jcc.DB2Driver</entry>
+	-->
+	
+	<entry key="schemaName">PDMS</entry>
+	<entry key="jdbc.schema">PDMS</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">db2admin</entry>
+	<entry key="jdbc.password">admin</entry>
+	<entry key="jdbc.url">jdbc:db2://192.168.40.132:50000/pdms:currentSchema=PDMS;</entry>
+	<entry key="jdbc.driver">com.ibm.db2.jcc.DB2Driver</entry>
+	
+	<!-- 数据库类型映射  -->
+	<entry key="java_typemapping.java.sql.Timestamp">Date</entry>
+	<entry key="java_typemapping.java.sql.Date">Date</entry>
+	<entry key="java_typemapping.java.sql.Time">Date</entry>	
+	<entry key="java_typemapping.java.lang.Byte">Long</entry>
+	<entry key="java_typemapping.java.lang.Short">Long</entry>
+	<entry key="java_typemapping.java.lang.Integer">Long</entry>
+	<entry key="java_typemapping.java.lang.String">String</entry>	
+	<entry key="java_typemapping.java.math.BigDecimal">BigDecimal</entry>	
+	<entry key="java_typemapping.java.lang.Boolean">Boolean</entry>
+	<entry key="java_typemapping.java.lang.Long">Long</entry>
+	<!-- 数据库映射END -->
+</properties>

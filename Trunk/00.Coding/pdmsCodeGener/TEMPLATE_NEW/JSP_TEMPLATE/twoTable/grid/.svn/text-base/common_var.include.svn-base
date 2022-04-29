@@ -1,0 +1,2 @@
+<#assign classNameLower = clazz.className?uncap_first>
+<#macro jspEl value>${r"${"}${value}}</#macro>

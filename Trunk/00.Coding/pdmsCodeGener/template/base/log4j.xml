@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">	
+	<appender name="ErrorLog" class="com.ccb.openframework.log.impl.DailyRollingBySizeFileAppender">
+		<param name="file" value="/home/ap/${username}/logs/console/AdminServer_console_err.log" />
+		<!-- <param name="file" value="/home/console_err.log" />  -->
+		<param name="BufferedIO" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="MaxFileSize" value="50MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[CCB][Console][%l][%d{yyyy-MM-dd HH:mm:ss SSS}][%-5p][evtTraceId=%X{['_evt_trace_id']}][transactionCode=%X{['_service_id']}] [seqNo=%X{['_seq_no']}][userMessage=%m]%n" />
+		</layout>
+	</appender>
+	
+	<appender name="AppLog" class="com.ccb.openframework.log.impl.DailyRollingBySizeFileAppender">
+		<param name="file" value="/home/ap/${username}/logs/console/AdminServer_console_out.log" />
+		<!-- <param name="file" value="/home/console_out.log" />  -->
+		<param name="BufferedIO" value="true" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="MaxFileSize" value="50MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[CCB][Console][%l][%d{yyyy-MM-dd HH:mm:ss SSS}][%-5p][evtTraceId=%X{['_evt_trace_id']}][transactionCode=%X{['_service_id']}][seqNo=%X{['_seq_no']}][userMessage=%m]%n" />
+		</layout>
+	</appender>
+	
+	<appender name="MonitorLog" class="com.ccb.openframework.monitor.utils.CosDailyRollingFileAppender">
+		<param name="file" value="/home/ap/${username}/logs/console/TRAN_AdminServer" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="DatePattern" value="'_'yyyyMMddHHmm'.txt'" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="ConsoleLog" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%m%n" />
+		</layout>
+	</appender>
+		
+	
+     <logger name="monitorlogger" additivity="false" >
+     	<level value="INFO"/>
+     		<appender-ref ref="MonitorLog"/>
+     </logger>
+     
+	<root>
+		<priority value="debug"></priority>
+		<appender-ref ref="ErrorLog" />
+		<appender-ref ref="AppLog" />
+		<!-- <appender-ref ref="ConsoleLog" />  -->
+	</root>
+
+</log4j:configuration>
+
+

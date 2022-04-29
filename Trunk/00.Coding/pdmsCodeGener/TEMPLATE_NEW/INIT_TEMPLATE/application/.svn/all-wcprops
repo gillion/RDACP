@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/pdms/!svn/ver/3177/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/INIT_TEMPLATE/application
+END
+application-${moduleName}.xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/pdms/!svn/ver/3177/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/INIT_TEMPLATE/application/application-$%7BmoduleName%7D.xml.ftl
+END

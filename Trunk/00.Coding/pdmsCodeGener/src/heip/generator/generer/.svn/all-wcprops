@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/pdms/!svn/ver/3302/trunk/codegener/pdmsCodeGener/src/heip/generator/generer
+END
+EntityGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/pdms/!svn/ver/69/trunk/codegener/pdmsCodeGener/src/heip/generator/generer/EntityGenerator.java
+END
+JSPGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/pdms/!svn/ver/3348/trunk/codegener/pdmsCodeGener/src/heip/generator/generer/JSPGenerator.java
+END
+ActionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/pdms/!svn/ver/3348/trunk/codegener/pdmsCodeGener/src/heip/generator/generer/ActionGenerator.java
+END
+ServiceGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/pdms/!svn/ver/3348/trunk/codegener/pdmsCodeGener/src/heip/generator/generer/ServiceGenerator.java
+END
+AbstractGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/pdms/!svn/ver/69/trunk/codegener/pdmsCodeGener/src/heip/generator/generer/AbstractGenerator.java
+END
+JavaClazzGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/pdms/!svn/ver/69/trunk/codegener/pdmsCodeGener/src/heip/generator/generer/JavaClazzGenerator.java
+END

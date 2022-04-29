@@ -1,0 +1,163 @@
+DROP sequence SEQ_ST_COMWAREHOUSE RESTRICT;
+DROP sequence SEQ_ST_COMAREA RESTRICT;
+DROP sequence SEQ_ST_COMSTORE RESTRICT;
+
+DROP TABLE ST_COMWAREHOUSE;
+DROP TABLE ST_COMAREA;
+DROP TABLE ST_COMSTORE;
+
+CREATE TABLE ST_COMWAREHOUSE
+(                                
+SWAREHOUSEID  INTEGER NOT NULL,
+SENDNO  VARCHAR(3),
+COMM  VARCHAR(1),
+IFLAG  INTEGER,
+BSYSTAG  VARCHAR(1),
+SWAREHOUSENAME  VARCHAR(20),
+SSHORTNAME  VARCHAR(20),
+SDISTRICT  VARCHAR(10),
+SENGNAME  VARCHAR(20),
+SLINKMAN  VARCHAR(12),
+STELEPHONE  VARCHAR(16),
+SADDRESS  VARCHAR(50),
+SREMARK  VARCHAR(60),
+SCOSTUSE  VARCHAR(1),
+SDEPTID  VARCHAR(20),
+SDWDM  VARCHAR(12),
+SYEAR  VARCHAR(4),
+STATE  VARCHAR(6),
+IPERIOD  INTEGER,
+CONSTRAINT ST_COMWAREHOUSE_PK PRIMARY KEY (SWAREHOUSEID)
+);
+comment on table ST_COMWAREHOUSE
+  is '仓库资料设定档';
+comment on column ST_COMWAREHOUSE.SWAREHOUSEID
+  is '仓库编号';
+comment on column ST_COMWAREHOUSE.SENDNO
+  is '发送次数';
+comment on column ST_COMWAREHOUSE.COMM
+  is '状态传输控制位';
+comment on column ST_COMWAREHOUSE.IFLAG
+  is '旗标';
+comment on column ST_COMWAREHOUSE.BSYSTAG
+  is '系统标志';
+comment on column ST_COMWAREHOUSE.SWAREHOUSENAME
+  is '仓库名称';
+comment on column ST_COMWAREHOUSE.SSHORTNAME
+  is '仓库简称';
+comment on column ST_COMWAREHOUSE.SDISTRICT
+  is '区域';
+comment on column ST_COMWAREHOUSE.SENGNAME
+  is '英文名称';
+comment on column ST_COMWAREHOUSE.SLINKMAN
+  is '负责人';
+comment on column ST_COMWAREHOUSE.STELEPHONE
+  is '联络电话';
+comment on column ST_COMWAREHOUSE.SADDRESS
+  is '仓库地址';
+comment on column ST_COMWAREHOUSE.SREMARK
+  is '备注';
+comment on column ST_COMWAREHOUSE.SCOSTUSE
+  is '计价方式';
+comment on column ST_COMWAREHOUSE.SDEPTID
+  is '所属部门';
+comment on column ST_COMWAREHOUSE.SDWDM
+  is '单位代码';
+comment on column ST_COMWAREHOUSE.SYEAR
+  is '年份';
+comment on column ST_COMWAREHOUSE.IPERIOD
+  is '期间';
+comment on column ST_COMWAREHOUSE.STATE
+  is '状态';
+
+CREATE TABLE ST_COMAREA
+(                                
+SAREAID  INTEGER NOT NULL,
+SENDNO  VARCHAR(3),
+COMM  VARCHAR(1),
+IFLAG  INTEGER,
+BSYSTAG  VARCHAR(1),
+SDWDM  VARCHAR(12),
+SAREANAME  VARCHAR(32),
+SWAREHOUSEID  INTEGER,
+SSTOREID  INTEGER,
+SPROTYPE  VARCHAR(20),
+SREMARK  VARCHAR(90),
+STATE  VARCHAR(6),
+CONSTRAINT ST_COMAREA_PK PRIMARY KEY (SAREAID)
+);
+comment on table ST_COMAREA
+  is '储位资料设定档';
+comment on column ST_COMAREA.SAREAID
+  is '储位编号';
+comment on column ST_COMAREA.SENDNO
+  is '发送次数';
+comment on column ST_COMAREA.COMM
+  is '状态传输控制位';
+comment on column ST_COMAREA.IFLAG
+  is '旗标';
+comment on column ST_COMAREA.BSYSTAG
+  is '系统标志';
+comment on column ST_COMAREA.SDWDM
+  is '单位代码';
+comment on column ST_COMAREA.SAREANAME
+  is '储位名称';
+comment on column ST_COMAREA.SWAREHOUSEID
+  is '仓库编号';
+comment on column ST_COMAREA.SSTOREID
+  is '默认架位编号';
+comment on column ST_COMAREA.SPROTYPE
+  is '默认类别编号';
+comment on column ST_COMAREA.SREMARK
+  is '备注';
+comment on column ST_COMAREA.STATE
+  is '状态';
+
+
+CREATE TABLE ST_COMSTORE
+(                                
+SSTOREID  INTEGER NOT NULL,
+SENDNO  VARCHAR(3),
+COMM  VARCHAR(1),
+IFLAG  INTEGER,
+BSYSTAG  VARCHAR(1),
+SDWDM  VARCHAR(12),
+SSTORENAME  VARCHAR(32),
+SAREAID  INTEGER,
+SPROID  VARCHAR(20),
+SREMARK  VARCHAR(90),
+STATE  VARCHAR(6),
+CONSTRAINT ST_COMSTORE_PK PRIMARY KEY (SSTOREID)
+);
+comment on table ST_COMSTORE
+  is '架位资料设定档';
+comment on column ST_COMSTORE.SSTOREID
+  is '架位编号';
+comment on column ST_COMSTORE.SENDNO
+  is '发送次数';
+comment on column ST_COMSTORE.COMM
+  is '状态传输控制位';
+comment on column ST_COMSTORE.IFLAG
+  is '旗标';
+comment on column ST_COMSTORE.BSYSTAG
+  is '系统标志';
+comment on column ST_COMSTORE.SDWDM
+  is '单位代码';
+comment on column ST_COMSTORE.SSTORENAME
+  is '架位名称';
+comment on column ST_COMSTORE.SAREAID
+  is '储位编号';
+comment on column ST_COMSTORE.SPROID
+  is '配件编号';
+comment on column ST_COMSTORE.SREMARK
+  is '备注';
+comment on column ST_COMSTORE.STATE
+  is '状态';
+
+
+
+CREATE sequence "SEQ_ST_COMWAREHOUSE" AS INTEGER START WITH 100 increment BY 1 no minvalue no maxvalue cycle cache 20 ORDER;
+
+CREATE sequence "SEQ_ST_COMAREA" AS INTEGER START WITH 100 increment BY 1 no minvalue no maxvalue cycle cache 20 ORDER;
+
+CREATE sequence "SEQ_ST_COMSTORE" AS INTEGER START WITH 100 increment BY 1 no minvalue no maxvalue cycle cache 20 ORDER;

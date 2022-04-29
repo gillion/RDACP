@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/pdms/!svn/ver/3307/trunk/codegener/pdmsCodeGener/src/heip/generator/entity
+END
+EntityClazz.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/pdms/!svn/ver/3348/trunk/codegener/pdmsCodeGener/src/heip/generator/entity/EntityClazz.java
+END
+EntityTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/pdms/!svn/ver/69/trunk/codegener/pdmsCodeGener/src/heip/generator/entity/EntityTable.java
+END
+EntityColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/pdms/!svn/ver/3348/trunk/codegener/pdmsCodeGener/src/heip/generator/entity/EntityColumn.java
+END

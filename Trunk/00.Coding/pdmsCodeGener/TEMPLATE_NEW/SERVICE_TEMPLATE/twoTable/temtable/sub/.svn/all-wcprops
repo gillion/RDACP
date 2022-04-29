@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/pdms/!svn/ver/69/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/twoTable/temtable/sub
+END
+application-${moduleName}.xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/pdms/!svn/ver/3235/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/twoTable/temtable/sub/application-$%7BmoduleName%7D.xml.ftl
+END
+application-${clazz.className}.xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/pdms/!svn/ver/3235/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/twoTable/temtable/sub/application-$%7Bclazz.className%7D.xml.ftl
+END
+${clazz.className}BS.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/pdms/!svn/ver/3235/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/twoTable/temtable/sub/$%7Bclazz.className%7DBS.java
+END
+${clazz.className}BSImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/pdms/!svn/ver/3241/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/twoTable/temtable/sub/$%7Bclazz.className%7DBSImpl.java
+END

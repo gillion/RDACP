@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/pdms/!svn/ver/493/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/threeTable/subMain
+END
+common_var.include
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/pdms/!svn/ver/69/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/threeTable/subMain/common_var.include
+END
+${clazz.underLineName}_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/pdms/!svn/ver/417/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/threeTable/subMain/$%7Bclazz.underLineName%7D_edit.jsp
+END
+${clazz.underLineName}_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/pdms/!svn/ver/493/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/JSP_TEMPLATE/threeTable/subMain/$%7Bclazz.underLineName%7D_list.jsp
+END

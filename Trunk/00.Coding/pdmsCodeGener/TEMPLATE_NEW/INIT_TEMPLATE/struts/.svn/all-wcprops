@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/pdms/!svn/ver/3177/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/INIT_TEMPLATE/struts
+END
+struts-${moduleName}.xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/pdms/!svn/ver/3177/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/INIT_TEMPLATE/struts/struts-$%7BmoduleName%7D.xml.ftl
+END

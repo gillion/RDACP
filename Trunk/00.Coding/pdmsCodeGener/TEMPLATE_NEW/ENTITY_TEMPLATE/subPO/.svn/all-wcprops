@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/pdms/!svn/ver/166/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/ENTITY_TEMPLATE/subPO
+END
+${className}.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/pdms/!svn/ver/166/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/ENTITY_TEMPLATE/subPO/$%7BclassName%7D.java
+END

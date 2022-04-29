@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/pdms/!svn/ver/333/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/single
+END
+application-${moduleName}.xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/pdms/!svn/ver/3346/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/single/application-$%7BmoduleName%7D.xml.ftl
+END
+${className}BS.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/pdms/!svn/ver/106/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/single/$%7BclassName%7DBS.java
+END
+${className}BSImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/pdms/!svn/ver/3346/trunk/codegener/pdmsCodeGener/TEMPLATE_NEW/SERVICE_TEMPLATE/single/$%7BclassName%7DBSImpl.java
+END

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<outbound-services>
+
+	<!-- 默认处理链 -->
+	<default-handler-stack id="defaultOutboundStack" />
+
+	<!-- 默认字符集 -->
+	<default-charset name="UTF-8" />
+	<default-version value="01" />
+	<!-- 服务端点配置 -->
+	<endpoints>
+	  <!-- <endpoint id="console" type="http" uri="/imitation/HttpImitationServer" sec-node-id="419002" default="true"> -->
+	  <endpoint id="console" type="http" uri="${consoleuri}" sec-node-id="${secnodeid}" default="true"> 
+		 <host id="host1" ip="127.0.0.1" port="8080" />  
+			<connect-policy connect-timeout="10000"
+				request-timeout="10000" retry-times="2" failover="false"
+				fail-then-skip-times="0" />
+		</endpoint>
+
+	</endpoints>
+
+</outbound-services>

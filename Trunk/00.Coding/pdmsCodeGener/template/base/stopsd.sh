@@ -1,0 +1,1 @@
+sh /home/ap/${username}/domains/${domainhome}/stop_${Srvname}.sh;

@@ -1,0 +1,1 @@
+sh /home/ap/${username}/domains/${domainhome}/start_AdminServer.sh;sh /home/ap/${username}/domains/${domainhome}/start_${Srvname}.sh;
