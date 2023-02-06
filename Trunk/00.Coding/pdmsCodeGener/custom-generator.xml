@@ -5,8 +5,8 @@
 	</comment>
 	
 	<entry key="zh_connstr">139.9.182.62:3001</entry>
-	<entry key="domainhome">crmc_ces</entry>
-	<entry key="username">crmc_ces</entry>
+	<entry key="domainhome">njb</entry>
+	<entry key="username">njb</entry>
 	<entry key="outRoot">E:\heip-generator-output</entry>
 	<entry key="Srvname">mSrv1.sh</entry>
   	<entry key="weblogicinstall">/home/mw/weblogic/wls1036</entry>
@@ -18,7 +18,7 @@
 	<entry key="seekManageronStartUpSeek">ON</entry>
 	
 
-	<entry key="consoleuri">/NCES/</entry>
+	<entry key="consoleuri">/njb/</entry>
 	<entry key="secnodeid">12001</entry>
 	<entry key="registrationip1">139.9.182.62</entry>
 	<entry key="registrationip2">139.9.182.62</entry>
